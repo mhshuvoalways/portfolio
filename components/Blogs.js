@@ -5,7 +5,7 @@ import BlogCard from "./BlogCard";
 const Blog = ({ posts, goTo }) => {
   const blogsRef = useRef(null);
 
-  if (goTo) {
+  if (goTo === "blogs") {
     blogsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 

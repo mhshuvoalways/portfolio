@@ -10,7 +10,7 @@
     @apply w-10/12 mx-auto;
   }
   .section-title {
-    @apply text-xl sm:text-3xl text-center mt-32 mb-20 border-b-4 border-secondary pb-5 w-full sm:w-4/12 m-auto;
+    @apply text-xl sm:text-3xl text-center mt-32 mb-20 border-b-4 border-secondary pb-5 w-8/12 sm:w-4/12 m-auto;
   }
   .text1 {
     @apply text-2xl sm:text-5xl;
@@ -55,5 +55,15 @@
   }
   .animate-mypicture {
     animation: mypicture 5s ease-in-out infinite;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ff4a57;
+    border-radius: 20%;
   }
 }

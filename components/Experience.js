@@ -2,9 +2,9 @@ import { useRef } from "react";
 import { Fade, Zoom } from "react-reveal";
 
 const Experience = ({ goTo }) => {
-  const experienceRef = useRef();
+  const experienceRef = useRef(null);
 
-  if (goTo) {
+  if (goTo === "experience") {
     experienceRef.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -25,7 +25,7 @@ const Experience = ({ goTo }) => {
         </Zoom>
         <Fade right>
           <div className="w-full sm:w-6/12">
-            <div className="text2 flex items-center gap-5">
+            <div className="text2 flex gap-5">
               <a
                 href="https://www.fiverr.com/mhshuvoit"
                 target="_blank"

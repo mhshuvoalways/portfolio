@@ -2,10 +2,16 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { Fade } from "react-reveal";
 import MyImage from "../public/mhshuvo.png";
-
+import { motion } from "framer-motion";
 function Intro({ goTo }) {
   const [index, setIndex] = useState(0);
-  const texts = ["committed", "passionate", "fast-learner", "selt-taught"];
+  const texts = [
+    "committed",
+    "passionate",
+    "fast learner",
+    "self taught",
+    "enthusiast",
+  ];
 
   const introRef = useRef(null);
 
@@ -17,7 +23,7 @@ function Intro({ goTo }) {
     return () => clearInterval(interval);
   }, [texts.length]);
 
-  if (goTo) {
+  if (goTo === "home") {
     introRef.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -30,7 +36,7 @@ function Intro({ goTo }) {
       ref={introRef}
     >
       <Fade bottom>
-        <div className="space-y-10 lg:w-6/12">
+        <div className="space-y-5 md:space-y-10 lg:w-6/12">
           <p className="text-gray-600 uppercase">Welcome to my world</p>
           <div className="flex gap-2 sm:gap-5 items-center text1">
             <h2>Hi, I’m MH Shuvo</h2>
@@ -38,7 +44,7 @@ function Intro({ goTo }) {
           </div>
           <div className="text2 relative text-primary">
             <p>A</p>
-            <p id="animated-text" className="italic">
+            <p id="animated-text" className="italic mb-20">
               {texts.map((text, i) => (
                 <span
                   key={i}
@@ -52,25 +58,25 @@ function Intro({ goTo }) {
                 </span>
               ))}
             </p>
-            <p className="absolute top-5 left-0 sm:top-0 sm:left-36 md:left-48 w-full">
-              full stack developer
+            <p className="absolute top-5 left-0 sm:top-0 sm:left-36 md:left-44 w-full">
+              front end developer
             </p>
           </div>
-          <div>
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a
-              className="bg-secondary border-primary px-6 py-2 rounded-full font-light"
               href="https://drive.google.com/file/d/1kO6sGCsUXSYhVbmSivzIrhU_aispKpcJ/view?usp=share_link"
               target="_blank"
+              className="bg-secondary border-primary px-6 py-2 rounded-full font-light"
             >
               Resume
             </a>
-          </div>
+          </motion.button>
         </div>
       </Fade>
       <Image
         src={MyImage}
         alt={MyImage}
-        className="w-5/12 lg:w-3/12 animate-mypicture"
+        className="w-6/12 lg:w-3/12 animate-mypicture"
       />
     </div>
   );

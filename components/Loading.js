@@ -10,7 +10,7 @@ const Loading = () => {
           <p className="font-semibold text2">Please wait...</p>
         </div>
       </div>
-      <p className="fixed bg-gray-800 inset-0 opacity-70" />
+      <p className="fixed bg-gray-800 inset-0 opacity-90" />
     </div>
   );
 };

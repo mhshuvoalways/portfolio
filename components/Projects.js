@@ -7,10 +7,11 @@ const Projects = ({ goTo }) => {
   const projectRef = useRef(null);
 
   const currentHandler = (value) => {
+    console.log(value);
     setCurrent(value);
   };
 
-  if (goTo) {
+  if (goTo === "projects") {
     projectRef.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
@@ -35,41 +36,33 @@ const Projects = ({ goTo }) => {
           </small>
         </div>
         <p
-          className={
-            current === "fullstack"
-              ? "text-secondary text3 border-b-4 px-5 py-1 border-secondary cursor-pointer"
-              : "text-secondary text3 px-5 py-1 cursor-pointer hover:font-bold"
-          }
+          className={`text-secondary text3 px-5 py-1 cursor-pointer ${
+            current === "fullstack" && "border-b-4 border-secondary"
+          }`}
           onClick={() => currentHandler("fullstack")}
         >
           Full Stack
         </p>
         <p
-          className={
-            current === "frontend"
-              ? "text-secondary text3 border-b-4 px-5 py-1 border-secondary cursor-pointer"
-              : "text-secondary text3 px-5 py-1 cursor-pointer hover:font-bold"
-          }
+          className={`text-secondary text3 px-5 py-1 cursor-pointer ${
+            current === "frontend" && "border-b-4 border-secondary"
+          }`}
           onClick={() => currentHandler("frontend")}
         >
           Front End
         </p>
         <p
-          className={
-            current === "landingpage"
-              ? "text-secondary text3 border-b-4 px-5 py-1 border-secondary cursor-pointer"
-              : "text-secondary text3 px-5 py-1 cursor-pointer hover:font-bold"
-          }
+          className={`text-secondary text3 px-5 py-1 cursor-pointer ${
+            current === "landingpage" && "border-b-4 border-secondary"
+          }`}
           onClick={() => currentHandler("landingpage")}
         >
           Landing Page
         </p>
         <p
-          className={
-            current === "others"
-              ? "text-secondary text3 border-b-4 px-5 py-1 border-secondary cursor-pointer"
-              : "text-secondary text3 px-5 py-1 cursor-pointer hover:font-bold"
-          }
+          className={`text-secondary text3 px-5 py-1 cursor-pointer ${
+            current === "others" && "border-b-4 border-secondary"
+          }`}
           onClick={() => currentHandler("others")}
         >
           Others

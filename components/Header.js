@@ -69,76 +69,78 @@ const Header = ({ gotoHandler }) => {
           </ul>
         </nav>
       </header>
-      <motion.div
-        animate={{ opacity: showHeader ? 1 : 0, y: showHeader ? 72 : -100 }}
-        className={`fixed top-0 border-gray-600 border-b border-t shadow-md left-0 right-0 bg-gray-700 z-10 block lg:hidden`}
-      >
-        <ul>
-          <li
-            className="cursor-pointer hover:bg-gray-800 py-2"
-            onClick={() => {
-              gotoHandler("home");
-              headerHandler();
-            }}
-          >
-            <p className="w-10/12 mx-auto">Home</p>
-          </li>
-          <li
-            className="cursor-pointer hover:bg-gray-800 py-2"
-            onClick={() => {
-              gotoHandler("about");
-              headerHandler();
-            }}
-          >
-            <p className="w-10/12 mx-auto">About</p>
-          </li>
-          <li
-            className="cursor-pointer hover:bg-gray-800 py-2"
-            onClick={() => {
-              gotoHandler("skills");
-              headerHandler();
-            }}
-          >
-            <p className="w-10/12 mx-auto">Skills</p>
-          </li>
-          <li
-            className="cursor-pointer hover:bg-gray-800 py-2"
-            onClick={() => {
-              gotoHandler("projects");
-              headerHandler();
-            }}
-          >
-            <p className="w-10/12 mx-auto">Projects</p>
-          </li>
-          <li
-            className="cursor-pointer hover:bg-gray-800 py-2"
-            onClick={() => {
-              gotoHandler("experience");
-              headerHandler();
-            }}
-          >
-            <p className="w-10/12 mx-auto">Experience</p>
-          </li>
-          <li
-            className="cursor-pointer hover:bg-gray-800 py-2"
-            onClick={() => {
-              gotoHandler("blogs");
-              headerHandler();
-            }}
-          >
-            <p className="w-10/12 mx-auto">Blogs</p>
-          </li>
-          <li
-            className="cursor-pointer hover:bg-gray-800 py-2"
-            onClick={() => {
-              gotoHandler("contact");
-              headerHandler();
-            }}
-          >
-            <p className="w-10/12 mx-auto">Contact</p>
-          </li>
-        </ul>
-      </motion.div>
+      {showHeader && (
+        <motion.div
+          animate={{ opacity: showHeader ? 1 : 0, y: showHeader ? 72 : -100 }}
+          className={`fixed top-0 border-gray-600 border-b border-t shadow-md left-0 right-0 bg-gray-700 z-10 block lg:hidden`}
+        >
+          <ul>
+            <li
+              className="cursor-pointer hover:bg-gray-800 py-2"
+              onClick={() => {
+                gotoHandler("home");
+                headerHandler();
+              }}
+            >
+              <p className="w-10/12 mx-auto">Home</p>
+            </li>
+            <li
+              className="cursor-pointer hover:bg-gray-800 py-2"
+              onClick={() => {
+                gotoHandler("about");
+                headerHandler();
+              }}
+            >
+              <p className="w-10/12 mx-auto">About</p>
+            </li>
+            <li
+              className="cursor-pointer hover:bg-gray-800 py-2"
+              onClick={() => {
+                gotoHandler("skills");
+                headerHandler();
+              }}
+            >
+              <p className="w-10/12 mx-auto">Skills</p>
+            </li>
+            <li
+              className="cursor-pointer hover:bg-gray-800 py-2"
+              onClick={() => {
+                gotoHandler("projects");
+                headerHandler();
+              }}
+            >
+              <p className="w-10/12 mx-auto">Projects</p>
+            </li>
+            <li
+              className="cursor-pointer hover:bg-gray-800 py-2"
+              onClick={() => {
+                gotoHandler("experience");
+                headerHandler();
+              }}
+            >
+              <p className="w-10/12 mx-auto">Experience</p>
+            </li>
+            <li
+              className="cursor-pointer hover:bg-gray-800 py-2"
+              onClick={() => {
+                gotoHandler("blogs");
+                headerHandler();
+              }}
+            >
+              <p className="w-10/12 mx-auto">Blogs</p>
+            </li>
+            <li
+              className="cursor-pointer hover:bg-gray-800 py-2"
+              onClick={() => {
+                gotoHandler("contact");
+                headerHandler();
+              }}
+            >
+              <p className="w-10/12 mx-auto">Contact</p>
+            </li>
+          </ul>
+        </motion.div>
+      )}
     </>
   );
 };

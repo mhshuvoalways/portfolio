@@ -6,7 +6,7 @@ import MyImage from "../public/mhshuvo.png";
 const About = ({ goTo }) => {
   const aboutRef = useRef(null);
 
-  if (goTo) {
+  if (goTo === "about") {
     aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -14,7 +14,7 @@ const About = ({ goTo }) => {
     <div className="my-container" ref={aboutRef}>
       <p className="section-title">About Me</p>
       <div className="flex justify-center lg:justify-between items-center gap-10 flex-wrap lg:flex-nowrap">
-        <div className="w-5/12 lg:w-3/12 animate-mypicture">
+        <div className="w-6/12 lg:w-3/12 animate-mypicture">
           <Bounce bottom>
             <Image src={MyImage} alt={MyImage} />
           </Bounce>

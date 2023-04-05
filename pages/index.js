@@ -11,50 +11,22 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = ({ posts }) => {
-  const [scrollView, setScrollView] = useState({});
+  const [scrollView, setScrollView] = useState("");
 
   const gotoHandler = (value) => {
-    if (value === "home") {
-      setScrollView({
-        home: true,
-      });
-    } else if (value === "about") {
-      setScrollView({
-        about: true,
-      });
-    } else if (value === "skills") {
-      setScrollView({
-        skills: true,
-      });
-    } else if (value === "projects") {
-      setScrollView({
-        projects: true,
-      });
-    } else if (value === "experience") {
-      setScrollView({
-        experience: true,
-      });
-    } else if (value === "blogs") {
-      setScrollView({
-        blogs: true,
-      });
-    } else if (value === "contact") {
-      setScrollView({
-        contact: true,
-      });
-    }
+    setScrollView(value);
   };
 
   return (
     <div>
       <Header gotoHandler={gotoHandler} />
-      <Intro goTo={scrollView?.home} />
-      <About goTo={scrollView?.about} />
-      <Skills goTo={scrollView?.skills} />
-      <Projects goTo={scrollView?.projects} />
-      <Experience goTo={scrollView?.experience} />
-      <Blogs posts={posts} goTo={scrollView?.blogs} />
-      <Contact goTo={scrollView?.contact} />
+      <Intro goTo={scrollView} />
+      <About goTo={scrollView} />
+      <Skills goTo={scrollView} />
+      <Projects goTo={scrollView} />
+      <Experience goTo={scrollView} />
+      <Blogs posts={posts} goTo={scrollView} />
+      <Contact goTo={scrollView} />
       <Footer />
     </div>
   );

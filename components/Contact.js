@@ -2,6 +2,7 @@ import axios from "axios";
 import Image from "next/image";
 import { useState, useRef } from "react";
 import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 import Tostify from "./Tostify";
 import Email from "../public/icons/email.svg";
 import Home from "../public/icons/home.svg";
@@ -38,7 +39,7 @@ const Contact = ({ goTo }) => {
       });
   };
 
-  if (goTo) {
+  if (goTo === "contact") {
     contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -89,6 +90,7 @@ const Contact = ({ goTo }) => {
                 placeholder="Enter Your Full Name"
                 name="name"
                 onChange={onChangeHandler}
+                required
               />
             </div>
             <div>
@@ -98,6 +100,7 @@ const Contact = ({ goTo }) => {
                 placeholder="Enter Your Valid Email"
                 name="email"
                 onChange={onChangeHandler}
+                required
               />
             </div>
             <div>
@@ -106,11 +109,16 @@ const Contact = ({ goTo }) => {
                 placeholder="Enter Your Message"
                 name="message"
                 onChange={onChangeHandler}
+                required
               />
             </div>
-            <button className="border-secondary px-5 border-2 py-1 cursor-pointer w-full sm:w-32 rounded-full hover:bg-secondary">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="border-secondary px-5 border-2 py-1 cursor-pointer w-full sm:w-32 rounded-full hover:bg-secondary"
+            >
               Submit
-            </button>
+            </motion.button>
           </form>
         </div>
       </Fade>

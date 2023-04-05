@@ -37,7 +37,7 @@ import Postman from "../public/skills/postman.png";
 const Skillls = ({ goTo }) => {
   const skillRef = useRef(null);
 
-  if (goTo) {
+  if (goTo === "skills") {
     skillRef.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
