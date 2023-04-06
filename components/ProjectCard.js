@@ -34,13 +34,17 @@ const ProjectCard = ({
       </div>
       <div className="flex items-center gap-10 flex-wrap justify-center mt-8">
         {githubLink && (
-          <a href={githubLink} target="_blank">
-            <Image src={GithubIcon} alt={GithubIcon} />
-          </a>
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <a href={githubLink} target="_blank">
+              <Image src={GithubIcon} alt={GithubIcon} />
+            </a>
+          </motion.button>
         )}
-        <a href={webLink} target="_blank">
-          <Image src={ExternalLinkIcon} alt={ExternalLinkIcon} />
-        </a>
+        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <a href={webLink} target="_blank">
+            <Image src={ExternalLinkIcon} alt={ExternalLinkIcon} />
+          </a>
+        </motion.button>
       </div>
     </motion.div>
   );

@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Socials from "@/components/Socials";
 
 const Index = ({ posts }) => {
   const [scrollView, setScrollView] = useState("");
@@ -19,7 +20,7 @@ const Index = ({ posts }) => {
 
   return (
     <div>
-      <Header gotoHandler={gotoHandler} />
+      <Header gotoHandler={gotoHandler} scrollView={scrollView} />
       <Intro goTo={scrollView} />
       <About goTo={scrollView} />
       <Skills goTo={scrollView} />
@@ -28,6 +29,7 @@ const Index = ({ posts }) => {
       <Blogs posts={posts} goTo={scrollView} />
       <Contact goTo={scrollView} />
       <Footer />
+      <Socials />
     </div>
   );
 };

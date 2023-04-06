@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import moment from "moment";
 
 const BlogCard = ({ id, image, createdAt, title }) => {
@@ -18,13 +19,15 @@ const BlogCard = ({ id, image, createdAt, title }) => {
       <p className="text3 tracking-wide font-normal mt-3 mb-5">
         {title.length > 45 ? title.slice(0, 45) + "..." : title}
       </p>
-      <a
-        href={`https://daringpage.vercel.app/post/${id}`}
-        target="_blank"
-        className="border-secondary border rounded-full px-5 w-48 text-center py-1 cursor-pointer"
-      >
-        Read at My Blog
-      </a>
+      <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <a
+          href={`https://daringpage.vercel.app/post/${id}`}
+          target="_blank"
+          className="border-secondary border rounded-full px-5 w-48 text-center py-1 cursor-pointer hover:bg-secondary"
+        >
+          Read at My Blog
+        </a>
+      </motion.button>
     </div>
   );
 };
