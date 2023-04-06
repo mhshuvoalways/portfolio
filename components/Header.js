@@ -110,6 +110,7 @@ const Header = ({ gotoHandler, scrollView }) => {
         animate={{
           opacity: showHeader ? 1 : 0,
           x: showHeader ? 0 : -500,
+          display: showHeader ? "block" : "none",
         }}
         className={`fixed top-16 border-gray-600 border-b border-t shadow-md left-0 right-0 bg-gray-700 z-10 block lg:hidden mt-2`}
       >
