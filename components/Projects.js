@@ -1,25 +1,17 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
+import { Element } from "react-scroll";
 import projectsdata from "../db.js";
 import ProjectCard from "./ProjectCard";
 
-const Projects = ({ goTo }) => {
+const Projects = () => {
   const [current, setCurrent] = useState("all");
-  const projectRef = useRef(null);
 
   const currentHandler = (value) => {
-    console.log(value);
     setCurrent(value);
   };
 
-  if (goTo === "projects") {
-    projectRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
-
   return (
-    <div className="my-container" ref={projectRef}>
+    <Element className="my-container" name="projects">
       <p className="section-title">Projects I have Built</p>
       <div className="flex items-center justify-center gap-5 flex-wrap">
         <div
@@ -95,7 +87,7 @@ const Projects = ({ goTo }) => {
           );
         })}
       </div>
-    </div>
+    </Element>
   );
 };
 

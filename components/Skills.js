@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { Element } from "react-scroll";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
 import JS from "../public/skills/js.png";
@@ -34,17 +34,9 @@ import Figma from "../public/skills/figma.png";
 import XD from "../public/skills/xd.png";
 import Postman from "../public/skills/postman.png";
 
-const Skillls = ({ goTo }) => {
-  const skillRef = useRef(null);
-
-  if (goTo === "skills") {
-    skillRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
+const Skillls = () => {
   return (
-    <div className="my-container" ref={skillRef}>
+    <Element className="my-container" name="skills">
       <p className="section-title">What I Am Good At</p>
       <Fade right>
         <div className="space-y-20">
@@ -250,7 +242,7 @@ const Skillls = ({ goTo }) => {
           </div>
         </div>
       </Fade>
-    </div>
+    </Element>
   );
 };
 

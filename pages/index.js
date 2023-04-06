@@ -1,6 +1,6 @@
-import { useState } from "react";
 import axios from "axios";
 import Header from "@/components/Header";
+import ScrollSign from "@/components/ScrollSign";
 import Intro from "@/components/Intro";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -12,22 +12,17 @@ import Footer from "@/components/Footer";
 import Socials from "@/components/Socials";
 
 const Index = ({ posts }) => {
-  const [scrollView, setScrollView] = useState("");
-
-  const gotoHandler = (value) => {
-    setScrollView(value);
-  };
-
   return (
     <div>
-      <Header gotoHandler={gotoHandler} scrollView={scrollView} />
-      <Intro goTo={scrollView} />
-      <About goTo={scrollView} />
-      <Skills goTo={scrollView} />
-      <Projects goTo={scrollView} />
-      <Experience goTo={scrollView} />
-      <Blogs posts={posts} goTo={scrollView} />
-      <Contact goTo={scrollView} />
+      <Header />
+      <ScrollSign />
+      <Intro />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Blogs posts={posts} />
+      <Contact />
       <Footer />
       <Socials />
     </div>

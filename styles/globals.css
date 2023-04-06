@@ -22,6 +22,10 @@
     @apply text-lg sm:text-xl;
   }
 
+  .progressbar{
+    top: 72px;
+  }
+
   @keyframes wave {
     0%,
     100% {

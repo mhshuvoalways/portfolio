@@ -1,17 +1,12 @@
-import React, { useRef } from "react";
+import React from "react";
+import { Element } from "react-scroll";
 import Image from "next/image";
 import Bounce from "react-reveal/Bounce";
 import MyImage from "../public/mhshuvo.png";
 
-const About = ({ goTo }) => {
-  const aboutRef = useRef(null);
-
-  if (goTo === "about") {
-    aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
+const About = () => {
   return (
-    <div className="my-container" ref={aboutRef}>
+    <Element className="my-container" name="about">
       <p className="section-title">About Me</p>
       <div className="flex justify-center lg:justify-between items-center gap-10 flex-wrap lg:flex-nowrap">
         <div className="w-6/12 lg:w-3/12 animate-mypicture">
@@ -51,7 +46,7 @@ const About = ({ goTo }) => {
           </p>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

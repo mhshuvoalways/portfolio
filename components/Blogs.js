@@ -1,16 +1,10 @@
-import React, { useRef } from "react";
+import { Element } from "react-scroll";
 import { Fade } from "react-reveal";
 import BlogCard from "./BlogCard";
 
-const Blog = ({ posts, goTo }) => {
-  const blogsRef = useRef(null);
-
-  if (goTo === "blogs") {
-    blogsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
+const Blog = ({ posts }) => {
   return (
-    <div className="my-container" ref={blogsRef}>
+    <Element className="my-container" name="blogs">
       <p className="section-title">Blogs</p>
       <Fade left>
         <div className="mt-20 flex justify-center gap-5 flex-wrap">
@@ -30,7 +24,7 @@ const Blog = ({ posts, goTo }) => {
             })}
         </div>
       </Fade>
-    </div>
+    </Element>
   );
 };
 

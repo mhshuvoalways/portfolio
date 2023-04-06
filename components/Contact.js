@@ -1,6 +1,7 @@
 import axios from "axios";
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState } from "react";
+import { Element } from "react-scroll";
 import { Fade } from "react-reveal";
 import { motion } from "framer-motion";
 import Tostify from "./Tostify";
@@ -9,15 +10,13 @@ import Home from "../public/icons/home.svg";
 import Phone from "../public/icons/phone.svg";
 import Loading from "./Loading";
 
-const Contact = ({ goTo }) => {
+const Contact = () => {
   const [contact, setContact] = useState({
     name: "",
     email: "",
     message: "",
   });
   const [loading, setLoading] = useState("");
-
-  const contactRef = useRef(null);
 
   const onChangeHandler = (e) => {
     setContact({
@@ -39,12 +38,8 @@ const Contact = ({ goTo }) => {
       });
   };
 
-  if (goTo === "contact") {
-    contactRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
   return (
-    <div className="my-container" ref={contactRef}>
+    <Element className="my-container" name="contact">
       <p className="section-title">Contact Me</p>
       <Fade bottom>
         <div className="flex flex-wrap justify-around gap-10 font-semibold text-center">
@@ -126,7 +121,7 @@ const Contact = ({ goTo }) => {
       {(loading === "success" || loading === "fail") && (
         <Tostify loading={loading} />
       )}
-    </div>
+    </Element>
   );
 };
 

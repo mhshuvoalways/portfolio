@@ -1,9 +1,11 @@
 import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Fade } from "react-reveal";
-import MyImage from "../public/mhshuvo.png";
+import { Element } from "react-scroll";
 import { motion } from "framer-motion";
-function Intro({ goTo }) {
+import MyImage from "../public/mhshuvo.png";
+
+function Intro() {
   const [index, setIndex] = useState(0);
   const texts = [
     "committed",
@@ -13,8 +15,6 @@ function Intro({ goTo }) {
     "enthusiast",
   ];
 
-  const introRef = useRef(null);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((index) => (index + 1) % texts.length);
@@ -23,17 +23,10 @@ function Intro({ goTo }) {
     return () => clearInterval(interval);
   }, [texts.length]);
 
-  if (goTo === "home") {
-    introRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
-
   return (
-    <div
+    <Element
       className="my-container lg:h-screen flex items-center justify-center lg:justify-between flex-wrap pt-36 pb-10 lg:py-14 gap-10"
-      ref={introRef}
+      name="home"
     >
       <Fade bottom>
         <div className="space-y-5 md:space-y-10 lg:w-6/12">
@@ -78,7 +71,7 @@ function Intro({ goTo }) {
         alt={MyImage}
         className="w-6/12 lg:w-3/12 animate-mypicture"
       />
-    </div>
+    </Element>
   );
 }
 

@@ -1,18 +1,9 @@
-import { useRef } from "react";
+import { Element } from "react-scroll";
 import { Fade, Zoom } from "react-reveal";
 
-const Experience = ({ goTo }) => {
-  const experienceRef = useRef(null);
-
-  if (goTo === "experience") {
-    experienceRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
-
+const Experience = () => {
   return (
-    <div className="my-container" ref={experienceRef}>
+    <Element className="my-container" name="experience">
       <p className="section-title">Working Experiences</p>
       <div className="flex justify-start sm:justify-center gap-10 flex-wrap sm:flex-nowrap item">
         <Fade left>
@@ -52,7 +43,7 @@ const Experience = ({ goTo }) => {
           </div>
         </Fade>
       </div>
-    </div>
+    </Element>
   );
 };
 

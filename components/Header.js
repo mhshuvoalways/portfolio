@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 import Bar from "../public/icons/bar.svg";
 import Cross from "../public/icons/cross.svg";
 
-const Header = ({ gotoHandler, scrollView }) => {
+const Header = () => {
   const [showHeader, setShowHeader] = useState(false);
 
   const headerHandler = (value) => {
@@ -15,15 +16,19 @@ const Header = ({ gotoHandler, scrollView }) => {
     <div className="py-5 shadow-md fixed left-0 right-0 common-style z-20">
       <header className="my-container">
         <nav className="flex justify-between gap-5 flex-wrap items-center">
-          <p
-            className="text-2xl cursor-pointer"
+          <Link
+            to="home"
+            activeClass="border-b-2 border-secondary font-semibold text-secondary"
+            className="cursor-pointer text-2xl"
+            spy={true}
+            smooth={true}
+            duration={1000}
             onClick={() => {
-              gotoHandler("home");
               headerHandler(false);
             }}
           >
             MH Shuvo
-          </p>
+          </Link>
           {showHeader ? (
             <Image
               src={Cross}
@@ -40,68 +45,89 @@ const Header = ({ gotoHandler, scrollView }) => {
             />
           )}
           <ul className="lg:flex items-center gap-5 md:gap-10 flex-wrap hidden">
-            <li
-              className={`cursor-pointer ${
-                scrollView === "home" &&
-                "border-b-2 border-secondary font-semibold text-secondary"
-              }`}
-              onClick={() => gotoHandler("home")}
-            >
-              Home
+            <li>
+              <Link
+                to="home"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                Home
+              </Link>
             </li>
-            <li
-              className={`cursor-pointer ${
-                scrollView === "about" &&
-                "border-b-2 border-secondary font-semibold text-secondary"
-              }`}
-              onClick={() => gotoHandler("about")}
-            >
-              About
+            <li>
+              <Link
+                to="about"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                About
+              </Link>
             </li>
-            <li
-              className={`cursor-pointer ${
-                scrollView === "skills" &&
-                "border-b-2 border-secondary font-semibold text-secondary"
-              }`}
-              onClick={() => gotoHandler("skills")}
-            >
-              Skills
+            <li>
+              <Link
+                to="skills"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                Skills
+              </Link>
             </li>
-            <li
-              className={`cursor-pointer ${
-                scrollView === "projects" &&
-                "border-b-2 border-secondary font-semibold text-secondary"
-              }`}
-              onClick={() => gotoHandler("projects")}
-            >
-              Projects
+            <li>
+              <Link
+                to="projects"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                Projects
+              </Link>
             </li>
-            <li
-              className={`cursor-pointer ${
-                scrollView === "experience" &&
-                "border-b-2 border-secondary font-semibold text-secondary"
-              }`}
-              onClick={() => gotoHandler("experience")}
-            >
-              Experience
+            <li>
+              <Link
+                to="experience"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                Experience
+              </Link>
             </li>
-            <li
-              className={`cursor-pointer ${
-                scrollView === "blogs" &&
-                "border-b-2 border-secondary font-semibold text-secondary"
-              }`}
-              onClick={() => gotoHandler("blogs")}
-            >
-              Blogs
+            <li>
+              <Link
+                to="blogs"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                Blogs
+              </Link>
             </li>
-            <li
-              className={`cursor-pointer ${
-                scrollView === "contact" &&
-                "border-b-2 border-secondary font-semibold text-secondary"
-              }`}
-              onClick={() => gotoHandler("contact")}
-            >
-              Contact
+            <li>
+              <Link
+                to="contact"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
@@ -110,94 +136,75 @@ const Header = ({ gotoHandler, scrollView }) => {
         animate={{
           opacity: showHeader ? 1 : 0,
           x: showHeader ? 0 : -500,
-          display: showHeader ? "block" : "none",
         }}
         className={`fixed top-16 border-gray-600 border-b border-t shadow-md left-0 right-0 bg-gray-700 z-10 block lg:hidden mt-2`}
       >
         <ul>
-          <li
-            className={`cursor-pointer py-2 ${
-              scrollView === "home" &&
-              "text-secondary hover:bg-secondary font-semibold"
-            }`}
-            onClick={() => {
-              gotoHandler("home");
-              headerHandler(false);
-            }}
-          >
-            <p className="w-10/12 mx-auto">Home</p>
+          <li className="py-2 w-10/12 mx-auto">
+            <Link
+              to="home"
+              activeClass="text-secondary font-semibold"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Home
+            </Link>
           </li>
-          <li
-            className={`cursor-pointer py-2 ${
-              scrollView === "about" &&
-              "text-secondary hover:bg-secondary font-semibold"
-            }`}
-            onClick={() => {
-              gotoHandler("about");
-              headerHandler(false);
-            }}
-          >
-            <p className="w-10/12 mx-auto">About</p>
+          <li className="py-2 w-10/12 mx-auto">
+            <Link
+              to="about"
+              activeClass="text-secondary font-semibold"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              About
+            </Link>
           </li>
-          <li
-            className={`cursor-pointer py-2 ${
-              scrollView === "skills" &&
-              "text-secondary hover:bg-secondary font-semibold"
-            }`}
-            onClick={() => {
-              gotoHandler("skills");
-              headerHandler(false);
-            }}
-          >
-            <p className="w-10/12 mx-auto">Skills</p>
+          <li className="py-2 w-10/12 mx-auto">
+            <Link
+              to="projects"
+              activeClass="text-secondary font-semibold"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Projects
+            </Link>
           </li>
-          <li
-            className={`cursor-pointer py-2 ${
-              scrollView === "projects" &&
-              "text-secondary hover:bg-secondary font-semibold"
-            }`}
-            onClick={() => {
-              gotoHandler("projects");
-              headerHandler(false);
-            }}
-          >
-            <p className="w-10/12 mx-auto">Projects</p>
+          <li className="py-2 w-10/12 mx-auto">
+            <Link
+              to="experience"
+              activeClass="text-secondary font-semibold"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Experience
+            </Link>
           </li>
-          <li
-            className={`cursor-pointer py-2 ${
-              scrollView === "experience" &&
-              "text-secondary hover:bg-secondary font-semibold"
-            }`}
-            onClick={() => {
-              gotoHandler("experience");
-              headerHandler(false);
-            }}
-          >
-            <p className="w-10/12 mx-auto">Experience</p>
+          <li className="py-2 w-10/12 mx-auto">
+            <Link
+              to="blogs"
+              activeClass="text-secondary font-semibold"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Blogs
+            </Link>
           </li>
-          <li
-            className={`cursor-pointer py-2 ${
-              scrollView === "blogs" &&
-              "text-secondary hover:bg-secondary font-semibold"
-            }`}
-            onClick={() => {
-              gotoHandler("blogs");
-              headerHandler(false);
-            }}
-          >
-            <p className="w-10/12 mx-auto">Blogs</p>
-          </li>
-          <li
-            className={`cursor-pointer py-2 ${
-              scrollView === "contact" &&
-              "text-secondary hover:bg-secondary font-semibold"
-            }`}
-            onClick={() => {
-              gotoHandler("contact");
-              headerHandler(false);
-            }}
-          >
-            <p className="w-10/12 mx-auto">Contact</p>
+          <li className="py-2 w-10/12 mx-auto">
+            <Link
+              to="contact"
+              activeClass="text-secondary font-semibold"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </motion.div>
