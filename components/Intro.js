@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Fade } from "react-reveal";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
-import MyImage from "../public/mhshuvo.png";
+import MyImage from "../public/mhshuvotop.png";
 
 function Intro() {
   const [index, setIndex] = useState(0);
@@ -69,7 +69,7 @@ function Intro() {
       <Image
         src={MyImage}
         alt={MyImage}
-        className="w-6/12 lg:w-3/12 animate-mypicture"
+        className="w-10/12 lg:w-5/12 animate-mypicture border-2 border-dashed border-primary"
       />
     </Element>
   );

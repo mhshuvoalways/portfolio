@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import Bar from "../public/icons/bar.svg";
@@ -7,18 +7,40 @@ import Cross from "../public/icons/cross.svg";
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(false);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState(true);
 
   const headerHandler = (value) => {
     setShowHeader(value);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setPrevScrollY(currentScrollY);
+      if (currentScrollY > prevScrollY) {
+        setScrollDirection(false);
+      } else if (currentScrollY < prevScrollY) {
+        setScrollDirection(true);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollY]);
+
   return (
-    <div className="py-5 shadow-md fixed left-0 right-0 common-style z-20">
+    <div
+      className={`py-5 shadow-md fixed left-0 right-0 common-style z-10 transition-transform duration-300 ease-in-out $ ${
+        scrollDirection ? "transform-none" : "-translate-y-full"
+      }`}
+    >
       <header className="my-container">
         <nav className="flex justify-between gap-5 flex-wrap items-center">
           <Link
             to="home"
-            activeClass="border-b-2 border-secondary font-semibold text-secondary"
+            activeClass="font-semibold"
             className="cursor-pointer text-2xl"
             spy={true}
             smooth={true}
@@ -48,7 +70,7 @@ const Header = () => {
             <li>
               <Link
                 to="home"
-                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
                 className="cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -60,7 +82,7 @@ const Header = () => {
             <li>
               <Link
                 to="about"
-                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
                 className="cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -72,7 +94,7 @@ const Header = () => {
             <li>
               <Link
                 to="skills"
-                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
                 className="cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -84,7 +106,7 @@ const Header = () => {
             <li>
               <Link
                 to="projects"
-                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
                 className="cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -96,7 +118,7 @@ const Header = () => {
             <li>
               <Link
                 to="experience"
-                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
                 className="cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -108,7 +130,7 @@ const Header = () => {
             <li>
               <Link
                 to="blogs"
-                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
                 className="cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -120,7 +142,7 @@ const Header = () => {
             <li>
               <Link
                 to="contact"
-                activeClass="border-b-2 border-secondary font-semibold text-secondary"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
                 className="cursor-pointer"
                 spy={true}
                 smooth={true}
@@ -135,9 +157,9 @@ const Header = () => {
       <motion.div
         animate={{
           opacity: showHeader ? 1 : 0,
-          x: showHeader ? 0 : -500,
+          x: showHeader ? 0 : -300,
         }}
-        className={`fixed top-16 border-gray-600 border-b border-t shadow-md left-0 right-0 bg-gray-700 z-10 block lg:hidden mt-2`}
+        className={`fixed top-16 border-gray-600 border-b border-t shadow-md left-0 right-0 bg-gray-700 z-20 block lg:hidden mt-2 opacity-0`}
       >
         <ul>
           <li className="py-2 w-10/12 mx-auto">

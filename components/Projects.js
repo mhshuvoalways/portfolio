@@ -69,6 +69,7 @@ const Projects = () => {
               title={project.title}
               description={project.description}
               technologies={project.technologies}
+              height={project.height}
               githubLink={project.githubLink}
               webLink={project.webLink}
             />
@@ -80,6 +81,7 @@ const Projects = () => {
                 title={project.title}
                 description={project.description}
                 technologies={project.technologies}
+                height={project.height}
                 githubLink={project.githubLink}
                 webLink={project.webLink}
               />

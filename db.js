@@ -1,5 +1,5 @@
 import DaringPage from "./public/projects/daringpage.png";
-import EShop from "./public/projects/eshop.jpg";
+import EShop from "./public/projects/eshop.png";
 import EssayContest from "./public/projects/essaycontestapp.jpg";
 import PasswordVault from "./public/projects/passwordvault.png";
 import MathPlus from "./public/projects/mathplus.png";
@@ -20,9 +20,9 @@ const Projects = [
     id: "EShop",
     type: "fullstack",
     image: EShop,
-    title: "e-Shop",
+    title: "e-Shop Multi Vendor",
     description:
-      "E-Shop is a functionally oriented multi-vendor ecommerce application where users can get almost all the necessary facilities. There are 2 types of payment methods available such as PayPal and Razorpay",
+      "E-Shop is a functionally oriented multi vendor ecommerce application where users can get almost all the necessary facilities. There are 2 types of payment methods available such as PayPal and Razorpay",
     technologies: [
       "React",
       "Redux",
@@ -34,8 +34,9 @@ const Projects = [
       "Netlify",
       "Cyclic",
     ],
-    githubLink: "https://github.com/mlhnshuvo/ecommerce-app",
-    webLink: "https://ecommerce-app-mhs.netlify.app",
+    height: "550",
+    githubLink: "https://github.com/mlhnshuvo/multi-vendor-ecommerce",
+    webLink: "https://eshop-multi-vendor.netlify.app",
   },
   {
     id: "DaringPage",
@@ -52,8 +53,9 @@ const Projects = [
       "MongoDB",
       "Vercel",
     ],
+    height: "190",
     githubLink: "https://github.com/mlhnshuvo/ecommerce-app",
-    webLink: "https://ecommerce-app-mhs.netlify.app",
+    webLink: "https://daringpage.vercel.app",
   },
   {
     id: "PasswordVault",
@@ -71,6 +73,7 @@ const Projects = [
       "Netlify",
       "Cyclic",
     ],
+    height: "480",
     githubLink: "https://github.com/mlhnshuvo/password-manager-app",
     webLink: "https://password-manager-mhs.netlify.app",
   },
@@ -91,6 +94,7 @@ const Projects = [
       "Netlify",
       "Cyclic",
     ],
+    height: "100",
     githubLink: "https://github.com/mlhnshuvo/monomousumicontest",
     webLink: "https://www.monomousumicontest.com",
   },
@@ -110,6 +114,7 @@ const Projects = [
       "Netlify",
       "Cyclic",
     ],
+    height: "100",
     githubLink: "https://github.com/mlhnshuvo/monomousumicontest",
     webLink: "https://www.monomousumicontest.com",
   },
@@ -121,6 +126,7 @@ const Projects = [
     description:
       "Shop Mate is a simple functional-based application where users can add, delete and update buckets and add a list of items under each bucket.",
     technologies: ["React", "BEM", "Easy-peasy", "Netlify"],
+    height: "100",
     githubLink: "https://github.com/mlhnshuvo/shopmate",
     webLink: "https://shopmate-mhs.netlify.app",
   },
@@ -132,6 +138,7 @@ const Projects = [
     description:
       "Polling is a simple functional-based application where users can add, delete and update poll category and add vote under each category.",
     technologies: ["React", "Netlify"],
+    height: "100",
     githubLink: "https://github.com/mlhnshuvo/poll-app",
     webLink: "https://polling-mhs.netlify.app",
   },
@@ -143,6 +150,7 @@ const Projects = [
     description:
       "TodoList is a simple application where users can add and filter todo",
     technologies: ["React", "Netlify"],
+    height: "100",
     githubLink: "https://todolist-mhs.netlify.app",
     webLink: "https://github.com/mlhnshuvo/todo-app",
   },
@@ -154,6 +162,7 @@ const Projects = [
     description:
       "Q2Life is a good-looking business web page with some DOM operation.",
     technologies: ["Figma", "HTML", "CSS", "DOM", "Netlify"],
+    height: "100",
     githubLink: "https://github.com/mlhnshuvo/q2life-landing-page",
     webLink: "https://q2life.netlify.app",
   },
@@ -164,6 +173,7 @@ const Projects = [
     title: "Cude",
     description: "A simple landing page with html, css and totally responsive.",
     technologies: ["HTML", "CSS", "jQuery", "Netlify"],
+    height: "100",
     githubLink: "https://github.com/mlhnshuvo/cude-landing-page",
     webLink: "https://cude-mhs.netlify.app",
   },
@@ -174,6 +184,7 @@ const Projects = [
     title: "Duhoot",
     description: "A simple landing page with html, css and totally responsive.",
     technologies: ["HTML", "CSS", "jQuery", "Netlify"],
+    height: "100",
     githubLink: "https://github.com/mlhnshuvo/duhoot-landing-page",
     webLink: "https://duhoot.netlify.app",
   },
@@ -184,6 +195,7 @@ const Projects = [
     title: "Portfolio 1",
     description: "This is my first portfolio with totally responsive",
     technologies: ["HTML", "CSS", "jQuery", "Netlify"],
+    height: "100",
     githubLink: "https://github.com/mlhnshuvo/duhoot-landing-page",
     webLink: "https://duhoot.netlify.app",
   },
@@ -192,8 +204,10 @@ const Projects = [
     type: "others",
     image: BingoGame,
     title: "Bingo Game",
-    description: "This is few pages of Bing game. Play bingo live on the best platform in Brazil",
+    description:
+      "This is few pages of Bing game. Play bingo live on the best platform in Brazil",
     technologies: ["React", "Netlify"],
+    height: "100",
     githubLink: "https://portfolio2-mhs.netlify.app",
     webLink: "https://github.com/mlhnshuvo/portfolio2",
   },
@@ -204,6 +218,7 @@ const Projects = [
     title: "Portfolio2",
     description: "This is my second portfolio with totally responsive",
     technologies: ["React", "Netlify"],
+    height: "100",
     githubLink: "https://portfolio2-mhs.netlify.app",
     webLink: "https://github.com/mlhnshuvo/portfolio2",
   },
@@ -215,6 +230,7 @@ const Projects = [
     description:
       "This is a page for essay contest students. Here they can see Awards, Prizes, Magazines etc.",
     technologies: ["React", "Netlify"],
+    height: "100",
     githubLink: "https://essay-contest-winner-page.netlify.app",
     webLink: "https://essay.monomousumicontest.com",
   },
@@ -226,6 +242,7 @@ const Projects = [
     description:
       "Alekhya is an Indian Edutech Platform, that brings together technology to the education sector and providing requisite support to students, writers and school administrations. Student can purchase all the essay contest's book on this platform",
     technologies: ["WordPress", "c-Panel"],
+    height: "100",
     githubLink: "",
     webLink: "https://www.alekhya.org",
   },

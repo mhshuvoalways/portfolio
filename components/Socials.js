@@ -8,7 +8,7 @@ import HackerRank from "../public/icons/hackerrank.svg";
 
 const Socials = () => {
   return (
-    <div className="fixed bottom-0 right-2 flex flex-col gap-5 justify-center items-center z-40">
+    <div className="fixed bottom-0 right-2 flex flex-col gap-5 justify-end items-center z-40">
       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <a
           href="https://github.com/mlhnshuvo"
@@ -54,7 +54,7 @@ const Socials = () => {
           <Image src={Facebook} alt="" />
         </a>
       </motion.button>
-      <p className="border-2 w-1 h-44 rounded-full border-gray-500 opacity-30"></p>
+      <p className="border-2 w-1 h-32 rounded-full border-gray-500 opacity-30"></p>
     </div>
   );
 };

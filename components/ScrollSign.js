@@ -10,7 +10,7 @@ const ScrollSign = () => {
 
   return (
     <motion.div
-      className="origin-left fixed left-1 right-0 bg-secondary h-1 progressbar"
+      className="origin-left fixed left-1 right-0 bg-secondary h-1 z-30"
       style={{ scaleX }}
     />
   );
