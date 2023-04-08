@@ -162,7 +162,7 @@ const Header = () => {
         className={`fixed top-16 border-gray-600 border-b border-t shadow-md left-0 right-0 bg-gray-700 z-20 block lg:hidden mt-2 opacity-0`}
       >
         <ul>
-          <li className="py-2 w-10/12 mx-auto">
+          <li>
             <Link
               to="home"
               activeClass="text-secondary font-semibold"
@@ -170,10 +170,10 @@ const Header = () => {
               smooth={true}
               duration={1000}
             >
-              Home
+              <p className="py-2 w-10/12 mx-auto">Home</p>
             </Link>
           </li>
-          <li className="py-2 w-10/12 mx-auto">
+          <li>
             <Link
               to="about"
               activeClass="text-secondary font-semibold"
@@ -181,10 +181,10 @@ const Header = () => {
               smooth={true}
               duration={1000}
             >
-              About
+              <p className="py-2 w-10/12 mx-auto">About</p>
             </Link>
           </li>
-          <li className="py-2 w-10/12 mx-auto">
+          <li>
             <Link
               to="projects"
               activeClass="text-secondary font-semibold"
@@ -192,10 +192,10 @@ const Header = () => {
               smooth={true}
               duration={1000}
             >
-              Projects
+              <p className="py-2 w-10/12 mx-auto">Projects</p>
             </Link>
           </li>
-          <li className="py-2 w-10/12 mx-auto">
+          <li>
             <Link
               to="experience"
               activeClass="text-secondary font-semibold"
@@ -203,10 +203,10 @@ const Header = () => {
               smooth={true}
               duration={1000}
             >
-              Experience
+              <p className="py-2 w-10/12 mx-auto">Experience</p>
             </Link>
           </li>
-          <li className="py-2 w-10/12 mx-auto">
+          <li>
             <Link
               to="blogs"
               activeClass="text-secondary font-semibold"
@@ -214,10 +214,10 @@ const Header = () => {
               smooth={true}
               duration={1000}
             >
-              Blogs
+              <p className="py-2 w-10/12 mx-auto">Blogs</p>
             </Link>
           </li>
-          <li className="py-2 w-10/12 mx-auto">
+          <li>
             <Link
               to="contact"
               activeClass="text-secondary font-semibold"
@@ -225,7 +225,7 @@ const Header = () => {
               smooth={true}
               duration={1000}
             >
-              Contact
+              <p className="py-2 w-10/12 mx-auto">Contact</p>
             </Link>
           </li>
         </ul>
