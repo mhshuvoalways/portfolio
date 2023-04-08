@@ -9,12 +9,12 @@ export default function App({ Component, pageProps }) {
     <div>
       <Head>
         <title>MH Shuvo</title>
-        <meta name="description" content="MH Shuvo Portfolio" key="desc" />
+        <meta name="description" content="Full stack web developer" key="desc" />
         <meta property="og:title" content="MH Shuvo Portfolio" />
         <meta property="og:description" content="MH Shuvo Portfolio" />
         <meta
           property="og:image"
-          content="https://example.com/images/cool-page.jpg"
+          content=""
         />
         <link rel="icon" type="image/x-icon" href="favicons/favicon.ico" />
         <link
