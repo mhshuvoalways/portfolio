@@ -173,7 +173,7 @@ const Projects = [
     title: "Cude",
     description: "A simple landing page with html, css and totally responsive.",
     technologies: ["HTML", "CSS", "jQuery", "Netlify"],
-    height: "100",
+    height: "1000",
     githubLink: "https://github.com/mlhnshuvo/cude-landing-page",
     webLink: "https://cude-mhs.netlify.app",
   },
@@ -230,7 +230,7 @@ const Projects = [
     description:
       "This is a page for essay contest students. Here they can see Awards, Prizes, Magazines etc.",
     technologies: ["React", "Netlify"],
-    height: "100",
+    height: "1738",
     githubLink: "https://essay-contest-winner-page.netlify.app",
     webLink: "https://essay.monomousumicontest.com",
   },

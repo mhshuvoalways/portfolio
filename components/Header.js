@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <div
-      className={`py-5 shadow-md fixed left-0 right-0 common-style z-10 transition-transform duration-300 ease-in-out $ ${
+      className={`py-5 shadow-md fixed left-0 right-0 common-style z-10 transition-transform duration-500 ease-in-out $ ${
         scrollDirection ? "transform-none" : "-translate-y-full"
       }`}
     >

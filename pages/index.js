@@ -31,12 +31,12 @@ const Index = ({ posts }) => {
 
 export async function getStaticProps() {
   let posts;
-  // await axios
-  //   .get("https://daringpage.vercel.app/api/posts")
-  //   .then((res) => {
-  //     posts = res.data;
-  //   })
-  //   .catch(() => console.log("Server error"));
+  await axios
+    .get("https://daringpage.vercel.app/api/posts")
+    .then((res) => {
+      posts = res.data;
+    })
+    .catch(() => console.log("Server error"));
 
   return {
     props: {
