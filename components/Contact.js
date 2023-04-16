@@ -29,7 +29,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading("loading");
     axios
-      .post("https://my-portfolio-mhs.vercel.app/send", contact)
+      .post("https://mlhnshuvo.vercel.app/api", contact)
       .then(() => {
         setLoading("success");
       })

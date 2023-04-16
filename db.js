@@ -306,7 +306,7 @@ const Projects = [
   },
   {
     id: "BlogUsingThirdPartyApi",
-    type: "others",
+    type: "frontend",
     image: BlogUsingThirdPartyApi,
     title: "Blog Using Third Party Api",
     description:
