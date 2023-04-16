@@ -32,6 +32,11 @@ const Contact = () => {
       .post("https://mlhnshuvo.vercel.app/api", contact)
       .then(() => {
         setLoading("success");
+        setContact({
+          name: "",
+          email: "",
+          message: "",
+        });
       })
       .catch(() => {
         setLoading("fail");
@@ -85,6 +90,7 @@ const Contact = () => {
                 placeholder="Enter Your Full Name"
                 name="name"
                 onChange={onChangeHandler}
+                value={contact.name}
                 required
               />
             </div>
@@ -95,6 +101,7 @@ const Contact = () => {
                 placeholder="Enter Your Valid Email"
                 name="email"
                 onChange={onChangeHandler}
+                value={contact.email}
                 required
               />
             </div>
@@ -104,6 +111,7 @@ const Contact = () => {
                 placeholder="Enter Your Message"
                 name="message"
                 onChange={onChangeHandler}
+                value={contact.message}
                 required
               />
             </div>
