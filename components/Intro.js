@@ -57,7 +57,7 @@ function Intro() {
           </div>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a
-              href="https://drive.google.com/file/d/1kO6sGCsUXSYhVbmSivzIrhU_aispKpcJ/view?usp=share_link"
+              href="https://drive.google.com/file/d/10YtqIMryE5Q8NmjlUK0ciR19DvxeyTK0/view?usp=share_link"
               target="_blank"
               className="bg-secondary border-primary px-6 py-2 rounded-full font-light"
             >
