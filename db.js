@@ -19,7 +19,7 @@ import Cude from "./public/projects/cude.png";
 import Portfolio1 from "./public/projects/portfolio1.png";
 import BlogUsingThirdPartyApi from "./public/projects/blog-using-third-party-api.png";
 import TicTacToe from "./public/projects/tic-tac-toe.png";
-import Alekhya from "./public/projects/alekhya.org.png";
+import Alekhya from "./public/projects/alekhya.org.jpg";
 
 const Projects = [
   {
@@ -324,7 +324,7 @@ const Projects = [
     description:
       "Alekhya is an Indian Edutech Platform, that brings together technology to the education sector and providing requisite support to students, writers and school administrations. Student can purchase all the essay contest's book on this platform",
     technologies: ["WordPress", "c-Panel"],
-    height: "100",
+    height: "970",
     githubLink: "",
     webLink: "https://www.alekhya.org",
   },
