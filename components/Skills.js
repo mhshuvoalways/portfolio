@@ -12,9 +12,12 @@ import Bootstrap from "../public/skills/bootstrap.png";
 import Sass from "../public/skills/sass.png";
 import Express from "../public/skills/expressjs.png";
 import Nodejs from "../public/skills/nodejs.png";
+import Prisma from "../public/skills/prisma.png";
+import Postgres from "../public/skills/postgresql.png";
 import ReactNative from "../public/skills/reactnative.png";
 import Mongoose from "../public/skills/mongoose.png";
 import Mongodb from "../public/skills/mongodb.png";
+import MySQL from "../public/skills/mysql.png";
 import FramerMotion from "../public/skills/framermotion.png";
 import TypeScript from "../public/skills/typescript.png";
 import MaterialUI from "../public/skills/materialui.png";
@@ -110,12 +113,24 @@ const Skillls = () => {
                 <p className="mt-3 tracking-widest text-center">Nodejs</p>
               </div>
               <div>
-                <Image src={Mongodb} alt={Mongodb} className="w-14 mx-auto" />
-                <p className="mt-3 tracking-widest text-center">MongoDB</p>
+                <Image src={Prisma} alt={Prisma} className="w-11 mx-auto" />
+                <p className="mt-3 tracking-widest text-center">Prisma</p>
               </div>
               <div>
                 <Image src={Mongoose} alt={Mongoose} className="w-14 mx-auto" />
                 <p className="mt-3 tracking-widest text-center">Mongoose</p>
+              </div>
+              <div>
+                <Image src={Postgres} alt={Postgres} className="w-12 mx-auto" />
+                <p className="mt-3 tracking-widest text-center">PostgreSQL</p>
+              </div>
+              <div>
+                <Image src={Mongodb} alt={Mongodb} className="w-14 mx-auto" />
+                <p className="mt-3 tracking-widest text-center">MongoDB</p>
+              </div>
+              <div>
+                <Image src={MySQL} alt={MySQL} className="w-14 mx-auto" />
+                <p className="mt-3 tracking-widest text-center">MySQL</p>
               </div>
               <div>
                 <Image
