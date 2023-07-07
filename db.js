@@ -20,6 +20,7 @@ import Portfolio1 from "./public/projects/portfolio1.png";
 import BlogUsingThirdPartyApi from "./public/projects/blog-using-third-party-api.png";
 import TicTacToe from "./public/projects/tic-tac-toe.png";
 import Alekhya from "./public/projects/alekhya.org.jpg";
+import Extention from "./public/projects/extension.png";
 
 const Projects = [
   {
@@ -315,6 +316,18 @@ const Projects = [
     height: "480",
     githubLink: "https://github.com/mlhnshuvo/blog-using-third-party-api",
     webLink: "https://blog-using-third-party-api.vercel.app",
+  },
+  {
+    id: "Extention",
+    type: "others",
+    image: Extention,
+    title: "Auto Refresh Chrome Extension",
+    description:
+      "The Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",
+    technologies: ["Chrome", "Extension", "Reactjs"],
+    height: "50",
+    githubLink: "https://github.com/mlhnshuvo/auto-refresh-chrome-extension",
+    webLink: "",
   },
   {
     id: "Alekhya",
