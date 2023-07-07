@@ -1,5 +1,6 @@
 import DaringPage from "./public/projects/daringpage.png";
 import EShop from "./public/projects/eshop.png";
+import DrawOnScreenshtos from "./public/projects/drawing-tool.png";
 import EssayContest from "./public/projects/essaycontestapp.png";
 import PasswordVault from "./public/projects/passwordvault.png";
 import MathPlus from "./public/projects/mathplus.png";
@@ -65,6 +66,39 @@ const Projects = [
     height: "480",
     githubLink: "https://github.com/mlhnshuvo/password-manager-app",
     webLink: "https://password-vault-app.vercel.app",
+  },
+  {
+    id: "Extention",
+    type: "others",
+    image: Extention,
+    title: "Auto Refresh Chrome Extension",
+    description:
+      "The Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",
+    technologies: ["Chrome", "Extension", "Reactjs"],
+    height: "50",
+    githubLink: "https://github.com/mlhnshuvo/auto-refresh-chrome-extension",
+    webLink: "",
+  },
+  {
+    id: "DrawOnScreenshtos",
+    type: "fullstack",
+    image: DrawOnScreenshtos,
+    title: "Drawing Tool on The Screenshots",
+    description:
+      "An intuitive web application that allows users to upload two videos, control video playback, sync video playback positions, capture screenshots, draw on the videos and add text or voice notes to these screenshots. Users can then save and share their annotated videos and screenshots.",
+    technologies: [
+      "Reactjs",
+      "Tailwind",
+      "Expressjs",
+      "MongoDB",
+      "Multer",
+      "Cloudinary",
+      "Netlify",
+      "Render",
+    ],
+    height: "",
+    githubLink: "https://github.com/mlhnshuvo/drawing-on-screenshot",
+    webLink: "https://baseball-direction.netlify.app",
   },
   {
     id: "DaringPage",
