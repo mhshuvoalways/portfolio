@@ -83,7 +83,7 @@ const Projects = [
     id: "DrawOnScreenshtos",
     type: "fullstack",
     image: DrawOnScreenshtos,
-    title: "Drawing Tool on The Screenshots",
+    title: "Drawing on Screenshots",
     description:
       "An intuitive web application that allows users to upload two videos, control video playback, sync video playback positions, capture screenshots, draw on the videos and add text or voice notes to these screenshots. Users can then save and share their annotated videos and screenshots.",
     technologies: [
