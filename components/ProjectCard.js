@@ -61,11 +61,13 @@ const ProjectCard = ({
             </a>
           </motion.button>
         )}
-        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <a href={webLink} target="_blank">
-            <Image src={ExternalLinkIcon} alt={ExternalLinkIcon} />
-          </a>
-        </motion.button>
+        {webLink && (
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <a href={webLink} target="_blank">
+              <Image src={ExternalLinkIcon} alt={ExternalLinkIcon} />
+            </a>
+          </motion.button>
+        )}
       </div>
     </motion.div>
   );
