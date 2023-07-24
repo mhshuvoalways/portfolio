@@ -45,19 +45,27 @@ const Projects = () => {
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "landingpage" && "border-b-4 border-secondary"
+            current === "extention" && "border-b-4 border-secondary"
           }`}
-          onClick={() => currentHandler("landingpage")}
+          onClick={() => currentHandler("extention")}
         >
-          Landing Page
+          Extention
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "others" && "border-b-4 border-secondary"
+            current === "template" && "border-b-4 border-secondary"
           }`}
-          onClick={() => currentHandler("others")}
+          onClick={() => currentHandler("template")}
         >
-          Others
+          Template
+        </p>
+        <p
+          className={`text-secondary text3 px-5 py-1 cursor-pointer ${
+            current === "wordpress" && "border-b-4 border-secondary"
+          }`}
+          onClick={() => currentHandler("wordpress")}
+        >
+          Wordpress
         </p>
       </div>
       <div className="mt-20 flex justify-center gap-5 flex-wrap">

@@ -22,6 +22,7 @@ import BlogUsingThirdPartyApi from "./public/projects/blog-using-third-party-api
 import TicTacToe from "./public/projects/tic-tac-toe.png";
 import Alekhya from "./public/projects/alekhya.org.jpg";
 import Extention from "./public/projects/extension.png";
+import Rentify from "./public/projects/rentify.png";
 
 const Projects = [
   {
@@ -69,7 +70,7 @@ const Projects = [
   },
   {
     id: "Extention",
-    type: "others",
+    type: "extention",
     image: Extention,
     title: "Auto Refresh Chrome Extension",
     description:
@@ -161,8 +162,31 @@ const Projects = [
     webLink: "https://math-plus-app.vercel.app",
   },
   {
+    id: "Rentify",
+    type: "fullstack",
+    image: Rentify,
+    title: "Rentify",
+    description:
+      "This is a simple MERN stack web application for renting various items such as cars, motorcycles, bikes, and rooms. Users can select available dates for renting items. If a date is unavailable, it will be marked in red. Users can make payments using Stripe or choose to pay in cash. Additionally, users can log in to view their order history. The application also includes an admin panel for managing categories, products, orders, and users.",
+    technologies: [
+      "Nextjs",
+      "Reactjs",
+      "Tailwind",
+      "Expressjs",
+      "MongoDB",
+      "Multer",
+      "Cloudinary",
+      "SMTP server",
+      "Render",
+      "Netlify",
+    ],
+    height: "410",
+    githubLink: "https://github.com/mlhnshuvo/rent-app",
+    webLink: "https://rentify-app.netlify.app",
+  },
+  {
     id: "CourseTemplateReact",
-    type: "others",
+    type: "template",
     image: CourseTemplateReact,
     title: "Course Template React",
     description:
@@ -174,7 +198,7 @@ const Projects = [
   },
   {
     id: "HealthCareTemplate",
-    type: "others",
+    type: "template",
     image: HealthCareTemplate,
     title: "Health Care Template",
     description:
@@ -186,7 +210,7 @@ const Projects = [
   },
   {
     id: "Spaymart",
-    type: "others",
+    type: "template",
     image: Spaymart,
     title: "Spaymart Animal Saving Template",
     description:
@@ -211,7 +235,7 @@ const Projects = [
 
   {
     id: "Q2Life",
-    type: "landingpage",
+    type: "template",
     image: Q2Life,
     title: "Q2Life",
     description:
@@ -223,7 +247,7 @@ const Projects = [
   },
   {
     id: "Dietis",
-    type: "others",
+    type: "template",
     image: Dietis,
     title: "Dietis React Template",
     description:
@@ -235,7 +259,7 @@ const Projects = [
   },
   {
     id: "Cude",
-    type: "landingpage",
+    type: "template",
     image: Cude,
     title: "Cude",
     description: "Landing page with html, css, jquery plugins 💻",
@@ -246,7 +270,7 @@ const Projects = [
   },
   {
     id: "Portfolio1",
-    type: "landingpage",
+    type: "template",
     image: Portfolio1,
     title: "Portfolio 1",
     description:
@@ -259,7 +283,7 @@ const Projects = [
 
   {
     id: "EssayContestPage",
-    type: "others",
+    type: "template",
     image: EssayContestPage,
     title: "Essay Contest Winners",
     description:
@@ -271,7 +295,7 @@ const Projects = [
   },
   {
     id: "KirinAvaturn",
-    type: "others",
+    type: "template",
     image: KirinAvaturn,
     title: "Avatar Builder with Avaturn API",
     description:
@@ -283,7 +307,7 @@ const Projects = [
   },
   {
     id: "Keflemariam",
-    type: "others",
+    type: "template",
     image: Keflemariam,
     title: "Keflemariam's Portfolio",
     description:
@@ -330,7 +354,7 @@ const Projects = [
   },
   {
     id: "TicTacToe",
-    type: "others",
+    type: "template",
     image: TicTacToe,
     title: "Tic Tac Toe Game",
     description: "React tic tac toe game🏆",
@@ -353,7 +377,7 @@ const Projects = [
   },
   {
     id: "Alekhya",
-    type: "others",
+    type: "wordpress",
     image: Alekhya,
     title: "Alekhya",
     description:
