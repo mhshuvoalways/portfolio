@@ -2,6 +2,7 @@ import DaringPage from "./public/projects/daringpage.png";
 import EShop from "./public/projects/eshop.png";
 import DrawOnScreenshtos from "./public/projects/drawing-tool.png";
 import EssayContest from "./public/projects/essaycontestapp.png";
+import Traveling from "./public/projects/traveling.png";
 import PasswordVault from "./public/projects/passwordvault.png";
 import MathPlus from "./public/projects/mathplus.png";
 import CourseTemplateReact from "./public/projects/course-template-react.png";
@@ -119,6 +120,26 @@ const Projects = [
     height: "190",
     githubLink: "https://github.com/mlhnshuvo/blog-app-nextjs",
     webLink: "https://daringpage.vercel.app",
+  },
+  {
+    id: "Traveling",
+    type: "fullstack",
+    image: Traveling,
+    title: "Travel Booking Web Application ",
+    description:
+      "This application allows users to browse available travel dates, book them, make payments via PayPal, and leave reviews.🚌 The application is built using Next.js, Node.js, and MongoDB. This document provides an overview of the application's features, installation instructions, and usage guidelines.",
+    technologies: [
+      "Nextjs",
+      "Tailwind",
+      "Expressjs",
+      "MongoDB",
+      "Cloudinary",
+      "render",
+      "Netlify",
+    ],
+    height: "360",
+    githubLink: "https://github.com/mlhnshuvo/traveling-app",
+    webLink: "https://traveling-mhs.netlify.app",
   },
   {
     id: "EssayContest",
