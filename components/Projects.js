@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Element } from "react-scroll";
+import { Fade } from "react-reveal";
 import projectsdata from "../db.js";
 import ProjectCard from "./ProjectCard";
 
@@ -71,18 +72,7 @@ const Projects = () => {
       <div className="mt-20 flex justify-center gap-5 flex-wrap">
         {projectsdata.map((project) => {
           return current === "all" ? (
-            <ProjectCard
-              key={project.id}
-              image={project.image}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              height={project.height}
-              githubLink={project.githubLink}
-              webLink={project.webLink}
-            />
-          ) : (
-            current === project.type && (
+            <Fade bottom>
               <ProjectCard
                 key={project.id}
                 image={project.image}
@@ -93,6 +83,21 @@ const Projects = () => {
                 githubLink={project.githubLink}
                 webLink={project.webLink}
               />
+            </Fade>
+          ) : (
+            current === project.type && (
+              <Fade bottom>
+                <ProjectCard
+                  key={project.id}
+                  image={project.image}
+                  title={project.title}
+                  description={project.description}
+                  technologies={project.technologies}
+                  height={project.height}
+                  githubLink={project.githubLink}
+                  webLink={project.webLink}
+                />
+              </Fade>
             )
           );
         })}

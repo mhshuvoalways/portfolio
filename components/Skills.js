@@ -41,8 +41,8 @@ const Skillls = () => {
   return (
     <Element className="my-container" name="skills">
       <p className="section-title">What I Am Good At</p>
-      <Fade right>
-        <div className="space-y-20">
+      <div className="space-y-20">
+        <Fade bottom>
           <div>
             <p className="text3 font-semibold border-secondary border-2 tracking-widest w-full sm:w-4/12 lg:w-3/12 px-5 mx-auto py-1 rounded text-center">
               EXPERTISE
@@ -255,8 +255,8 @@ const Skillls = () => {
               </div>
             </div>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
     </Element>
   );
 };

@@ -5,12 +5,15 @@ import EssayContest from "./public/projects/essaycontestapp.png";
 import Traveling from "./public/projects/traveling.png";
 import PasswordVault from "./public/projects/passwordvault.png";
 import MathPlus from "./public/projects/mathplus.png";
+import TripRouting from "./public/projects/trip-routing.png";
+import BusinessWebisteTemplate from "./public/projects/business-webiste-template.png";
+import HorseRidingTrainingWebsite from "./public/projects/horse-riding-training-website.png";
 import CourseTemplateReact from "./public/projects/course-template-react.png";
 import HealthCareTemplate from "./public/projects/health-care-template.png";
+import SuperbInfo from "./public/projects/superb-info.png";
 import Spaymart from "./public/projects/spaymart.png";
 import WeatherWithDom from "./public/projects/weather-with-dom.png";
 import Shopmate from "./public/projects/shopmate.png";
-import KirinAvaturn from "./public/projects/kirin-avaturn.png";
 import Keflemariam from "./public/projects/keflemariam.png";
 import Polling from "./public/projects/polling.jpg";
 import TodoList from "./public/projects/todolist.jpg";
@@ -206,6 +209,48 @@ const Projects = [
     webLink: "https://rentify-app.netlify.app",
   },
   {
+    id: "TripRouting",
+    type: "frontend",
+    image: TripRouting,
+    title: "Trip routing app with google map API",
+    description:
+      "This is a simple trip routing application that will help you trip✈",
+    technologies: [
+      "Nexjs",
+      "Firebase-auth",
+      "Google-maps-API",
+      "Framer-motion",
+      "Cyclic",
+    ],
+    height: "",
+    githubLink:
+      "https://github.com/mlhnshuvo/trip-routing-app-with-google-map-api",
+    webLink: "https://trip-routing-app.vercel.app",
+  },
+  {
+    id: "BusinessWebisteTemplate",
+    type: "template",
+    image: BusinessWebisteTemplate,
+    title: "Business Webiste Template",
+    description: "This is the design of some business pages in nextjs💲",
+    technologies: ["Nextjs", "Tailwind", "Vercel"],
+    height: "1500",
+    githubLink: "https://github.com/mlhnshuvo/business-website-template",
+    webLink: "https://ourproject-sk.vercel.app",
+  },
+  {
+    id: "HorseRidingTrainingWebsite",
+    type: "template",
+    image: HorseRidingTrainingWebsite,
+    title: "Horse Riding Training Website",
+    description:
+      "💻This is a beautiful horse riding training web landing page🔥",
+    technologies: ["Nextjs", "Tailwind", "Vercel"],
+    height: "2270",
+    githubLink: "https://github.com/mlhnshuvo/horse-riding-training-website",
+    webLink: "https://horse-riding-training-website.vercel.app",
+  },
+  {
     id: "CourseTemplateReact",
     type: "template",
     image: CourseTemplateReact,
@@ -226,6 +271,27 @@ const Projects = [
       "💊This is a healthcare template for influencers and companies who want to donate money or something to help poor people who cannot afford treatment💊",
     technologies: ["React", "Netlify"],
     height: "830",
+    githubLink: "https://github.com/mlhnshuvo/health-care-template",
+    webLink: "https://health-care-template.netlify.app",
+  },
+  {
+    id: "SuperbInfo",
+    type: "template",
+    image: SuperbInfo,
+    title: "Saving personal data",
+    description:
+      "This is the application for saving personal data with redux persist with a simple but beautiful design from Figma in Reactjs, TypeScript🔥❤",
+    technologies: [
+      "React",
+      "React-redux",
+      "TypeScript",
+      "Redux-persist",
+      "Dropzone",
+      "Framer-motion",
+      "Vitejs",
+      "Netlify",
+    ],
+    height: "90",
     githubLink: "https://github.com/mlhnshuvo/health-care-template",
     webLink: "https://health-care-template.netlify.app",
   },
@@ -313,18 +379,6 @@ const Projects = [
     height: "1910",
     githubLink: "https://github.com/mlhnshuvo/essay-contest-winner-page",
     webLink: "https://essay.monomousumicontest.com",
-  },
-  {
-    id: "KirinAvaturn",
-    type: "template",
-    image: KirinAvaturn,
-    title: "Avatar Builder with Avaturn API",
-    description:
-      "Basically, it's a react template and one of my clients said to add the avaturn API for some interactivity🧞‍♂️",
-    technologies: ["React", "Netlify", "Render"],
-    height: "200",
-    githubLink: "https://github.com/mlhnshuvo/avatar-builder-template",
-    webLink: "https://kirin-avaturn.netlify.app",
   },
   {
     id: "Keflemariam",

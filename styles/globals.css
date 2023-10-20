@@ -6,9 +6,6 @@
   .common-style {
     @apply bg-gray-800 font-normal text-gray-200 overflow-x-hidden;
   }
-  .my-container {
-    @apply w-10/12 mx-auto;
-  }
   .section-title {
     @apply text-xl sm:text-3xl text-center mt-32 mb-20 border-b-4 border-secondary pb-5 w-8/12 sm:w-4/12 m-auto;
   }
@@ -20,6 +17,40 @@
   }
   .text3 {
     @apply text-lg sm:text-xl;
+  }
+
+  .my-container {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  @media (min-width: 640px) {
+    .my-container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .my-container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .my-container {
+      max-width: 1024px;
+      padding: 0 40px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .my-container {
+      max-width: 1280px;
+      padding: 0 50px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .my-container {
+      max-width: 1536px;
+      padding: 0 60px;
+    }
   }
 
   @keyframes wave {

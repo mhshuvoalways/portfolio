@@ -6,7 +6,7 @@ import MyImage from "../public/mhshuvo.png";
 
 const About = () => {
   return (
-    <Element className="my-container" name="about">
+    <Element className="my-container container" name="about">
       <p className="section-title">About Me</p>
       <div className="flex justify-center lg:justify-between items-center gap-10 flex-wrap lg:flex-nowrap">
         <div className="w-6/12 lg:w-3/12 animate-mypicture">
