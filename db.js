@@ -10,6 +10,7 @@ import BusinessWebisteTemplate from "./public/projects/business-webiste-template
 import HorseRidingTrainingWebsite from "./public/projects/horse-riding-training-website.png";
 import CourseTemplateReact from "./public/projects/course-template-react.png";
 import HealthCareTemplate from "./public/projects/health-care-template.png";
+import Costnip from "./public/projects/costnip.png";
 import SuperbInfo from "./public/projects/superb-info.png";
 import Spaymart from "./public/projects/spaymart.png";
 import WeatherWithDom from "./public/projects/weather-with-dom.png";
@@ -306,6 +307,20 @@ const Projects = [
     height: "1510",
     githubLink: "https://github.com/mlhnshuvo/animals-saving-react-template",
     webLink: "https://spaymart.netlify.app",
+  },
+  {
+    id: "Costnip",
+    type: "contribute",
+    image: Costnip,
+    title: "Costnip",
+    description: `I have actively contributed to this project by 
+      1. Fixed critical bugs that were causing data loss
+      2. Add a map feature with markers
+      3. Optimized the strapi queries for better performance`,
+    technologies: ["There are so many tools"],
+    height: "880",
+    githubLink: "",
+    webLink: "https://costnip.com",
   },
   {
     id: "Shopmate",

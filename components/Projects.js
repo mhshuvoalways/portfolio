@@ -42,7 +42,7 @@ const Projects = () => {
           }`}
           onClick={() => currentHandler("frontend")}
         >
-          Front End
+          Frontend
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
@@ -59,6 +59,14 @@ const Projects = () => {
           onClick={() => currentHandler("template")}
         >
           Template
+        </p>
+        <p
+          className={`text-secondary text3 px-5 py-1 cursor-pointer ${
+            current === "contribute" && "border-b-4 border-secondary"
+          }`}
+          onClick={() => currentHandler("contribute")}
+        >
+          Contribute
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
