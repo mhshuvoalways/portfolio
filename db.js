@@ -50,7 +50,7 @@ const Projects = [
       "Vercel",
     ],
     height: "550",
-    githubLink: "https://github.com/mlhnshuvo/multi-vendor-ecommerce",
+    githubLink: "https://github.com/mhshuvoalways/multi-vendor-ecommerce",
     webLink: "https://eshop-multi-vendor.vercel.app",
   },
   {
@@ -70,7 +70,7 @@ const Projects = [
       "Cyclic",
     ],
     height: "480",
-    githubLink: "https://github.com/mlhnshuvo/password-manager-app",
+    githubLink: "https://github.com/mhshuvoalways/password-manager-app",
     webLink: "https://password-manger-mhs.vercel.app",
   },
   {
@@ -82,7 +82,7 @@ const Projects = [
       "The Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",
     technologies: ["Chrome", "Extension", "Reactjs"],
     height: "50",
-    githubLink: "https://github.com/mlhnshuvo/auto-refresh-chrome-extension",
+    githubLink: "https://github.com/mhshuvoalways/auto-refresh-chrome-extension",
     webLink: "",
   },
   {
@@ -103,7 +103,7 @@ const Projects = [
       "Render",
     ],
     height: "",
-    githubLink: "https://github.com/mlhnshuvo/drawing-on-screenshot",
+    githubLink: "https://github.com/mhshuvoalways/drawing-on-screenshot",
     webLink: "https://baseball-direction.netlify.app",
   },
   {
@@ -122,7 +122,7 @@ const Projects = [
       "Vercel",
     ],
     height: "190",
-    githubLink: "https://github.com/mlhnshuvo/blog-app-nextjs",
+    githubLink: "https://github.com/mhshuvoalways/blog-app-nextjs",
     webLink: "https://daringpage.vercel.app",
   },
   {
@@ -142,7 +142,7 @@ const Projects = [
       "Netlify",
     ],
     height: "360",
-    githubLink: "https://github.com/mlhnshuvo/traveling-app",
+    githubLink: "https://github.com/mhshuvoalways/traveling-app",
     webLink: "https://traveling-mhs.netlify.app",
   },
   {
@@ -163,7 +163,7 @@ const Projects = [
       "Render",
     ],
     height: "",
-    githubLink: "https://github.com/mlhnshuvo/essay-contest-of-students",
+    githubLink: "https://github.com/mhshuvoalways/essay-contest-of-students",
     webLink: "https://www.monomousumicontest.com",
   },
   {
@@ -183,7 +183,7 @@ const Projects = [
       "Cyclic",
     ],
     height: "130",
-    githubLink: "https://github.com/mlhnshuvo/math-plus-for-kids",
+    githubLink: "https://github.com/mhshuvoalways/math-plus-for-kids",
     webLink: "https://math-plus-app.vercel.app",
   },
   {
@@ -206,7 +206,7 @@ const Projects = [
       "Netlify",
     ],
     height: "410",
-    githubLink: "https://github.com/mlhnshuvo/rent-app",
+    githubLink: "https://github.com/mhshuvoalways/rent-app",
     webLink: "https://rentify-app.netlify.app",
   },
   {
@@ -225,7 +225,7 @@ const Projects = [
     ],
     height: "",
     githubLink:
-      "https://github.com/mlhnshuvo/trip-routing-app-with-google-map-api",
+      "https://github.com/mhshuvoalways/trip-routing-app-with-google-map-api",
     webLink: "https://trip-routing-app.vercel.app",
   },
   {
@@ -236,7 +236,7 @@ const Projects = [
     description: "This is the design of some business pages in nextjs💲",
     technologies: ["Nextjs", "Tailwind", "Vercel"],
     height: "1500",
-    githubLink: "https://github.com/mlhnshuvo/business-website-template",
+    githubLink: "https://github.com/mhshuvoalways/business-website-template",
     webLink: "https://ourproject-sk.vercel.app",
   },
   {
@@ -248,7 +248,7 @@ const Projects = [
       "💻This is a beautiful horse riding training web landing page🔥",
     technologies: ["Nextjs", "Tailwind", "Vercel"],
     height: "2270",
-    githubLink: "https://github.com/mlhnshuvo/horse-riding-training-website",
+    githubLink: "https://github.com/mhshuvoalways/horse-riding-training-website",
     webLink: "https://horse-riding-training-website.vercel.app",
   },
   {
@@ -260,7 +260,7 @@ const Projects = [
       "Beautiful and fresh UI react template. I build it for one of my client📚",
     technologies: ["React", "Tailwind", "Netlify"],
     height: "570",
-    githubLink: "https://github.com/mlhnshuvo/react-course-template",
+    githubLink: "https://github.com/mhshuvoalways/react-course-template",
     webLink: "https://course-template-react.netlify.app",
   },
   {
@@ -272,7 +272,7 @@ const Projects = [
       "💊This is a healthcare template for influencers and companies who want to donate money or something to help poor people who cannot afford treatment💊",
     technologies: ["React", "Netlify"],
     height: "830",
-    githubLink: "https://github.com/mlhnshuvo/health-care-template",
+    githubLink: "https://github.com/mhshuvoalways/health-care-template",
     webLink: "https://health-care-template.netlify.app",
   },
   {
@@ -293,7 +293,7 @@ const Projects = [
       "Netlify",
     ],
     height: "90",
-    githubLink: "https://github.com/mlhnshuvo/health-care-template",
+    githubLink: "https://github.com/mhshuvoalways/health-care-template",
     webLink: "https://health-care-template.netlify.app",
   },
   {
@@ -305,7 +305,7 @@ const Projects = [
       "This design is inspired by SPAYMART with reactjs. SPAYMART is an animal welfare organization established to end the unnecessary killing of animals🐈",
     technologies: ["React", "Tailwind", "Netlify"],
     height: "1510",
-    githubLink: "https://github.com/mlhnshuvo/animals-saving-react-template",
+    githubLink: "https://github.com/mhshuvoalways/animals-saving-react-template",
     webLink: "https://spaymart.netlify.app",
   },
   {
@@ -331,7 +331,7 @@ const Projects = [
       "Shop Mate is a simple functional-based application where users can add, delete and update buckets and add a list of items under each bucket. This application inspired by google🥼",
     technologies: ["React", "BEM", "Easy-peasy", "Netlify"],
     height: "",
-    githubLink: "https://github.com/mlhnshuvo/shopping-list-app",
+    githubLink: "https://github.com/mhshuvoalways/shopping-list-app",
     webLink: "https://shopmate-mhs.netlify.app",
   },
 
@@ -344,7 +344,7 @@ const Projects = [
       "This is simple but beautiful and clean UI one page business figma to html template with dom manipulation🖥️",
     technologies: ["Figma", "HTML", "CSS", "DOM", "Netlify"],
     height: "600",
-    githubLink: "https://github.com/mlhnshuvo/q2life-landing-page",
+    githubLink: "https://github.com/mhshuvoalways/q2life-landing-page",
     webLink: "https://q2life.netlify.app",
   },
   {
@@ -356,7 +356,7 @@ const Projects = [
       "This is a design for an organization that was designed by Figma to React component💻",
     technologies: ["Figma", "React", "Recharts", "Netlify"],
     height: "80",
-    githubLink: "https://github.com/mlhnshuvo/react-template-dietis",
+    githubLink: "https://github.com/mhshuvoalways/react-template-dietis",
     webLink: "https://dietis.netlify.app",
   },
   {
@@ -367,7 +367,7 @@ const Projects = [
     description: "Landing page with html, css, jquery plugins 💻",
     technologies: ["HTML", "CSS", "jQuery", "Netlify"],
     height: "1000",
-    githubLink: "https://github.com/mlhnshuvo/cude-landing-page",
+    githubLink: "https://github.com/mhshuvoalways/cude-landing-page",
     webLink: "https://cude-page.netlify.app",
   },
   {
@@ -379,7 +379,7 @@ const Projects = [
       "This is a beautiful HTML, CSS, Bootstrap, jquery plugin portfolio",
     technologies: ["HTML", "CSS", "Bootstrap", "jQuery", "Netlify"],
     height: "820",
-    githubLink: "https://github.com/mlhnshuvo/portfolio1",
+    githubLink: "https://github.com/mhshuvoalways/portfolio1",
     webLink: "https://portfolio1-landing-page.netlify.app",
   },
 
@@ -392,7 +392,7 @@ const Projects = [
       "This is a page for essay contest students. Here they can see Awards, Prizes, Magazines etc.",
     technologies: ["React", "Netlify", "Render"],
     height: "1910",
-    githubLink: "https://github.com/mlhnshuvo/essay-contest-winner-page",
+    githubLink: "https://github.com/mhshuvoalways/essay-contest-winner-page",
     webLink: "https://essay.monomousumicontest.com",
   },
   {
@@ -404,7 +404,7 @@ const Projects = [
       "It was designed from Figma to HTML and then reactjs. Clean and good looking design💻",
     technologies: ["React", "Netlify", "Figma"],
     height: "670",
-    githubLink: "https://github.com/mlhnshuvo/client-portfolio",
+    githubLink: "https://github.com/mhshuvoalways/client-portfolio",
     webLink: "https://keflemariam.netlify.app",
   },
   {
@@ -415,7 +415,7 @@ const Projects = [
     description: "A simple weather app with JS AND DOM manipulation ☁",
     technologies: ["JS", "DOM manipulation", "HTML", "CSS", "Vercel"],
     height: "",
-    githubLink: "https://github.com/mlhnshuvo/weather-app-with-dom",
+    githubLink: "https://github.com/mhshuvoalways/weather-app-with-dom",
     webLink: "https://weather-with-dom.vercel.app",
   },
   {
@@ -427,7 +427,7 @@ const Projects = [
       "Polling is a simple functional-based application where users can add, delete and update poll category and add vote under each category.",
     technologies: ["React", "Netlify"],
     height: "",
-    githubLink: "https://github.com/mlhnshuvo/react-poll-app",
+    githubLink: "https://github.com/mhshuvoalways/react-poll-app",
     webLink: "https://poll-vote.netlify.app",
   },
   {
@@ -440,7 +440,7 @@ const Projects = [
     technologies: ["React", "Netlify"],
     height: "",
     githubLink: "https://todolist-mhs.netlify.app",
-    webLink: "https://github.com/mlhnshuvo/todo-app",
+    webLink: "https://github.com/mhshuvoalways/todo-app",
   },
   {
     id: "TicTacToe",
@@ -450,7 +450,7 @@ const Projects = [
     description: "React tic tac toe game🏆",
     technologies: ["React", "Netlify"],
     height: "",
-    githubLink: "https://github.com/mlhnshuvo/tic-tac-toe-game",
+    githubLink: "https://github.com/mhshuvoalways/tic-tac-toe-game",
     webLink: "https://tic-tac-toe-mhs.netlify.app",
   },
   {
@@ -462,7 +462,7 @@ const Projects = [
       "This is a simple blog app using a third-party API service with reactjs and bootstrap",
     technologies: ["React", "Bootstrap", "API", "Vercel"],
     height: "480",
-    githubLink: "https://github.com/mlhnshuvo/blog-using-third-party-api",
+    githubLink: "https://github.com/mhshuvoalways/blog-using-third-party-api",
     webLink: "https://blog-using-third-party-api.vercel.app",
   },
   {
