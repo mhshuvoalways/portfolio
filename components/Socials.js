@@ -11,7 +11,7 @@ const Socials = () => {
     <div className="fixed bottom-0 right-2 flex flex-col gap-5 justify-end items-center z-40">
       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <a
-          href="https://github.com/mlhnshuvo"
+          href="https://github.com/mhshuvoalways"
           target="_blank"
           className="opacity-30 hover:opacity-100"
         >
@@ -20,7 +20,7 @@ const Socials = () => {
       </motion.button>
       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <a
-          href="https://www.linkedin.com/in/mlhnshuvo"
+          href="https://www.linkedin.com/in/mhshuvoalways"
           target="_blank"
           className="opacity-30 hover:opacity-100"
         >
@@ -38,7 +38,7 @@ const Socials = () => {
       </motion.button>
       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <a
-          href="https://www.hackerrank.com/mlhnshuvo"
+          href="https://www.hackerrank.com/mhshuvoalways"
           target="_blank"
           className="opacity-30 hover:opacity-100"
         >
@@ -47,7 +47,7 @@ const Socials = () => {
       </motion.button>
       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <a
-          href="https://facebook.com/mlhnshuvo"
+          href="https://facebook.com/mhshuvoalways"
           target="_blank"
           className="opacity-30 hover:opacity-100"
         >
