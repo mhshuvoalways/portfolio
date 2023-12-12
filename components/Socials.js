@@ -13,7 +13,7 @@ const Socials = () => {
         <a
           href="https://github.com/mhshuvoalways"
           target="_blank"
-          className="opacity-30 hover:opacity-100"
+          className="opacity-90 hover:opacity-100"
         >
           <Image src={GithubIcon} alt="" />
         </a>
@@ -22,7 +22,7 @@ const Socials = () => {
         <a
           href="https://www.linkedin.com/in/mhshuvoalways"
           target="_blank"
-          className="opacity-30 hover:opacity-100"
+          className="opacity-90 hover:opacity-100"
         >
           <Image src={LinkedIN} alt="" />
         </a>
@@ -31,7 +31,7 @@ const Socials = () => {
         <a
           href="https://www.fiverr.com/mhshuvoit"
           target="_blank"
-          className="opacity-30 hover:opacity-100"
+          className="opacity-90 hover:opacity-100"
         >
           <Image src={Fiverr} alt="" />
         </a>
@@ -40,7 +40,7 @@ const Socials = () => {
         <a
           href="https://www.hackerrank.com/mhshuvoalways"
           target="_blank"
-          className="opacity-30 hover:opacity-100"
+          className="opacity-90 hover:opacity-100"
         >
           <Image src={HackerRank} alt="" />
         </a>
@@ -49,7 +49,7 @@ const Socials = () => {
         <a
           href="https://facebook.com/mhshuvoalways"
           target="_blank"
-          className="opacity-30 hover:opacity-100"
+          className="opacity-90 hover:opacity-100"
         >
           <Image src={Facebook} alt="" />
         </a>
