@@ -29,7 +29,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading("loading");
     axios
-      .post("https://mlhnshuvo.vercel.app/api", contact)
+      .post("https://www.mhshuvoalways.xyz/api", contact)
       .then(() => {
         setLoading("success");
         setContact({
