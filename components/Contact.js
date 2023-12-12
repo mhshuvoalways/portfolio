@@ -53,7 +53,7 @@ const Contact = () => {
               <Image src={Email} alt="" />
             </div>
             <p className="text3 tracking-widest">EMAIL</p>
-            <p>mlhnshuvo@gmail.com</p>
+            <p>mhshuvoalways@gmail.com</p>
           </div>
           <div className="space-y-5">
             <div className="border-secondary border-2 p-4 rounded-full w-16 h-16 mx-auto">
