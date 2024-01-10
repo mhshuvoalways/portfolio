@@ -19,6 +19,7 @@ import Mongoose from "../public/skills/mongoose.png";
 import Mongodb from "../public/skills/mongodb.png";
 import MySQL from "../public/skills/mysql.png";
 import FramerMotion from "../public/skills/framermotion.png";
+import Flutter from "../public/skills/flutter.png";
 import TypeScript from "../public/skills/typescript.png";
 import MaterialUI from "../public/skills/materialui.png";
 import StyleComponent from "../public/skills/styledcomponent.png";
@@ -187,6 +188,10 @@ const Skillls = () => {
                 <p className="mt-3 tracking-widest text-center">
                   Styled Component
                 </p>
+              </div>
+              <div>
+                <Image src={Flutter} alt={Flutter} className="w-12 mx-auto" />
+                <p className="mt-3 tracking-widest text-center">Flutter</p>
               </div>
               <div>
                 <Image src={Webpack} alt={Webpack} className="w-16 mx-auto" />
