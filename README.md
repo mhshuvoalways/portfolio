@@ -8,4 +8,4 @@ Therefore, I’m looking for a company willing to offer me a placement among its
 
 When I’m not in front of a computer screen, I’m probably watching movies, reading books, or crossing off another item on my bucket list. <br/>
 
-My portfolio lives at https://mlhnshuvo.vercel.app
+My portfolio lives at http://mhshuvoalways.xyz
