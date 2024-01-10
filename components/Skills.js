@@ -153,7 +153,7 @@ const Skillls = () => {
               <div>
                 <Image src={Server} alt={Server} className="w-14 mx-auto" />
                 <p className="mt-3 tracking-widest text-center">Server</p>
-                <small>Heroku, Netlify, Vercel, Render, Cyclic</small>
+                <small>AWS, Heroku, Vercel, Render</small>
               </div>
             </div>
           </div>
