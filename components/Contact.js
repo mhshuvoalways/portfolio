@@ -32,11 +32,11 @@ const Contact = () => {
     setLoading("loading");
 
     const messageHtml = `
-    <div>
+      <div>
         <h3>Name: ${contact.name}</h3>
         <p>Email: ${contact.email}</p>
         <p>Message: ${contact.message}</p>
-    </div>`;
+      </div>`;
     resend.emails
       .send({
         from: "MH Shuvo <noreply@mhshuvoalways.xyz>",
