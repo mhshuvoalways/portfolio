@@ -1,4 +1,4 @@
-import axios from "axios";
+import { Resend } from "resend";
 import Image from "next/image";
 import { useState } from "react";
 import { Element } from "react-scroll";
@@ -18,6 +18,8 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState("");
 
+  const resend = new Resend(process.env.RESEND_KEY);
+
   const onChangeHandler = (e) => {
     setContact({
       ...contact,
@@ -28,8 +30,20 @@ const Contact = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     setLoading("loading");
-    axios
-      .post("https://www.mhshuvoalways.xyz/api", contact)
+
+    const messageHtml = `
+    <div>
+        <h3>Name: ${contact.name}</h3>
+        <p>Email: ${contact.email}</p>
+        <p>Message: ${contact.message}</p>
+    </div>`;
+    resend.emails
+      .send({
+        from: "MH Shuvo <noreply@mhshuvoalways.xyz>",
+        to: contact.email,
+        subject: `${contact.name} will contact you soon`,
+        html: messageHtml,
+      })
       .then(() => {
         setLoading("success");
         setContact({
@@ -38,7 +52,8 @@ const Contact = () => {
           message: "",
         });
       })
-      .catch(() => {
+      .catch((err) => {
+        console.log(err);
         setLoading("fail");
       });
   };
