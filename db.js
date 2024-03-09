@@ -6,7 +6,7 @@ import Traveling from "./public/projects/traveling.png";
 import PasswordVault from "./public/projects/passwordvault.png";
 import MathPlus from "./public/projects/mathplus.png";
 import TripRouting from "./public/projects/trip-routing.png";
-import BusinessWebisteTemplate from "./public/projects/business-webiste-template.png";
+import MyFates from "./public/projects/business-webiste-template.png";
 import HorseRidingTrainingWebsite from "./public/projects/horse-riding-training-website.png";
 import CourseTemplateReact from "./public/projects/course-template-react.png";
 import HealthCareTemplate from "./public/projects/health-care-template.png";
@@ -82,8 +82,21 @@ const Projects = [
       "The Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",
     technologies: ["Chrome", "Extension", "Reactjs"],
     height: "50",
-    githubLink: "https://github.com/mhshuvoalways/auto-refresh-chrome-extension",
+    githubLink:
+      "https://github.com/mhshuvoalways/auto-refresh-chrome-extension",
     webLink: "",
+  },
+  {
+    id: "MyFates",
+    type: "fullstack",
+    image: MyFates,
+    title: "MyFates",
+    description:
+      "MyFates is a Japanese-Korean self empowering service that was made to give deeper understanding about oneself. Myfates uses traditional horoscope and psychological methods to give maximum insight about oneself.🙆‍♂️",
+    technologies: ["Nextjs", "Nodejs", "Tailwind", "AWS", "CICD", "Nginx"],
+    height: "1500",
+    githubLink: "https://github.com/mhshuvoalways/myfates-web-app-client",
+    webLink: "https://myfates.com",
   },
   {
     id: "DrawOnScreenshtos",
@@ -229,17 +242,6 @@ const Projects = [
     webLink: "https://trip-routing-app.vercel.app",
   },
   {
-    id: "BusinessWebisteTemplate",
-    type: "template",
-    image: BusinessWebisteTemplate,
-    title: "Business Webiste Template",
-    description: "This is the design of some business pages in nextjs💲",
-    technologies: ["Nextjs", "Tailwind", "Vercel"],
-    height: "1500",
-    githubLink: "https://github.com/mhshuvoalways/business-website-template",
-    webLink: "https://ourproject-sk.vercel.app",
-  },
-  {
     id: "HorseRidingTrainingWebsite",
     type: "template",
     image: HorseRidingTrainingWebsite,
@@ -248,7 +250,8 @@ const Projects = [
       "💻This is a beautiful horse riding training web landing page🔥",
     technologies: ["Nextjs", "Tailwind", "Vercel"],
     height: "2270",
-    githubLink: "https://github.com/mhshuvoalways/horse-riding-training-website",
+    githubLink:
+      "https://github.com/mhshuvoalways/horse-riding-training-website",
     webLink: "https://horse-riding-training-website.vercel.app",
   },
   {
@@ -305,7 +308,8 @@ const Projects = [
       "This design is inspired by SPAYMART with reactjs. SPAYMART is an animal welfare organization established to end the unnecessary killing of animals🐈",
     technologies: ["React", "Tailwind", "Netlify"],
     height: "1510",
-    githubLink: "https://github.com/mhshuvoalways/animals-saving-react-template",
+    githubLink:
+      "https://github.com/mhshuvoalways/animals-saving-react-template",
     webLink: "https://spaymart.netlify.app",
   },
   {
