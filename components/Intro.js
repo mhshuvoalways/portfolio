@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Fade } from "react-reveal";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
-import MyImage from "../public/mhshuvoalways.png";
+import MyImage from "../public/mhshuvoalways.jpg";
 
 function Intro() {
   const [index, setIndex] = useState(0);
