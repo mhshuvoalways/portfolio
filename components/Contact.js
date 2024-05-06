@@ -1,14 +1,14 @@
 import axios from "axios";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-import { Element } from "react-scroll";
 import { Fade } from "react-reveal";
-import { motion } from "framer-motion";
-import Tostify from "./Tostify";
+import { Element } from "react-scroll";
 import Email from "../public/icons/email.svg";
 import Home from "../public/icons/home.svg";
 import Phone from "../public/icons/phone.svg";
 import Loading from "./Loading";
+import Tostify from "./Tostify";
 
 const Contact = () => {
   const [contact, setContact] = useState({
@@ -118,7 +118,7 @@ const Contact = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="border-secondary px-5 border-2 py-1 cursor-pointer w-full sm:w-32 rounded-full hover:text-gray-200 hover:bg-secondary"
+              className="border-secondary hover:border-transparent px-5 border-2 py-1 cursor-pointer w-full sm:w-32 rounded-full hover:text-gray-800 hover:bgGradient"
             >
               Submit
             </motion.button>

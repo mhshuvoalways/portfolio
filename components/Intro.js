@@ -19,9 +19,10 @@ function Intro() {
             Welcome to my world
           </p>
           <div className="flex gap-2 sm:gap-5 items-center text1">
-            <h2>Hi, I’m MH Shuvo</h2>
+            <p className="text1 font-semibold textGradient">Hi, I’m MH Shuvo</p>
             <p className="animate-wave">👋</p>
           </div>
+          <p className="text2 text-gray-200">Web & Mobile Application Developer</p>
           <p className="text-xl">
             🚀As an expert in JavaScript, Reactjs, React Native, Nextjs, and
             Nodejs, I specialize in building Web & Mobile Applications that not
@@ -39,7 +40,7 @@ function Intro() {
             <a
               href="https://docs.google.com/document/d/1_twoMTghS8p_C-yD73SUsPFA6Kxl62u68FyD6CXHx3Q/edit?usp=sharing"
               target="_blank"
-              className="bg-secondary border-primary px-6 py-2 rounded-full font-light text-gray-200"
+              className="bgGradient border-primary px-6 py-2 rounded-full font-light text-gray-800"
             >
               Resume
             </a>

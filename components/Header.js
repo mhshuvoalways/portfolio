@@ -41,7 +41,7 @@ const Header = () => {
           <Link
             to="home"
             activeClass="font-semibold"
-            className="cursor-pointer text-2xl text-secondary"
+            className="cursor-pointer text-2xl textGradient"
             spy={true}
             smooth={true}
             duration={1000}
@@ -77,18 +77,6 @@ const Header = () => {
                 duration={1000}
               >
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="about"
-                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
-                className="cursor-pointer"
-                spy={true}
-                smooth={true}
-                duration={1000}
-              >
-                About
               </Link>
             </li>
             <li>
@@ -171,17 +159,6 @@ const Header = () => {
               duration={1000}
             >
               <p className="py-2 w-10/12 mx-auto">Home</p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="about"
-              activeClass="text-secondary font-semibold"
-              spy={true}
-              smooth={true}
-              duration={1000}
-            >
-              <p className="py-2 w-10/12 mx-auto">About</p>
             </Link>
           </li>
           <li>

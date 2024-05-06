@@ -53,6 +53,16 @@
     }
   }
 
+  .textGradient {
+    background-image: linear-gradient(to right, #5ce1e6, #3372e3, #ff66c4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bgGradient {
+    background-image: linear-gradient(to right, #5ce1e6, #3372e3, #ff66c4);
+  }
+
   @keyframes wave {
     0%,
     100% {
