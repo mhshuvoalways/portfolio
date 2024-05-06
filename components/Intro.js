@@ -40,7 +40,7 @@ function Intro() {
             <a
               href="https://docs.google.com/document/d/1_twoMTghS8p_C-yD73SUsPFA6Kxl62u68FyD6CXHx3Q/edit?usp=sharing"
               target="_blank"
-              className="bgGradient border-primary px-6 py-2 rounded-full font-light text-gray-800"
+              className="bgGradient border-primary px-6 py-2 rounded-full text-gray-800 hover:text-gray-200 transition font-semibold"
             >
               Resume
             </a>

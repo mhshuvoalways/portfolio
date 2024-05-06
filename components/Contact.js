@@ -118,7 +118,7 @@ const Contact = () => {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="border-secondary hover:border-transparent px-5 border-2 py-1 cursor-pointer w-full sm:w-32 rounded-full hover:text-gray-800 hover:bgGradient"
+              className="bgGradient border-primary px-6 py-2 rounded-full text-gray-800 hover:text-gray-200 transition font-semibold"
             >
               Submit
             </motion.button>

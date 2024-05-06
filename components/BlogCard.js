@@ -23,7 +23,7 @@ const BlogCard = ({ id, image, createdAt, title }) => {
         <a
           href={`https://daringpage.vercel.app/post/${id}`}
           target="_blank"
-          className="border-secondary border hover:border-transparent hover:text-gray-800 rounded-full px-5 w-48 text-center py-2 cursor-pointer hover:bgGradient"
+          className="border-secondary border hover:border-transparent rounded-full px-5 w-48 text-center py-2 cursor-pointer hover:bgGradient transition font-semibold hover:text-gray-200"
         >
           Read at My Blog
         </a>
