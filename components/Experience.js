@@ -1,5 +1,5 @@
-import { Element } from "react-scroll";
 import { Fade, Zoom } from "react-reveal";
+import { Element } from "react-scroll";
 
 const Experience = () => {
   return (
@@ -25,21 +25,37 @@ const Experience = () => {
                 Fiverr
               </a>
               <p>-</p>
-              <p>Full Stack Web Developer</p>
+              <p>Web & Mobile Application Developer</p>
             </div>
             <p className="mt-2 sm:hidden block text-gray-400">
               AUG 2021 - CURRENT
             </p>
-            <ul className="mt-10 space-y-4">
-              <li>◉ Eye-catching frontend development</li>
-              <li>◉ Responsive design</li>
-              <li>◉ Cross browsers support</li>
-              <li>◉ API development</li>
-              <li>◉ Fix bugs and enhance existing websites</li>
-              <li>◉ Optimized</li>
-              <li>◉ Scalable</li>
-              <li>◉ Deployment</li>
-            </ul>
+            <div className="mt-10">
+              <p className="text-lg">
+                <strong>Achievement:</strong> Top Rated Freelancer with 5-Star
+                Reviews 👑
+              </p>
+              <br />
+              <p>
+                <strong>Level One:</strong> Completed 11 orders with a 100%
+                success rate, laying the foundation with small-scale website
+                design projects.
+              </p>
+              <br />
+              <p>
+                <strong>Level Two:</strong> Advanced to completing 50+ orders
+                with an impressive success score, delivering exceptional results
+                that delighted clients.
+              </p>
+              <br />
+              <p>
+                <strong>Top Rated:</strong> Reached the pinnacle with over 150+
+                orders completed, each earning a 5-star review. I specialize in
+                developing websites that prioritize scalability, availability,
+                usability, maintainability, reliability, and security,
+                solidifying my reputation as a top-rated freelancer.
+              </p>
+            </div>
           </div>
         </Fade>
       </div>
