@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,19 @@ export default function App({ Component, pageProps }) {
           content="Emsj9m4YMOWhv0OQpmwdXBzzFbYdUp-DpmWpukNsWj0"
         />
       </Head>
+      {/* google analytics */}
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', ${NEXT_PUBLIC_MEASUREMENT_ID});
+        `}
+      </Script>
       <div className={`${inter.className} common-style`}>
         <Component {...pageProps} />
       </div>
