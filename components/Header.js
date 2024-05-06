@@ -41,7 +41,7 @@ const Header = () => {
           <Link
             to="home"
             activeClass="font-semibold"
-            className="cursor-pointer text-2xl"
+            className="cursor-pointer text-2xl text-secondary"
             spy={true}
             smooth={true}
             duration={1000}

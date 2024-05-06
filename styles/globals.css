@@ -4,7 +4,7 @@
 
 @layer components {
   .common-style {
-    @apply bg-gray-800 font-normal text-gray-200 overflow-x-hidden;
+    @apply bg-gray-800 font-normal text-gray-400 overflow-x-hidden;
   }
   .section-title {
     @apply text-xl sm:text-3xl text-center mt-32 mb-20 border-b-4 border-secondary pb-5 w-8/12 sm:w-4/12 m-auto;
@@ -94,7 +94,7 @@
     background: #1f2937;
   }
   ::-webkit-scrollbar-thumb {
-    background: #ff4a57;
+    background: #ff66c4;
     border-radius: 20%;
   }
 }

@@ -77,7 +77,7 @@ const Projects = () => {
           Wordpress
         </p>
       </div>
-      <div className="mt-20 flex justify-center gap-5 flex-wrap">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         {projectsdata.map((project) => {
           return current === "all" ? (
             <Fade bottom>

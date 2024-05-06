@@ -2,7 +2,6 @@ import axios from "axios";
 import Header from "@/components/Header";
 import ScrollSign from "@/components/ScrollSign";
 import Intro from "@/components/Intro";
-import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
@@ -17,7 +16,6 @@ const Index = ({ posts }) => {
       <ScrollSign />
       <Header />
       <Intro />
-      <About />
       <Skills />
       <Projects />
       <Experience />

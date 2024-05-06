@@ -4,14 +4,14 @@ import moment from "moment";
 
 const BlogCard = ({ id, image, createdAt, title }) => {
   return (
-    <div className="bg-gray-900 p-4 w-full md:w-80 rounded-md shadow-md">
+    <div className="bg-gray-900 p-4 w-full md:w-[95%] rounded-md shadow-md">
       <Image
         unoptimized
         width={600}
         height={600}
         src={image}
         alt={image}
-        className="h-auto md:h-48"
+        className="h-auto md:h-64 object-cover"
       />
       <p className="text-gray-400 text-sm uppercase mt-2">
         {moment(createdAt).format("LL")}

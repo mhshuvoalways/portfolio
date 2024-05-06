@@ -25,7 +25,7 @@ const ProjectCard = ({
 
   return (
     <motion.div
-      className="bg-gray-900 p-4 w-full md:w-80 rounded-md shadow-md"
+      className="bg-gray-900 p-4 w-full rounded-md shadow-md"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       onMouseEnter={handleHover}
