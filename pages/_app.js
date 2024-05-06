@@ -1,6 +1,6 @@
-import Head from "next/head";
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,13 +9,14 @@ export default function App({ Component, pageProps }) {
     <div>
       <Head>
         <title>MH Shuvo</title>
-        <meta name="description" content="Full stack web developer" key="desc" />
+        <meta
+          name="description"
+          content="Full stack web developer"
+          key="desc"
+        />
         <meta property="og:title" content="MH Shuvo Portfolio" />
         <meta property="og:description" content="MH Shuvo Portfolio" />
-        <meta
-          property="og:image"
-          content=""
-        />
+        <meta property="og:image" content="" />
         <link rel="icon" type="image/x-icon" href="favicons/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -33,6 +34,12 @@ export default function App({ Component, pageProps }) {
           type="image/png"
           sizes="16x16"
           href="/favicons/favicon-16x16.png"
+        />
+
+        {/* google search console */}
+        <meta
+          name="google-site-verification"
+          content="Emsj9m4YMOWhv0OQpmwdXBzzFbYdUp-DpmWpukNsWj0"
         />
       </Head>
       <div className={`${inter.className} common-style`}>
