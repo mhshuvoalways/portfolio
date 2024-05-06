@@ -479,7 +479,7 @@ const Projects = [
     technologies: ["WordPress", "c-Panel"],
     height: "970",
     githubLink: "",
-    webLink: "https://www.alekhya.org",
+    webLink: "",
   },
 ];
 
