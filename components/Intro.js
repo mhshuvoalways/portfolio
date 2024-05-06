@@ -53,7 +53,7 @@ function Intro() {
         <Image
           src={MyImage}
           alt={MyImage}
-          className="animate-mypicture border-8 border-primary rounded-full"
+          className="animate-mypicture rounded-full"
         />
       </div>
     </Element>
