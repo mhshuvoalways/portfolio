@@ -46,14 +46,14 @@ export default function App({ Component, pageProps }) {
       {/* google analytics */}
       <Script
         async
-        src={`https://www.googletagmanager.com/gtag/js?id=G-RGZ3GNNNYC`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.MEASUREMENT_ID}`}
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
-         gtag('config', G-RGZ3GNNNYC);
+         gtag('config', '${process.env.MEASUREMENT_ID}');
         `}
       </Script>
       <div className={`${inter.className} common-style`}>
