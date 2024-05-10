@@ -59,14 +59,14 @@ const Contact = () => {
             <div className="border-secondary border-2 p-4 rounded-full w-16 h-16 mx-auto">
               <Image src={Phone} alt="" />
             </div>
-            <p className="text3 tracking-widest">Phone</p>
+            <p className="text3 tracking-widest">PHONE</p>
             <p>+8801712892969</p>
           </div>
           <div className="space-y-5">
             <div className="border-secondary border-2 p-4 rounded-full w-16 h-16 mx-auto">
               <Image src={Home} alt="" />
             </div>
-            <p className="text3 tracking-widest">Home</p>
+            <p className="text3 tracking-widest">HOME</p>
             <p>Kushtia, Bangladesh</p>
           </div>
         </div>

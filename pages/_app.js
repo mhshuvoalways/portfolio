@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="keywords"
-          content="software developer, web design, web development, mobile development, full stack developer, Reactjs, React Native, Nextjs, Nodejs, MongoDB"
+          content="software developer, web design, web development, mobile development, extension development, full stack developer, javaScript, python, reactjs, react Native, nextjs, nodejs, mongoDB"
         />
         <meta name="author" content="MH Shuvo" />
         <meta name="language" content="English" />
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
           property="og:description"
           content="I specialize in building Software Developer that not only look great but also deliver exceptional scalability, availability, usability, maintainability, reliability, and security."
         />
-        
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mhshuvoalways.xyz" />
         <meta
