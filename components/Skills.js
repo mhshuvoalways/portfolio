@@ -36,11 +36,12 @@ import Yarn from "../public/skills/yarn.png";
 import Figma from "../public/skills/figma.png";
 import XD from "../public/skills/xd.png";
 import Postman from "../public/skills/postman.png";
+import SectionTitle from "./SectionTitle";
 
 const Skillls = () => {
   return (
     <Element className="my-container" name="skills">
-      <p className="section-title">What I Am Good At</p>
+      <SectionTitle title={'What I Am Good At'}/>
       <div className="space-y-20">
         <Fade bottom>
           <div>

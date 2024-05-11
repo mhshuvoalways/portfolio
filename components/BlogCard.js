@@ -11,7 +11,7 @@ const BlogCard = ({ id, image, createdAt, title }) => {
         height={600}
         src={image}
         alt={image}
-        className="h-auto md:h-64 object-cover"
+        className="h-auto md:h-64 object-cover rounded-md"
       />
       <p className="text-gray-400 text-sm uppercase mt-2">
         {moment(createdAt).format("LL")}

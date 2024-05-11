@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Element } from "react-scroll";
 import { Fade } from "react-reveal";
+import { Element } from "react-scroll";
 import projectsdata from "../db.js";
 import ProjectCard from "./ProjectCard";
+import SectionTitle from "./SectionTitle.jsx";
 
 const Projects = () => {
   const [current, setCurrent] = useState("all");
@@ -13,12 +14,12 @@ const Projects = () => {
 
   return (
     <Element className="my-container" name="projects">
-      <p className="section-title">Projects I have Built</p>
+      <SectionTitle title={"Projects I have Built"} />
       <div className="flex items-center justify-center gap-5 flex-wrap">
         <div
           className={
             current === "all"
-              ? "border-b-4 px-5 py-1 border-secondary cursor-pointer flex items-center gap-2"
+              ? "border-b-4 px-5 py-1 border-secondary cursor-pointer flex items-center gap-2 rounded-full"
               : "px-5 py-1 cursor-pointer flex items-center gap-2 hover:font-bold"
           }
           onClick={() => currentHandler("all")}
@@ -30,7 +31,8 @@ const Projects = () => {
         </div>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "fullstack" && "border-b-4 border-secondary"
+            current === "fullstack" &&
+            "border-b-4 border-secondary rounded-full"
           }`}
           onClick={() => currentHandler("fullstack")}
         >
@@ -38,7 +40,7 @@ const Projects = () => {
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "frontend" && "border-b-4 border-secondary"
+            current === "frontend" && "border-b-4 border-secondary rounded-full"
           }`}
           onClick={() => currentHandler("frontend")}
         >
@@ -46,7 +48,8 @@ const Projects = () => {
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "extention" && "border-b-4 border-secondary"
+            current === "extention" &&
+            "border-b-4 border-secondary rounded-full"
           }`}
           onClick={() => currentHandler("extention")}
         >
@@ -54,7 +57,7 @@ const Projects = () => {
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "template" && "border-b-4 border-secondary"
+            current === "template" && "border-b-4 border-secondary rounded-full"
           }`}
           onClick={() => currentHandler("template")}
         >
@@ -62,7 +65,8 @@ const Projects = () => {
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "contribute" && "border-b-4 border-secondary"
+            current === "contribute" &&
+            "border-b-4 border-secondary rounded-full"
           }`}
           onClick={() => currentHandler("contribute")}
         >
@@ -70,7 +74,8 @@ const Projects = () => {
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "wordpress" && "border-b-4 border-secondary"
+            current === "wordpress" &&
+            "border-b-4 border-secondary rounded-full"
           }`}
           onClick={() => currentHandler("wordpress")}
         >
@@ -78,9 +83,9 @@ const Projects = () => {
         </p>
       </div>
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-        {projectsdata.map((project) => {
-          return current === "all" ? (
-            <Fade bottom>
+        {projectsdata.map((project) => (
+          <Fade bottom key={project.id}>
+            {current === "all" ? (
               <ProjectCard
                 key={project.id}
                 image={project.image}
@@ -91,10 +96,8 @@ const Projects = () => {
                 githubLink={project.githubLink}
                 webLink={project.webLink}
               />
-            </Fade>
-          ) : (
-            current === project.type && (
-              <Fade bottom>
+            ) : (
+              current === project.type && (
                 <ProjectCard
                   key={project.id}
                   image={project.image}
@@ -105,10 +108,10 @@ const Projects = () => {
                   githubLink={project.githubLink}
                   webLink={project.webLink}
                 />
-              </Fade>
-            )
-          );
-        })}
+              )
+            )}
+          </Fade>
+        ))}
       </div>
     </Element>
   );

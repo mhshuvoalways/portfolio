@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import Bar from "../public/icons/bar.svg";
 import Cross from "../public/icons/cross.svg";
@@ -40,8 +40,7 @@ const Header = () => {
         <nav className="flex justify-between gap-5 flex-wrap items-center">
           <Link
             to="home"
-            activeClass="font-semibold"
-            className="cursor-pointer text-2xl textGradient"
+            className="cursor-pointer text-2xl textGradient font-bold"
             spy={true}
             smooth={true}
             duration={1000}
@@ -101,6 +100,18 @@ const Header = () => {
                 duration={1000}
               >
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="testimonials"
+                activeClass="border-b-2 border-secondary font-semibold text-secondary pb-1"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={1000}
+              >
+                Testimonials
               </Link>
             </li>
             <li>
@@ -170,6 +181,17 @@ const Header = () => {
               duration={1000}
             >
               <p className="py-2 w-10/12 mx-auto">Projects</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="testimonials"
+              activeClass="text-secondary font-semibold"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <p className="py-2 w-10/12 mx-auto">Testimonials</p>
             </Link>
           </li>
           <li>

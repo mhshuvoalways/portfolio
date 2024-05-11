@@ -1,10 +1,11 @@
 import { Fade, Zoom } from "react-reveal";
 import { Element } from "react-scroll";
+import SectionTitle from "./SectionTitle";
 
 const Experience = () => {
   return (
     <Element className="my-container" name="experience">
-      <p className="section-title">Working Experiences</p>
+      <SectionTitle title={"Working Experiences"} />
       <div className="flex justify-start sm:justify-center gap-10 flex-wrap sm:flex-nowrap item">
         <Fade left>
           <p className="w-5/12 text-right hidden sm:block mt-1">
@@ -31,7 +32,6 @@ const Experience = () => {
               AUG 2021 - CURRENT
             </p>
             <div className="mt-10">
-              🏆 Achievement Unlocked: Top Rated Freelancer 👑
               <p className="text-lg">
                 <strong>🏆 Achievement Unlocked:</strong> Top Rated Freelancer
                 👑

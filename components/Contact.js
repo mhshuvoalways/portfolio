@@ -8,6 +8,7 @@ import Email from "../public/icons/email.svg";
 import Home from "../public/icons/home.svg";
 import Phone from "../public/icons/phone.svg";
 import Loading from "./Loading";
+import SectionTitle from "./SectionTitle";
 import Tostify from "./Tostify";
 
 const Contact = () => {
@@ -45,7 +46,7 @@ const Contact = () => {
 
   return (
     <Element className="my-container" name="contact">
-      <p className="section-title">Contact Me</p>
+      <SectionTitle title={"Contact Me"} />
       <Fade bottom>
         <div className="flex flex-wrap justify-around gap-10 font-semibold text-center">
           <div className="space-y-5">

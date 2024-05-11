@@ -35,6 +35,7 @@ const ProjectCard = ({
         <Image
           src={image}
           alt={image}
+          className="rounded-md"
           style={{
             transition: "transform 2s ease",
             transform: isHovered ? `translateY(-${height}px)` : "translateY(0)",

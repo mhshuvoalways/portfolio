@@ -1,13 +1,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
 import { Fade } from "react-reveal";
 import { Element } from "react-scroll";
 import MyImage from "../public/mhshuvoalways.jpg";
 
 function Intro() {
-  const [index, setIndex] = useState(0);
-
   return (
     <Element
       className="my-container lg:h-screen flex items-center justify-center lg:justify-between lg:flex-row flex-col-reverse flex-wrap pt-36 lg:pt-14 gap-10"
@@ -22,7 +19,9 @@ function Intro() {
             <p className="text1 font-semibold textGradient">Hi, I’m MH Shuvo</p>
             <p className="animate-wave">👋</p>
           </div>
-          <p className="text2 text-gray-200">Web & Mobile Application Developer</p>
+          <p className="text2 text-gray-200">
+            Software Developer | Web & Mobile Application Developer
+          </p>
           <p className="text-xl">
             🚀As an expert in JavaScript, Reactjs, React Native, Nextjs, and
             Nodejs, I specialize in building Web & Mobile Applications that not
@@ -47,7 +46,7 @@ function Intro() {
           </motion.button>
         </div>
       </Fade>
-      <div className="w-8/12 lg:w-4/12">
+      <div className="w-7/12 lg:w-3/12">
         <p className="text-gray-600 uppercase lg:hidden block text-center mb-5">
           Welcome to my world
         </p>

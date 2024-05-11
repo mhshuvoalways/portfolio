@@ -1,14 +1,15 @@
-import axios from "axios";
-import Header from "@/components/Header";
-import ScrollSign from "@/components/ScrollSign";
-import Intro from "@/components/Intro";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Experience from "@/components/Experience";
 import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Intro from "@/components/Intro";
+import Projects from "@/components/Projects";
+import ScrollSign from "@/components/ScrollSign";
+import Skills from "@/components/Skills";
 import Socials from "@/components/Socials";
+import Testimonials from "@/components/Testimonials";
+import axios from "axios";
 
 const Index = ({ posts }) => {
   return (
@@ -18,6 +19,7 @@ const Index = ({ posts }) => {
       <Intro />
       <Skills />
       <Projects />
+      <Testimonials />
       <Experience />
       <Blogs posts={posts} />
       <Contact />

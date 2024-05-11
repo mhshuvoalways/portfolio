@@ -1,9 +1,10 @@
-import { Element } from "react-scroll";
 import { Fade } from "react-reveal";
+import { Element } from "react-scroll";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import BlogCard from "./BlogCard";
+import SectionTitle from "./SectionTitle";
 
 const Blog = ({ posts }) => {
   const settings = {
@@ -34,7 +35,7 @@ const Blog = ({ posts }) => {
 
   return (
     <Element className="my-container" name="blogs">
-      <p className="section-title">Blogs</p>
+      <SectionTitle title={"My Blogs"} />
       <Fade left>
         <Slider {...settings}>
           {[...posts].reverse().map((post) => {
