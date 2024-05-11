@@ -79,6 +79,26 @@ const Projects = [
     webLink: "",
   },
   {
+    id: "Traveling",
+    type: "fullstack",
+    image: Traveling,
+    title: "Travel Booking Web Application ",
+    description:
+      "This application allows users to browse available travel dates, book them, make payments via PayPal, and leave reviews.🚌 The application is built using Next.js, Node.js, and MongoDB. This document provides an overview of the application's features, installation instructions, and usage guidelines.",
+    technologies: [
+      "Nextjs",
+      "Tailwind",
+      "Expressjs",
+      "MongoDB",
+      "Cloudinary",
+      "render",
+      "Netlify",
+    ],
+    height: "380",
+    githubLink: "https://github.com/mhshuvoalways/traveling-app",
+    webLink: "https://traveling-mhs.netlify.app",
+  },
+  {
     id: "MyFates",
     type: "fullstack",
     image: MyFates,
@@ -108,26 +128,6 @@ const Projects = [
     height: "190",
     githubLink: "https://github.com/mhshuvoalways/blog-app-nextjs",
     webLink: "https://daringpage.vercel.app",
-  },
-  {
-    id: "Traveling",
-    type: "fullstack",
-    image: Traveling,
-    title: "Travel Booking Web Application ",
-    description:
-      "This application allows users to browse available travel dates, book them, make payments via PayPal, and leave reviews.🚌 The application is built using Next.js, Node.js, and MongoDB. This document provides an overview of the application's features, installation instructions, and usage guidelines.",
-    technologies: [
-      "Nextjs",
-      "Tailwind",
-      "Expressjs",
-      "MongoDB",
-      "Cloudinary",
-      "render",
-      "Netlify",
-    ],
-    height: "360",
-    githubLink: "https://github.com/mhshuvoalways/traveling-app",
-    webLink: "https://traveling-mhs.netlify.app",
   },
   {
     id: "HorseRidingTrainingWebsite",
