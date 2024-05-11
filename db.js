@@ -1,3 +1,4 @@
+import FlushTune from "@/public/projects/flush-tunes.png";
 import MyFates from "./public/projects/business-webiste-template.png";
 import Costnip from "./public/projects/costnip.png";
 import CourseTemplateReact from "./public/projects/course-template-react.png";
@@ -141,6 +142,18 @@ const Projects = [
     githubLink:
       "https://github.com/mhshuvoalways/horse-riding-training-website",
     webLink: "https://horse-riding-training-website.vercel.app",
+  },
+  {
+    id: "FlushTune",
+    type: "fullstack",
+    image: FlushTune,
+    title: "A revolutionary device designed",
+    description:
+      "Shitz N Giggles is a revolutionary device designed to enhance your flushing experience. It seamlessly blends cutting-edge technology with unparalleled luxury, ensuring that every visit to the bathroom is nothing short of extraordinary. This document outlines the key features and functionalities of Shitz N Giggles, addressing common questions and providing guidance on its usage. 😀",
+    technologies: ["Nextjs", "Tailwind", "Vercel"],
+    height: "960",
+    githubLink: "https://github.com/mhshuvoalways/flush-tunes",
+    webLink: "https://flush-tunes.vercel.app/",
   },
   {
     id: "CourseTemplateReact",
