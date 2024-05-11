@@ -57,14 +57,6 @@ const Projects = () => {
         </p>
         <p
           className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "template" && "border-b-4 border-secondary rounded-full"
-          }`}
-          onClick={() => currentHandler("template")}
-        >
-          Template
-        </p>
-        <p
-          className={`text-secondary text3 px-5 py-1 cursor-pointer ${
             current === "contribute" &&
             "border-b-4 border-secondary rounded-full"
           }`}
@@ -72,22 +64,12 @@ const Projects = () => {
         >
           Contribute
         </p>
-        <p
-          className={`text-secondary text3 px-5 py-1 cursor-pointer ${
-            current === "wordpress" &&
-            "border-b-4 border-secondary rounded-full"
-          }`}
-          onClick={() => currentHandler("wordpress")}
-        >
-          Wordpress
-        </p>
       </div>
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-        {projectsdata.map((project) => (
-          <Fade bottom key={project.id}>
-            {current === "all" ? (
+        {projectsdata.map((project) =>
+          current === "all" ? (
+            <Fade key={project.id}>
               <ProjectCard
-                key={project.id}
                 image={project.image}
                 title={project.title}
                 description={project.description}
@@ -96,10 +78,11 @@ const Projects = () => {
                 githubLink={project.githubLink}
                 webLink={project.webLink}
               />
-            ) : (
-              current === project.type && (
+            </Fade>
+          ) : (
+            current === project.type && (
+              <Fade key={project.id}>
                 <ProjectCard
-                  key={project.id}
                   image={project.image}
                   title={project.title}
                   description={project.description}
@@ -108,10 +91,10 @@ const Projects = () => {
                   githubLink={project.githubLink}
                   webLink={project.webLink}
                 />
-              )
-            )}
-          </Fade>
-        ))}
+              </Fade>
+            )
+          )
+        )}
       </div>
     </Element>
   );

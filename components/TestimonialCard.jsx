@@ -10,7 +10,7 @@ const BlogCard = ({ img }) => {
         alt={img}
         className="h-auto sm:h-48 rounded-md"
         width={500}
-        height={200}
+        height={300}
       />
       <motion.button
         whileHover={{ scale: 1.1 }}
