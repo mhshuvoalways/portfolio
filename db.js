@@ -145,7 +145,7 @@ const Projects = [
   },
   {
     id: "FlushTune",
-    type: "fullstack",
+    type: "frontend",
     image: FlushTune,
     title: "A revolutionary device designed",
     description:
