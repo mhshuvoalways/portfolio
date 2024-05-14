@@ -121,7 +121,7 @@ const Projects = [
   },
   {
     id: "Solutiongorilla",
-    type: "fullstack",
+    type: "frontend",
     image: Solutiongorilla,
     title: "Simplifying Platform Engineering with Cloud Native Solutions",
     description:
