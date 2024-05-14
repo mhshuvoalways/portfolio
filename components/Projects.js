@@ -71,6 +71,7 @@ const Projects = () => {
             <Fade key={project.id}>
               <ProjectCard
                 image={project.image}
+                type={project.type}
                 title={project.title}
                 description={project.description}
                 technologies={project.technologies}
@@ -84,6 +85,7 @@ const Projects = () => {
               <Fade key={project.id}>
                 <ProjectCard
                   image={project.image}
+                  type={project.type}
                   title={project.title}
                   description={project.description}
                   technologies={project.technologies}

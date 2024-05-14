@@ -123,9 +123,9 @@ const Projects = [
     id: "Solutiongorilla",
     type: "frontend",
     image: Solutiongorilla,
-    title: "Simplifying Platform Engineering with Cloud Native Solutions",
+    title: "Solution Gorilla",
     description:
-      "Solutions Gorilla's goal is to provide a platform that enables customers to deploy their applications and projects quickly and easily. It offers a four-week program to launch a platform including self-service capabilities, infrastructure setup, and security tooling. Their platform is based on cloud-native and open-source technologies.",
+      "🦍 Solutions Gorilla's goal is to provide information about the platform that enables customers to deploy their applications and projects quickly and easily. It offers a four-week program to launch a platform including self-service capabilities, infrastructure setup, and security tooling. Their platform is based on cloud-native and open-source technologies.",
     technologies: ["Reactjs", "Tailwind", "Vercel"],
     height: "420",
     githubLink: "https://github.com/mhshuvoalways/solutions-gorilla",

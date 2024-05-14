@@ -1,11 +1,12 @@
-import { useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import GithubIcon from "../public/icons/github.svg";
+import Image from "next/image";
+import { useState } from "react";
 import ExternalLinkIcon from "../public/icons/external-link.svg";
+import GithubIcon from "../public/icons/github.svg";
 
 const ProjectCard = ({
   image,
+  type,
   title,
   description,
   technologies,
@@ -42,6 +43,9 @@ const ProjectCard = ({
           }}
         />
       </div>
+      <p className="text-gray-500 font-semibold mt-2 uppercase text-sm">
+        {type}
+      </p>
       <p className="text3 tracking-wide font-normal mt-2">{title}</p>
       <p className="text-gray-400 font-normal mt-2">{description}</p>
       <div className="flex items-center gap-2 text-gray-400 font-normal mt-5 flex-wrap">
