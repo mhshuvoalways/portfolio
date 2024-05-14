@@ -15,6 +15,7 @@ import MathPlus from "./public/projects/mathplus.png";
 import PasswordVault from "./public/projects/passwordvault.png";
 import Polling from "./public/projects/polling.jpg";
 import Shopmate from "./public/projects/shopmate.png";
+import Solutiongorilla from "./public/projects/solutiongorilla.png";
 import Spaymart from "./public/projects/spaymart.png";
 import SuperbInfo from "./public/projects/superb-info.png";
 import TicTacToe from "./public/projects/tic-tac-toe.png";
@@ -80,38 +81,6 @@ const Projects = [
     webLink: "",
   },
   {
-    id: "Traveling",
-    type: "fullstack",
-    image: Traveling,
-    title: "Travel Booking Web Application ",
-    description:
-      "This application allows users to browse available travel dates, book them, make payments via PayPal, and leave reviews.🚌 The application is built using Next.js, Node.js, and MongoDB. This document provides an overview of the application's features, installation instructions, and usage guidelines.",
-    technologies: [
-      "Nextjs",
-      "Tailwind",
-      "Expressjs",
-      "MongoDB",
-      "Cloudinary",
-      "render",
-      "Netlify",
-    ],
-    height: "380",
-    githubLink: "https://github.com/mhshuvoalways/traveling-app",
-    webLink: "https://traveling-mhs.netlify.app",
-  },
-  {
-    id: "MyFates",
-    type: "fullstack",
-    image: MyFates,
-    title: "MyFates",
-    description:
-      "MyFates is a Japanese-Korean self empowering service that was made to give deeper understanding about oneself. Myfates uses traditional horoscope and psychological methods to give maximum insight about oneself.🙆‍♂️",
-    technologies: ["Nextjs", "Nodejs", "Tailwind", "AWS", "CICD", "Nginx"],
-    height: "1500",
-    githubLink: "https://github.com/mhshuvoalways/myfates-web-app-client",
-    webLink: "https://myfates.com",
-  },
-  {
     id: "DaringPage",
     type: "fullstack",
     image: DaringPage,
@@ -129,6 +98,50 @@ const Projects = [
     height: "190",
     githubLink: "https://github.com/mhshuvoalways/blog-app-nextjs",
     webLink: "https://daringpage.vercel.app",
+  },
+  {
+    id: "Traveling",
+    type: "fullstack",
+    image: Traveling,
+    title: "Travel Booking Web Application",
+    description:
+      "This application allows users to browse available travel dates, book them, make payments via PayPal, and leave reviews.🚌 The application is built using Next.js, Node.js, and MongoDB. This document provides an overview of the application's features, installation instructions, and usage guidelines.",
+    technologies: [
+      "Nextjs",
+      "Tailwind",
+      "Expressjs",
+      "MongoDB",
+      "Cloudinary",
+      "render",
+      "Netlify",
+    ],
+    height: "380",
+    githubLink: "https://github.com/mhshuvoalways/traveling-app",
+    webLink: "https://traveling-mhs.netlify.app",
+  },
+  {
+    id: "Solutiongorilla",
+    type: "fullstack",
+    image: Solutiongorilla,
+    title: "Simplifying Platform Engineering with Cloud Native Solutions",
+    description:
+      "Solutions Gorilla's goal is to provide a platform that enables customers to deploy their applications and projects quickly and easily. It offers a four-week program to launch a platform including self-service capabilities, infrastructure setup, and security tooling. Their platform is based on cloud-native and open-source technologies.",
+    technologies: ["Reactjs", "Tailwind", "Vercel"],
+    height: "420",
+    githubLink: "https://github.com/mhshuvoalways/solutions-gorilla",
+    webLink: "https://solutionsgorilla.com",
+  },
+  {
+    id: "MyFates",
+    type: "fullstack",
+    image: MyFates,
+    title: "MyFates",
+    description:
+      "MyFates is a Japanese-Korean self empowering service that was made to give deeper understanding about oneself. Myfates uses traditional horoscope and psychological methods to give maximum insight about oneself.🙆‍♂️",
+    technologies: ["Nextjs", "Nodejs", "Tailwind", "AWS", "CICD", "Nginx"],
+    height: "1500",
+    githubLink: "https://github.com/mhshuvoalways/myfates-web-app-client",
+    webLink: "https://myfates.com",
   },
   {
     id: "HorseRidingTrainingWebsite",
