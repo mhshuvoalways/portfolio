@@ -1,6 +1,4 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
-import ExternalLinkIcon from "../public/icons/external-link.svg";
 
 const BlogCard = ({ img }) => {
   return (
@@ -12,15 +10,6 @@ const BlogCard = ({ img }) => {
         width={500}
         height={300}
       />
-      <motion.button
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="mt-4"
-      >
-        <a href="https://fiverr.com/mhshuvoit" target="_blank">
-          <Image src={ExternalLinkIcon} alt="Icon" />
-        </a>
-      </motion.button>
     </div>
   );
 };

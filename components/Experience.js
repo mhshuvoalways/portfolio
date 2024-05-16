@@ -18,13 +18,7 @@ const Experience = () => {
         <Fade right>
           <div className="w-full sm:w-6/12">
             <div className="text2 flex gap-5">
-              <a
-                href="https://www.fiverr.com/mhshuvoit"
-                target="_blank"
-                className="underline text-green-500"
-              >
-                Fiverr
-              </a>
+              <p className="text-green-500">Fiverr</p>
               <p>-</p>
               <p>Web & Mobile Application Developer</p>
             </div>
