@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Fade } from "react-reveal";
 import { Element } from "react-scroll";
-import MyImage from "../public/mhshuvoalways.jpg";
+import MyImage from "../public/mhshuvo.png";
 
 function Intro() {
   return (
