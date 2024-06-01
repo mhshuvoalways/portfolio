@@ -93,6 +93,7 @@
   }
   .animate-mypicture {
     animation: mypicture 5s ease-in-out infinite;
+    @apply border-8 border-[#5ce1e6]
   }
   ::-webkit-scrollbar {
     width: 8px;
