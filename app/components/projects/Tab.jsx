@@ -14,7 +14,7 @@ const Tab = ({ current, currentHandler, projectDB }) => {
             }
             onClick={() => currentHandler(el)}
           >
-            <p className="text-primary text-base sm:text3 capitalize">{el}</p>
+            <p className="text-primary font-medium capitalize">{el}</p>
             <small className="bg-primary text-white rounded-md text-xs h-5 w-5 flex justify-center items-center">
               {projectDB.length}
             </small>
@@ -22,7 +22,7 @@ const Tab = ({ current, currentHandler, projectDB }) => {
         ) : (
           <p
             key={el}
-            className={`text-primary text-base sm:text3 px-2 py-1 cursor-pointer capitalize ${
+            className={`text-primary font-medium px-2 py-1 cursor-pointer capitalize ${
               current === el && "border-b-4 border-primary rounded-full"
             }`}
             onClick={() => currentHandler(el)}

@@ -23,8 +23,8 @@ const Experience = () => {
           <p className="mt-2 lg:hidden block text-gray-400">
             AUG 2021 - CURRENT
           </p>
-          <div className="mt-10 text-gray-400">
-            <p className="text-lg">
+          <div className="mt-10 text-gray-400 text3">
+            <p>
               <strong>🏆 Achievement Unlocked:</strong> Top Rated Freelancer 👑
             </p>
             <br />
