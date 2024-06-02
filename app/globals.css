@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text1 {
+    @apply text-2xl sm:text-5xl;
+  }
+  .text2 {
+    @apply text-xl sm:text-2xl;
+  }
+  .text3 {
+    @apply text-lg sm:text-xl;
+  }
+
+  .textGradient {
+    background-image: linear-gradient(
+      to right,
+      theme("colors.primary"),
+      theme("colors.secondary"),
+      theme("colors.tertiary")
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bgGradient {
+    background-image: linear-gradient(
+      to right,
+      theme("colors.primary"),
+      theme("colors.secondary"),
+      theme("colors.tertiary")
+    );
+  }
+
+  @keyframes wave {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(-25deg);
+    }
+    40% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(-15deg);
+    }
+    80% {
+      transform: rotate(5deg);
+    }
+  }
+  .animate-wave {
+    animation: wave 2s ease-in-out infinite;
+  }
+
+  @keyframes mypicture {
+    0%,
+    100% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+  }
+  .animate-mypicture {
+    animation: mypicture 5s ease-in-out infinite;
+    @apply border-8 border-primary;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+}
