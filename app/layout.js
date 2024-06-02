@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content={`https://mhshuvoalways.vercel.app`} />
         <meta
           property="og:image"
-          content={`https://mhshuvoalways.vercel.app/social_image.png`}
+          content={`https://mhshuvoalways.vercel.app/images/social_image.png`}
         />
         <meta property="og:image:alt" content="MH Shuvo" />
 
@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content={`https://mhshuvoalways.vercel.app/social_image.png`}
+          content={`https://mhshuvoalways.vercel.app/images/social_image.png`}
         />
         <meta name="twitter:image:alt" content="MH Shuvo" />
 
