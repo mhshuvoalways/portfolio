@@ -24,7 +24,7 @@ const items = [
 
 const Header = () => {
   return (
-    <header className="border-gray-800 border px-5 py-3 rounded-full flex justify-between items-center">
+    <header className="border-gray-800 border px-5 py-3 rounded-full flex justify-between items-center sticky top-0 z-10 bg-current">
       <Link href="/">
         <Image
           src={MyImage}
