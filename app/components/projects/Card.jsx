@@ -60,18 +60,24 @@ const ProjectCard = ({
       </div>
       <div className="flex items-center gap-10 flex-wrap justify-center mt-8">
         {githubLink && (
-          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a href={githubLink} target="_blank">
-              <i className="fa-brands fa-github" />
-            </a>
-          </motion.button>
+          <motion.a
+            href={githubLink}
+            target="_blank"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <i className="fa-brands fa-github text-gray-200 text-2xl" />
+          </motion.a>
         )}
         {webLink && (
-          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a href={webLink} target="_blank">
-              <i className="fa-brands fa-github" />
-            </a>
-          </motion.button>
+          <motion.a
+            href={webLink}
+            target="_blank"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <i className="fa-solid fa-arrow-up-right-from-square text-gray-200 text-2xl" />
+          </motion.a>
         )}
       </div>
     </motion.div>

@@ -1,8 +1,10 @@
-const Footer = ({ bottom }) => {
+const Footer = ({ bottom, bottomCondition }) => {
   return (
     <footer
-      className={`mt-20 !overflow-x-hidden ${
-        bottom &&
+      className={`mt-20 ${
+        bottom && "container w-11/12 xl:w-8/12 mx-auto fixed bottom-0 bg-black"
+      } ${
+        bottomCondition &&
         "container w-11/12 xl:w-8/12 mx-auto block sm:fixed bottom-0 bg-black"
       }`}
     >

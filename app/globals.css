@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply overflow-x-hidden;
+  }
+}
+
 @layer components {
   .text1 {
     @apply text-2xl sm:text-5xl;

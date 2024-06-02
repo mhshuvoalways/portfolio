@@ -3,7 +3,7 @@ import Experience from "../components/experience";
 
 const page = () => {
   return (
-    <Main bottom>
+    <Main bottomCondition>
       <div className="mt-10 lg:mt-20">
         <Experience />
       </div>

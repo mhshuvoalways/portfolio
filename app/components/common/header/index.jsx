@@ -32,14 +32,14 @@ const Header = () => {
           className="w-11 h-11 rounded-full cursor-pointer border-primary border-2"
         />
       </Link>
-      <div className="md:flex justify-between items-center gap-6 font-semibold text-primary hidden">
+      <div className="sm:flex justify-between items-center gap-6 font-semibold text-primary hidden">
         {items.map((el) => (
           <Link href={el.url} key={el.name}>
             {el.name}
           </Link>
         ))}
       </div>
-      <div className="block md:hidden">
+      <div className="block sm:hidden">
         <DropDown btnIcon={"fa-solid fa-bars"} items={items} />
       </div>
     </header>

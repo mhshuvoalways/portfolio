@@ -1,19 +1,18 @@
 import Footer from "@/app/components/common/footer";
 import Header from "@/app/components/common/header";
 
-const MainComponent = ({ children, bottom }) => {
+const MainComponent = ({ children, bottom, bottomCondition }) => {
   return (
     <div
-      className="bg-cover bg-no-repeat bg-fixed h-screen"
+      className="bg-cover bg-center bg-no-repeat bg-fixed min-h-screen"
       style={{
         backgroundImage: "url(/images/bg.svg)",
       }}
     >
-      <div className="container w-11/12 xl:w-8/12 mx-auto pt-10 min-h-screen">
+      <div className="container w-11/12 xl:w-8/12 mx-auto pt-10">
         <Header />
-        <div className=""> {children}</div>
-
-        <Footer bottom={bottom} />
+        {children}
+        <Footer bottom={bottom} bottomCondition={bottomCondition} />
       </div>
     </div>
   );

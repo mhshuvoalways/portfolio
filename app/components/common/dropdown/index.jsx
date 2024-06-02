@@ -26,7 +26,7 @@ export default function HeadLessUI({ btnIcon, items }) {
           className={"z-10 bg-gray-900 py-5 px-10 shadow rounded-xl space-y-5"}
         >
           {items.map((el) => (
-            <div key={el.id}>
+            <div key={el.name}>
               <MenuItem>
                 <Link
                   href={el.url}

@@ -69,7 +69,7 @@ const page = () => {
                 />
               </div>
               <button className="bgGradient px-5 py-3 rounded-lg hover:rounded-md transition-all font-semibold">
-                Subscribe
+                Submit
               </button>
             </div>
             <p className="text-gray-400 mt-3 text-sm">
