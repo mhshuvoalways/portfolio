@@ -23,6 +23,10 @@ const items = [
     name: "Experience",
     url: "/experience",
   },
+  {
+    name: "Contact",
+    url: "/contact",
+  },
 ];
 
 const Header = () => {

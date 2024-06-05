@@ -19,6 +19,10 @@
     @apply text-lg sm:text-xl;
   }
 
+  .btn {
+    @apply bgGradient px-10 py-3 rounded-lg hover:rounded-md transition-all font-semibold;
+  }
+
   .textGradient {
     background-image: linear-gradient(
       to right,

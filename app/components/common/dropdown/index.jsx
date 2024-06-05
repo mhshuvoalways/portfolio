@@ -23,7 +23,7 @@ export default function HeadLessUI({ btnIcon, items }) {
       >
         <MenuItems
           anchor="bottom end"
-          className={"z-10 bg-gray-900 py-5 px-10 shadow rounded-xl space-y-5"}
+          className={"z-20 bg-gray-900 py-5 px-10 shadow rounded-xl space-y-5"}
         >
           {items.map((el) => (
             <div key={el.name}>

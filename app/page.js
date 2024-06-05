@@ -58,24 +58,11 @@ const page = () => {
             <br />
             {`Send your email here to get quick reply👇`}
           </p>
-          <div>
-            <div className="flex items-center gap-2">
-              <div className="w-full sm:w-auto flex items-center gap-2 border border-gray-800 rounded-lg text-gray-300 p-3">
-                <i className="fa-solid fa-envelope"></i>
-                <input
-                  type="text"
-                  className="outline-0 bg-transparent w-full"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <button className="bgGradient px-5 py-3 rounded-lg hover:rounded-md transition-all font-semibold">
-                Submit
-              </button>
-            </div>
-            <p className="text-gray-400 mt-3 text-sm">
-              No Spamming. No Hanky Panky. Just Focused Contents
-            </p>
-          </div>
+          <button>
+            <Link className="btn" href={"/contact"}>
+              Contact
+            </Link>
+          </button>
         </div>
         <Image
           src={MyImage}
