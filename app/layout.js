@@ -61,6 +61,19 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`bg-black ${inter.className}`}>{children}</body>
+      {/* google analytics */}
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.MEASUREMENT_ID}`}
+      />
+      <script id="google-analytics" strategy="afterInteractive">
+        {`
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', '${process.env.MEASUREMENT_ID}');
+        `}
+      </script>
     </html>
   );
 }
