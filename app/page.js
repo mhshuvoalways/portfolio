@@ -28,7 +28,7 @@ const social = [
 
 const page = () => {
   return (
-    <Main>
+    <Main bottomCondition={true}>
       <div className="mt-10 lg:mt-20 flex items-center justify-between gap-10 flex-col-reverse lg:flex-row">
         <div className="space-y-8 w-11/12 lg:w-7/12">
           <div className="flex items-center gap-2">
@@ -54,10 +54,8 @@ const page = () => {
             <br />
             <br />
             {`🎯Let's work together to elevate your applications to new heights. Reach out to me via DM, and let's discuss how we can collaborate to achieve your goals. Your application transformation is just one click away!`}
-            <br />
-            <br />
-            {`Send your email here to get quick reply👇`}
           </p>
+          <br />
           <button>
             <Link className="btn" href={"/contact"}>
               Contact
