@@ -22,9 +22,9 @@ app.post("/api", (req, res) => {
         </div>`;
   resend.emails
     .send({
-      from: "MH Shuvo <noreply@mhshuvoalways.xyz>",
-      to: email,
-      subject: `${name} will contact you soon`,
+      from: "Portfolio <noreply@mhshuvoalways.xyz>",
+      to: "mhshuvoalways@gmail.com",
+      subject: `A message from my portfolio!`,
       html: messageHtml,
     })
     .then(() => {
