@@ -26,8 +26,8 @@
   .textGradient {
     background-image: linear-gradient(
       to right,
-      theme("colors.primary"),
       theme("colors.secondary"),
+      theme("colors.primary"),
       theme("colors.tertiary")
     );
     background-clip: text;
@@ -36,8 +36,8 @@
   .bgGradient {
     background-image: linear-gradient(
       to right,
-      theme("colors.primary"),
       theme("colors.secondary"),
+      theme("colors.primary"),
       theme("colors.tertiary")
     );
   }
