@@ -4,7 +4,7 @@ import { Fade, Zoom } from "react-awesome-reveal";
 
 const Experience = () => {
   return (
-    <div className="flex justify-start lg:justify-center gap-10 flex-wrap lg:flex-nowrap item">
+    <div className="flex justify-start lg:justify-center gap-10 flex-wrap lg:flex-nowrap">
       <Fade direction="left">
         <p className="text-right hidden lg:block mt-1 text-nowrap text-gray-400">
           AUG 2021 - CURRENT

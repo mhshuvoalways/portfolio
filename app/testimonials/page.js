@@ -69,7 +69,7 @@ const page = () => {
           {Array(21)
             .fill()
             .map((_el, index) => (
-              <Card key={index.id} img={index + 1} />
+              <Card key={index} img={index + 1} />
             ))}
         </Slider>
       </div>
