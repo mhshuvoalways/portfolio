@@ -7,10 +7,10 @@ const Loading = () => {
       <div className="fixed inset-0 flex justify-center items-center z-50 text-center">
         <div>
           <Image src={LoadingIcon} alt="" />
-          <p className="font-semibold text2">Please wait...</p>
+          <p className="font-semibold text2 text-white">Please wait...</p>
         </div>
       </div>
-      <p className="fixed bg-gray-800 inset-0 opacity-90" />
+      <p className="fixed bg-gray-800 inset-0 opacity-90 z-40" />
     </div>
   );
 };
