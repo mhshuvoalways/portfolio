@@ -20,7 +20,7 @@
   }
 
   .btn {
-    @apply bgGradient px-10 py-3 rounded-lg hover:rounded-md transition-all font-semibold;
+    @apply bgGradient px-10 py-3 rounded-lg hover:rounded-md transition-all font-semibold text-black;
   }
 
   .textGradient {

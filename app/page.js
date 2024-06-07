@@ -5,24 +5,29 @@ import Link from "next/link";
 
 const social = [
   {
+    name: "LinkedIn",
     icon: "fa-brands fa-linkedin",
     url: "https://www.linkedin.com/in/mhshuvoalways",
   },
   {
+    name: "Github",
     icon: "fa-brands fa-github",
     url: "https://www.github.com/mhshuvoalways",
   },
   {
-    icon: "fa-brands fa-facebook",
-    url: "https://www.linkedin.com/in/mhshuvoalways",
-  },
-  {
+    name: "Email",
     icon: "fa-solid fa-envelope",
     url: "https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mhshuvoalways@gmail.com",
   },
   {
-    icon: "fa-brands fa-whatsapp",
-    url: "https://wa.me/+8801712892969",
+    name: "Fiverr",
+    icon: "fi",
+    url: "https://www.fiverr.com/mhshuvoit",
+  },
+  {
+    name: "Facebook",
+    icon: "fa-brands fa-facebook",
+    url: "https://www.facebook.com/mhshuvoalways",
   },
 ];
 
@@ -41,16 +46,26 @@ const page = () => {
           </p>
           <div className="flex items-center gap-5 text-gray-400 text2">
             {social.map((el) => (
-              <Link href={el.url} target="blank" key={el.icon}>
-                <i className={el.icon}></i>
+              <Link href={el.url} target="blank" key={el.name} title={el.name}>
+                {el.name === "Fiverr" ? (
+                  <p
+                    className="bg-gray-400 text-gray-900 cursor-pointer border-2 border-gray-400 rounded-full w-6 h-6 flex items-center justify-center text-sm font-black"
+                    title={social[3].name}
+                  >
+                    {el.icon}
+                  </p>
+                ) : (
+                  <i className={el.icon}></i>
+                )}
               </Link>
             ))}
           </div>
           <p className="text-gray-400 text3 font-medium tracking-wide">
             🚀As an expert in JavaScript, Reactjs, React Native, Nextjs, and
-            Nodejs, I specialize in building Web & Mobile Applications that not
-            only look great but also deliver exceptional scalability,
-            availability, usability, maintainability, reliability, and security.
+            Nodejs, Expressjs, GraphQL and AWS, I specialize in building Web &
+            Mobile Applications that not only look great but also deliver
+            exceptional scalability, availability, usability, maintainability,
+            reliability, and security.
             <br />
             <br />
             {`🎯Let's work together to elevate your applications to new heights. Reach out to me via DM, and let's discuss how we can collaborate to achieve your goals. Your application transformation is just one click away!`}
