@@ -72,8 +72,13 @@ const page = () => {
           </p>
           <br />
           <button>
-            <Link className="btn" href={"/contact"}>
-              Contact
+            <Link
+              className="btn"
+              href={
+                "https://calendly.com/mhshuvoalways/support-for-building-website"
+              }
+            >
+              Book a call
             </Link>
           </button>
         </div>
