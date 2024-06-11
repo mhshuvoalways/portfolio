@@ -77,8 +77,9 @@ const page = () => {
               href={
                 "https://calendly.com/mhshuvoalways/support-for-building-website"
               }
+              target="blank"
             >
-              Book a call
+              Book a Call
             </Link>
           </button>
         </div>
