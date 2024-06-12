@@ -1,4 +1,4 @@
-const tabs = ["all", "frontend", "extention", "contribute"];
+const tabs = ["all", "full stack", "frontend", "extention", "contribute"];
 
 const Tab = ({ current, currentHandler, projectDB }) => {
   return (
@@ -25,7 +25,7 @@ const Tab = ({ current, currentHandler, projectDB }) => {
             className={`text-primary font-medium px-2 py-1 cursor-pointer capitalize ${
               current === el && "border-b-4 border-primary rounded-full"
             }`}
-            onClick={() => currentHandler(el)}
+            onClick={() => currentHandler(el.replace(/\s/g, ""))}
           >
             {el}
           </p>

@@ -16,6 +16,7 @@
     "react": "^18",
     "react-awesome-reveal": "^4.2.11",
     "react-dom": "^18",
+    "react-flip-move": "^3.0.5",
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
     "slick-carousel": "^1.8.1"
