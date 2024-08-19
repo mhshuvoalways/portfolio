@@ -13,6 +13,7 @@ import HorseRidingTrainingWebsite from "./images/projects/horse-riding-training-
 import Keflemariam from "./images/projects/keflemariam.png";
 import MathPlus from "./images/projects/mathplus.png";
 import PasswordVault from "./images/projects/passwordvault.png";
+import PennayCalc from "./images/projects/pennycalc.png";
 import Polling from "./images/projects/polling.jpg";
 import Shopmate from "./images/projects/shopmate.png";
 import Solutiongorilla from "./images/projects/solutiongorilla.png";
@@ -25,12 +26,36 @@ import WeatherWithDom from "./images/projects/weather-with-dom.png";
 
 const Projects = [
   {
+    id: "PennayCalc",
+    type: "fullstack",
+    image: PennayCalc,
+    title: "PennyCalc | Money Management App",
+    description:
+      "This app is designed to help users track and manage their finances efficiently. The app provides various features to monitor income, expenses, savings, and budget, along with detailed breakdowns and visual charts for better financial planning.",
+    technologies: [
+      "Nextjs",
+      "React",
+      "TypeScript",
+      "Redux",
+      "Tailwind",
+      "Expressjs",
+      "MongoDB",
+      "Multer",
+      "Cloudinary",
+      "SMTP server",
+      "Vercel",
+    ],
+    height: "150",
+    githubLink: "https://github.com/mhshuvoalways/money-management-app",
+    webLink: "https://pennycalc.vercel.app/",
+  },
+  {
     id: "EShop",
     type: "fullstack",
     image: EShop,
     title: "e-Shop Multi Vendor",
     description:
-      "E-Shop is a functionally oriented multi vendor ecommerce application where users can get almost all the necessary facilities. There are 2 types of payment methods available such as PayPal and Razorpay",
+      "E-Shop is a functionally oriented multi vendor ecommerce application where users can get almost all the necessary facilities. There are 2 types of payment methods available such as PayPal and Razorpay.",
     technologies: [
       "React",
       "Redux",
