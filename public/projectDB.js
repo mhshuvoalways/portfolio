@@ -36,7 +36,7 @@ const Projects = [
       "Nextjs",
       "React",
       "TypeScript",
-      "Redux",
+      "Redux toolkit",
       "Tailwind",
       "Expressjs",
       "MongoDB",
