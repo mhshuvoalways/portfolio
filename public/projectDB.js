@@ -1,23 +1,17 @@
 import MyFates from "./images/projects/business-webiste-template.png";
 import Costnip from "./images/projects/costnip.png";
 import CourseTemplateReact from "./images/projects/course-template-react.png";
-import Cude from "./images/projects/cude.png";
 import DaringPage from "./images/projects/daringpage.png";
 import EShop from "./images/projects/eshop.png";
-import EssayContestPage from "./images/projects/essaycontentlp.png";
-import EssayContest from "./images/projects/essaycontestapp.png";
 import Extention from "./images/projects/extension.png";
-import FlushTune from "./images/projects/flush-tunes.png";
 import HealthCareTemplate from "./images/projects/health-care-template.png";
 import HorseRidingTrainingWebsite from "./images/projects/horse-riding-training-website.png";
-import Keflemariam from "./images/projects/keflemariam.png";
 import MathPlus from "./images/projects/mathplus.png";
 import PasswordVault from "./images/projects/passwordvault.png";
 import PennayCalc from "./images/projects/pennycalc.png";
 import Polling from "./images/projects/polling.jpg";
 import Shopmate from "./images/projects/shopmate.png";
 import Solutiongorilla from "./images/projects/solutiongorilla.png";
-import Spaymart from "./images/projects/spaymart.png";
 import SuperbInfo from "./images/projects/superb-info.png";
 import TicTacToe from "./images/projects/tic-tac-toe.png";
 import TodoList from "./images/projects/todolist.jpg";
@@ -90,7 +84,7 @@ const Projects = [
     ],
     height: "480",
     githubLink: "https://github.com/mhshuvoalways/password-manager-app",
-    webLink: "https://password-manger-mhs.vercel.app",
+    webLink: "https://mypasswordvault.vercel.app",
   },
   {
     id: "Extention",
@@ -141,8 +135,8 @@ const Projects = [
       "Netlify",
     ],
     height: "380",
-    githubLink: "https://github.com/mhshuvoalways/traveling-app",
-    webLink: "https://traveling-mhs.netlify.app",
+    githubLink: "https://github.com/mhshuvoalways/travel-booking-app",
+    webLink: "https://travelbookingclient.vercel.app",
   },
   {
     id: "Solutiongorilla",
@@ -153,7 +147,7 @@ const Projects = [
       "🦍 Solutions Gorilla's goal is to provide information about the platform that enables customers to deploy their applications and projects quickly and easily. It offers a four-week program to launch a platform including self-service capabilities, infrastructure setup, and security tooling. Their platform is based on cloud-native and open-source technologies.",
     technologies: ["Reactjs", "Tailwind", "Vercel"],
     height: "420",
-    githubLink: "https://github.com/mhshuvoalways/solutions-gorilla",
+    githubLink: "https://github.com/mhshuvoalways/solutions-gorilla-website",
     webLink: "https://solutionsgorilla.com",
   },
   {
@@ -164,7 +158,7 @@ const Projects = [
     description:
       "MyFates is a Japanese-Korean self empowering service that was made to give deeper understanding about oneself. Myfates uses traditional horoscope and psychological methods to give maximum insight about oneself.🙆‍♂️",
     technologies: ["Nextjs", "Nodejs", "Tailwind", "AWS", "CICD", "Nginx"],
-    height: "1500",
+    height: "1450",
     githubLink: "https://github.com/mhshuvoalways/myfates-web-app-client",
     webLink: "https://myfates.com",
   },
@@ -176,22 +170,10 @@ const Projects = [
     description:
       "💻This is a beautiful horse riding training web landing page🔥",
     technologies: ["Nextjs", "Tailwind", "Vercel"],
-    height: "2270",
+    height: "2120",
     githubLink:
       "https://github.com/mhshuvoalways/horse-riding-training-website",
     webLink: "https://horse-riding-training-website.vercel.app",
-  },
-  {
-    id: "FlushTune",
-    type: "frontend",
-    image: FlushTune,
-    title: "A revolutionary device designed",
-    description:
-      "Shitz N Giggles is a revolutionary device designed to enhance your flushing experience. It seamlessly blends cutting-edge technology with unparalleled luxury, ensuring that every visit to the bathroom is nothing short of extraordinary. This document outlines the key features and functionalities of Shitz N Giggles, addressing common questions and providing guidance on its usage. 😀",
-    technologies: ["Nextjs", "Tailwind", "Vercel"],
-    height: "960",
-    githubLink: "https://github.com/mhshuvoalways/flush-tunes",
-    webLink: "https://flush-tunes.vercel.app/",
   },
   {
     id: "CourseTemplateReact",
@@ -235,42 +217,7 @@ const Projects = [
     ],
     height: "130",
     githubLink: "https://github.com/mhshuvoalways/math-plus-for-kids",
-    webLink: "https://math-plus-app.vercel.app",
-  },
-  {
-    id: "EssayContest",
-    type: "fullstack",
-    image: EssayContest,
-    title: "Essay Contest",
-    description:
-      "Student can submit their 3 essays every quarter to pay with Razorpay. The teacher gives a mark and when the result publishes, student can download their certificate. Winners are announced as winners by email and they get an award. They can also download the certificate for the award.",
-    technologies: [
-      "React",
-      "Redux",
-      "Tailwind",
-      "Expressjs",
-      "MongoDB",
-      "SMTP server",
-      "Netlify",
-      "Render",
-    ],
-    height: "",
-    githubLink: "https://github.com/mhshuvoalways/essay-contest-of-students",
-    webLink: "https://www.monomousumicontest.com",
-  },
-
-  {
-    id: "Spaymart",
-    type: "frontend",
-    image: Spaymart,
-    title: "Spaymart Animal Saving Template",
-    description:
-      "This design is inspired by SPAYMART with reactjs. SPAYMART is an animal welfare organization established to end the unnecessary killing of animals🐈",
-    technologies: ["React", "Tailwind", "Netlify"],
-    height: "1510",
-    githubLink:
-      "https://github.com/mhshuvoalways/animals-saving-react-template",
-    webLink: "https://spaymart.netlify.app",
+    webLink: "https://mathplus.vercel.app",
   },
   {
     id: "SuperbInfo",
@@ -320,30 +267,6 @@ const Projects = [
     webLink: "https://shopmate-mhs.netlify.app",
   },
   {
-    id: "EssayContestPage",
-    type: "frontend",
-    image: EssayContestPage,
-    title: "Essay Contest Winners",
-    description:
-      "This is a page for essay contest students. Here they can see Awards, Prizes, Magazines etc.",
-    technologies: ["React", "Netlify", "Render"],
-    height: "1910",
-    githubLink: "https://github.com/mhshuvoalways/essay-contest-winner-page",
-    webLink: "https://essay.monomousumicontest.com",
-  },
-  {
-    id: "Keflemariam",
-    type: "frontend",
-    image: Keflemariam,
-    title: "Keflemariam's Portfolio",
-    description:
-      "It was designed from Figma to HTML and then reactjs. Clean and good looking design💻",
-    technologies: ["React", "Netlify", "Figma"],
-    height: "670",
-    githubLink: "https://github.com/mhshuvoalways/client-portfolio",
-    webLink: "https://keflemariam.netlify.app",
-  },
-  {
     id: "WeatherWithDom",
     type: "frontend",
     image: WeatherWithDom,
@@ -353,17 +276,6 @@ const Projects = [
     height: "",
     githubLink: "https://github.com/mhshuvoalways/weather-app-with-dom",
     webLink: "https://weather-with-dom.vercel.app",
-  },
-  {
-    id: "Cude",
-    type: "frontend",
-    image: Cude,
-    title: "Cude",
-    description: "Landing page with html, css, jquery plugins 💻",
-    technologies: ["HTML", "CSS", "jQuery", "Netlify"],
-    height: "1000",
-    githubLink: "https://github.com/mhshuvoalways/cude-landing-page",
-    webLink: "https://cude-page.netlify.app",
   },
   {
     id: "Polling",

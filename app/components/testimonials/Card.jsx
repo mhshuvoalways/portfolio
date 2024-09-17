@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Card = ({ img }) => {
   return (
-    <div className="bg-gray-900 p-4 w-full md:w-[95%] mx-auto rounded-md shadow-md relative">
+    <div className="bg-gray-900 p-4 rounded-md shadow-md border border-primary">
       <Image
-        src={`/images/testimonials/${img}.png`}
-        alt={img}
-        className="h-auto sm:h-48 rounded-md"
-        width={500}
-        height={300}
+        src={img}
+        alt={"Photo"}
+        className="w-full h-full rounded-md"
+        width={700}
+        height={700}
       />
     </div>
   );

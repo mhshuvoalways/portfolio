@@ -16,12 +16,12 @@ const items = [
     url: "/projects",
   },
   {
-    name: "Testimonials",
-    url: "/testimonials",
+    name: "Reviews",
+    url: "/reviews",
   },
   {
-    name: "Experience",
-    url: "/experience",
+    name: "Experiences",
+    url: "/experiences",
   },
   {
     name: "Contact",
