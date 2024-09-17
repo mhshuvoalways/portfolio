@@ -4,7 +4,7 @@ import Loading from "@/app/components/common/loading";
 import Main from "@/app/components/common/main";
 import Tostify from "@/app/components/common/tostify";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
@@ -40,13 +40,6 @@ const Contact = () => {
         setLoading("fail");
       });
   };
-
-  useEffect(() => {
-    axios
-      .get(process.env.BACKEND_URL)
-      .then(() => {})
-      .catch(() => {});
-  }, []);
 
   return (
     <Main bottom={true}>
