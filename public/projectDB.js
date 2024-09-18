@@ -156,11 +156,11 @@ const Projects = [
     image: MyFates,
     title: "MyFates",
     description:
-      "MyFates is a Japanese-Korean self empowering service that was made to give deeper understanding about oneself. Myfates uses traditional horoscope and psychological methods to give maximum insight about oneself.🙆‍♂️",
+      "This website helps you discover your future 🔮. Get personal insights on life, love ❤️, and career 💼. Using ancient wisdom 🧠, it guides you to make better choices and unlock your full potential 🚀",
     technologies: ["Nextjs", "Nodejs", "Tailwind", "AWS", "CICD", "Nginx"],
     height: "1450",
-    githubLink: "https://github.com/mhshuvoalways/myfates-web-app-client",
-    webLink: "https://myfates.com",
+    githubLink: "https://github.com/mhshuvoalways/myfates-web-app",
+    webLink: "https://myfates.vercel.app",
   },
   {
     id: "HorseRidingTrainingWebsite",

@@ -9,6 +9,7 @@ const Card = ({ img }) => {
         className="w-full h-full rounded-md"
         width={700}
         height={700}
+        loading="eager"
       />
     </div>
   );

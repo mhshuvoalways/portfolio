@@ -12,4 +12,4 @@ Software Developer | Web & Mobile Application Developer
 
 <br/>
 
-My portfolio lives at http://mhshuvoalways.xyz
+My portfolio lives at http://mhshuvo.com
