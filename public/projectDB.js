@@ -205,19 +205,11 @@ const Projects = [
     image: MathPlus,
     title: "Math Plus",
     description:
-      "If you try to help your kids do better in Math by supporting them with their homework and finding complementary resources to help them grow Mathematically, this application is for you. This application will help to increase your child's math skills with joy.",
-    technologies: [
-      "React",
-      "BEM",
-      "Expressjs",
-      "MongoDB",
-      "Figma",
-      "Netlify",
-      "Cyclic",
-    ],
+      "➕Math+ is a free tool designed to help K-5 children improve their math skills through fun and interactive drills. This app focuses on basic algebra operations such as addition, subtraction, multiplication, and division. It’s perfect for enhancing your child's math abilities and identifying areas where they might need extra help.➕",
+    technologies: ["React", "BEM", "Figma", "Vercel"],
     height: "130",
-    githubLink: "https://github.com/mhshuvoalways/math-plus-for-kids",
-    webLink: "https://mathplus.vercel.app",
+    githubLink: "https://github.com/mhshuvoalways/math-plus-app",
+    webLink: "https://mathplusapp.vercel.app",
   },
   {
     id: "SuperbInfo",
