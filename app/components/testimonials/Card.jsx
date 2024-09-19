@@ -7,8 +7,8 @@ const Card = ({ img }) => {
         src={img}
         alt={"Photo"}
         className="w-full h-full rounded-md"
-        width={700}
-        height={700}
+        width={1000}
+        height={1000}
         loading="eager"
       />
     </div>

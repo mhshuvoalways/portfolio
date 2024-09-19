@@ -57,7 +57,7 @@ const page = () => {
           </Link>
         </div>
         <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 justify-items-center">
-          {Array(2)
+          {Array(3)
             .fill()
             .map((_el, index) => (
               <Card
