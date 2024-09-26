@@ -23,7 +23,8 @@ const Tab = ({ current, currentHandler, projectDB }) => {
           <p
             key={el}
             className={`text-primary font-medium px-2 py-1 cursor-pointer capitalize ${
-              current === el && "border-b-4 border-primary rounded-full"
+              current === el.replace(/\s/g, "") &&
+              "border-b-4 border-primary rounded-full"
             }`}
             onClick={() => currentHandler(el.replace(/\s/g, ""))}
           >

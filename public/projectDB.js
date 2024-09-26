@@ -44,6 +44,51 @@ const Projects = [
     webLink: "https://pennycalc.vercel.app/",
   },
   {
+    id: "PasswordVault",
+    type: "fullstack",
+    image: PasswordVault,
+    title: "Password Vault",
+    description:
+      "Password vault is designed to make managing passwords effortless. Users can generate passwords and save passwords of any social media or website.",
+    technologies: [
+      "React",
+      "Vitejs",
+      "Framer-motion",
+      "Expressjs",
+      "MongoDB",
+      "Netlify",
+      "Cyclic",
+    ],
+    height: "480",
+    githubLink: "https://github.com/mhshuvoalways/password-manager-app",
+    webLink: "https://mypasswordvault.vercel.app",
+  },
+  {
+    id: "MathPlus",
+    type: "frontend",
+    image: MathPlus,
+    title: "Math Plus",
+    description:
+      "➕Math+ is a free tool designed to help K-5 children improve their math skills through fun and interactive drills. This app focuses on basic algebra operations such as addition, subtraction, multiplication, and division. It’s perfect for enhancing your child's math abilities and identifying areas where they might need extra help.➕",
+    technologies: ["React", "BEM", "Figma", "Vercel"],
+    height: "130",
+    githubLink: "https://github.com/mhshuvoalways/math-plus-app",
+    webLink: "https://mathplusapp.vercel.app",
+  },
+  {
+    id: "Extention",
+    type: "extention",
+    image: Extention,
+    title: "Auto Refresh Chrome Extension",
+    description:
+      "The Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",
+    technologies: ["Chrome", "Extension", "Reactjs"],
+    height: "50",
+    githubLink:
+      "https://github.com/mhshuvoalways/auto-refresh-chrome-extension",
+    webLink: "",
+  },
+  {
     id: "EShop",
     type: "fullstack",
     image: EShop,
@@ -65,39 +110,6 @@ const Projects = [
     height: "550",
     githubLink: "https://github.com/mhshuvoalways/multi-vendor-ecommerce",
     webLink: "https://eshop-multi-vendor.vercel.app",
-  },
-  {
-    id: "PasswordVault",
-    type: "fullstack",
-    image: PasswordVault,
-    title: "Password Vault",
-    description:
-      "Password vault is designed to make managing passwords effortless. Users can generate passwords and save passwords of any social media or website.",
-    technologies: [
-      "React",
-      "Vitejs",
-      "Framer-motion",
-      "Expressjs",
-      "MongoDB",
-      "Netlify",
-      "Cyclic",
-    ],
-    height: "480",
-    githubLink: "https://github.com/mhshuvoalways/password-manager-app",
-    webLink: "https://mypasswordvault.vercel.app",
-  },
-  {
-    id: "Extention",
-    type: "extention",
-    image: Extention,
-    title: "Auto Refresh Chrome Extension",
-    description:
-      "The Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",
-    technologies: ["Chrome", "Extension", "Reactjs"],
-    height: "50",
-    githubLink:
-      "https://github.com/mhshuvoalways/auto-refresh-chrome-extension",
-    webLink: "",
   },
   {
     id: "DaringPage",
@@ -199,18 +211,7 @@ const Projects = [
     githubLink: "https://github.com/mhshuvoalways/health-care-template",
     webLink: "https://health-care-template.netlify.app",
   },
-  {
-    id: "MathPlus",
-    type: "fullstack",
-    image: MathPlus,
-    title: "Math Plus",
-    description:
-      "➕Math+ is a free tool designed to help K-5 children improve their math skills through fun and interactive drills. This app focuses on basic algebra operations such as addition, subtraction, multiplication, and division. It’s perfect for enhancing your child's math abilities and identifying areas where they might need extra help.➕",
-    technologies: ["React", "BEM", "Figma", "Vercel"],
-    height: "130",
-    githubLink: "https://github.com/mhshuvoalways/math-plus-app",
-    webLink: "https://mathplusapp.vercel.app",
-  },
+
   {
     id: "SuperbInfo",
     type: "frontend",

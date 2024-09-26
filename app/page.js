@@ -48,14 +48,11 @@ const page = () => {
             {social.map((el) => (
               <Link href={el.url} target="blank" key={el.name} title={el.name}>
                 {el.name === "Fiverr" ? (
-                  <p
-                    className="bg-gray-400 text-gray-900 cursor-pointer border-2 border-gray-400 rounded-full w-6 h-6 flex items-center justify-center text-sm font-black"
-                    title={social[3].name}
-                  >
+                  <p className="bg-gray-400 text-gray-900 cursor-pointer border-2 border-gray-400 rounded-full w-6 h-6 flex items-center justify-center text-sm font-black">
                     {el.icon}
                   </p>
                 ) : (
-                  <i className={el.icon}></i>
+                  <i className={`w-6 h-6 text-2xl pt-0.5 ${el.icon}`}></i>
                 )}
               </Link>
             ))}

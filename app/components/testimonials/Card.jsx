@@ -6,10 +6,10 @@ const Card = ({ img }) => {
       <Image
         src={img}
         alt={"Photo"}
-        className="w-full h-full rounded-md"
+        className="w-full h-full min-w-72 rounded-md"
         width={1000}
         height={1000}
-        loading="eager"
+        loading="lazy"
       />
     </div>
   );
