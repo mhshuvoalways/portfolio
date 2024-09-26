@@ -15,16 +15,28 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* website */}
+        <meta
+          name="description"
+          content="As an expert in JavaScript, Reactjs, React Native, Nextjs, and Nodejs, I specialize in building Web & Mobile Applications that not only look great but also deliver exceptional scalability, availability, usability, maintainability, reliability, and security."
+        />
+        <meta
+          name="og:title"
+          content="MH Shuvo | Software Developer | Web & Mobile Application Developer"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://mhshuvo.com`} />
+        <meta
+          property="og:description"
+          content="As an expert in JavaScript, Reactjs, React Native, Nextjs, and Nodejs, I specialize in building Web & Mobile Applications that not only look great but also deliver exceptional scalability, availability, usability, maintainability, reliability, and security."
+        />
         <meta
           property="og:image"
           content={`https://mhshuvo.com/images/social_image.png`}
         />
-        <meta property="og:image:alt" content="MH Shuvo" />
 
         {/* twitter */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@mhshuvoalways" />
         <meta
           name="twitter:title"
           content="MH Shuvo | Software Developer | Web & Mobile Application Developer"
@@ -37,7 +49,6 @@ export default function RootLayout({ children }) {
           name="twitter:image"
           content={`https://mhshuvo.com/images/social_image.png`}
         />
-        <meta name="twitter:image:alt" content="MH Shuvo" />
 
         {/* fontawesome */}
         <link
