@@ -86,7 +86,8 @@ const Projects = [
     height: "50",
     githubLink:
       "https://github.com/mhshuvoalways/auto-refresh-chrome-extension",
-    webLink: "",
+    webLink:
+      "https://chromewebstore.google.com/detail/easy-auto-refresh/kefkjkdjjekifjbfnlmgmgkdolhblceb",
   },
   {
     id: "EShop",
