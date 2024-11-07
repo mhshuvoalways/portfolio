@@ -1,4 +1,11 @@
-const tabs = ["all", "full stack", "frontend", "extention", "contribute"];
+const tabs = [
+  "all",
+  "full stack",
+  "frontend",
+  "extention",
+  "npm",
+  "contribute",
+];
 
 const Tab = ({ current, currentHandler, projectDB }) => {
   return (

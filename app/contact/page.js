@@ -27,7 +27,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading("loading");
     axios
-      .post(`${process.env.BACKEND_URL}/api`, contact)
+      .post(`/api/send-mail`, contact)
       .then(() => {
         setLoading("success");
         setContact({

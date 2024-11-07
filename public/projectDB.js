@@ -4,6 +4,7 @@ import CourseTemplateReact from "./images/projects/course-template-react.png";
 import DaringPage from "./images/projects/daringpage.png";
 import EShop from "./images/projects/eshop.png";
 import Extention from "./images/projects/extension.png";
+import Calendar from "./images/projects/calendar.png";
 import HealthCareTemplate from "./images/projects/health-care-template.png";
 import HorseRidingTrainingWebsite from "./images/projects/horse-riding-training-website.png";
 import MathPlus from "./images/projects/mathplus.png";
@@ -79,9 +80,9 @@ const Projects = [
     id: "Extention",
     type: "extention",
     image: Extention,
-    title: "Auto Refresh Chrome Extension",
+    title: "Auto Easy Refresh Chrome Extension",
     description:
-      "The Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",
+      "The Easy Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",
     technologies: ["Chrome", "Extension", "Reactjs"],
     height: "50",
     githubLink:
@@ -111,6 +112,19 @@ const Projects = [
     height: "550",
     githubLink: "https://github.com/mhshuvoalways/multi-vendor-ecommerce",
     webLink: "https://eshop-multi-vendor.vercel.app",
+  },
+  {
+    id: "ReactBookingCalender",
+    type: "npm",
+    image: Calendar,
+    title:
+      "A React component for booking and scheduling available time slots with ease.",
+    description:
+      "A React component for booking and scheduling available time slots with ease. react-booking-calendly lets you display a calendar with available for booking, providing a clean and customizable interface.",
+    technologies: ["Reactjs", "NPM"],
+    height: "100",
+    githubLink: "https://github.com/mhshuvoalways/react-booking-calendly",
+    webLink: "https://www.npmjs.com/package/react-booking-calendly",
   },
   {
     id: "DaringPage",

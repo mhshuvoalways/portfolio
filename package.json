@@ -17,7 +17,8 @@
     "react-awesome-reveal": "^4.2.11",
     "react-dom": "^18",
     "react-flip-move": "^3.0.5",
-    "react-toastify": "^10.0.5"
+    "react-toastify": "^10.0.5",
+    "resend": "^4.0.1-alpha.0"
   },
   "devDependencies": {
     "@types/node": "22.5.5",
