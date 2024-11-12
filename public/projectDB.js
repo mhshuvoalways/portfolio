@@ -136,7 +136,7 @@ const Projects = [
     description:
       "This component allows users to search for locations by name or address, select suggestions, and view detailed location information such as latitude and longitude.",
     technologies: ["Reactjs", "NPM"],
-    height: "100",
+    height: "",
     githubLink:
       "https://github.com/mhshuvoalways/react-google-location-suggest",
     webLink: "https://www.npmjs.com/package/react-google-location-suggest",
