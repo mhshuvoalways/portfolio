@@ -1,16 +1,17 @@
 import MyFates from "./images/projects/business-webiste-template.png";
+import Calendar from "./images/projects/calendar.png";
 import Costnip from "./images/projects/costnip.png";
 import CourseTemplateReact from "./images/projects/course-template-react.png";
 import DaringPage from "./images/projects/daringpage.png";
 import EShop from "./images/projects/eshop.png";
 import Extention from "./images/projects/extension.png";
-import Calendar from "./images/projects/calendar.png";
 import HealthCareTemplate from "./images/projects/health-care-template.png";
 import HorseRidingTrainingWebsite from "./images/projects/horse-riding-training-website.png";
 import MathPlus from "./images/projects/mathplus.png";
 import PasswordVault from "./images/projects/passwordvault.png";
 import PennayCalc from "./images/projects/pennycalc.png";
 import Polling from "./images/projects/polling.jpg";
+import GoogleLocationSuggest from "./images/projects/react-google-place-suggest.png";
 import Shopmate from "./images/projects/shopmate.png";
 import Solutiongorilla from "./images/projects/solutiongorilla.png";
 import SuperbInfo from "./images/projects/superb-info.png";
@@ -125,6 +126,20 @@ const Projects = [
     height: "100",
     githubLink: "https://github.com/mhshuvoalways/react-booking-calendly",
     webLink: "https://www.npmjs.com/package/react-booking-calendly",
+  },
+  {
+    id: "GoogleLocationSuggest",
+    type: "npm",
+    image: GoogleLocationSuggest,
+    title:
+      "A React component providing Google locations Autocomplete functionality.",
+    description:
+      "This component allows users to search for locations by name or address, select suggestions, and view detailed location information such as latitude and longitude.",
+    technologies: ["Reactjs", "NPM"],
+    height: "100",
+    githubLink:
+      "https://github.com/mhshuvoalways/react-google-location-suggest",
+    webLink: "https://www.npmjs.com/package/react-google-location-suggest",
   },
   {
     id: "DaringPage",
