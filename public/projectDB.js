@@ -16,6 +16,7 @@ import Shopmate from "./images/projects/shopmate.png";
 import Solutiongorilla from "./images/projects/solutiongorilla.png";
 import SuperbInfo from "./images/projects/superb-info.png";
 import TicTacToe from "./images/projects/tic-tac-toe.png";
+import TimsTutor from "./images/projects/timstutor.png";
 import TodoList from "./images/projects/todolist.jpg";
 import Traveling from "./images/projects/traveling.png";
 import WeatherWithDom from "./images/projects/weather-with-dom.png";
@@ -60,6 +61,28 @@ const Projects = [
       "MongoDB",
       "Netlify",
       "Cyclic",
+    ],
+    height: "480",
+    githubLink: "https://github.com/mhshuvoalways/password-manager-app",
+    webLink: "https://mypasswordvault.vercel.app",
+  },
+  {
+    id: "TimsTutor",
+    type: "fullstack",
+    image: TimsTutor,
+    title: "Tutor Marketplace",
+    description:
+      "The Tutor Marketplace project, designed to facilitate seamless interactions between Admins, Tutors, and Students. The platform aims to simplify learning, teaching, and administrative workflows.",
+    technologies: [
+      "Nextjs",
+      "motion-primitives",
+      "Zoom API",
+      "Stripe",
+      "Resend",
+      "Nodejs",
+      "Expressjs",
+      "MongoDB",
+      "Vercel",
     ],
     height: "480",
     githubLink: "https://github.com/mhshuvoalways/password-manager-app",

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Card = ({ img }) => {
   return (
-    <div className="bg-gray-900 p-4 rounded-md shadow-md border border-primary">
+    <div className="bg-gray-900 p-2 rounded-md shadow-md border border-primary">
       <Image
         src={img}
         alt={"Photo"}
