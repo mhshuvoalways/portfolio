@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply overflow-x-hidden;
+    @apply overflow-x-hidden absolute inset-0 -z-10 flex h-full min-h-screen flex-col bg-[radial-gradient(#6b7280,transparent_1px)] [background-size:16px_16px];
   }
 }
 
