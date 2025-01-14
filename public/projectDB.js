@@ -4,9 +4,10 @@ import Costnip from "./images/projects/costnip.png";
 import CourseTemplateReact from "./images/projects/course-template-react.png";
 import DaringPage from "./images/projects/daringpage.png";
 import EShop from "./images/projects/eshop.png";
-import Extention from "./images/projects/extension.png";
+import Extension from "./images/projects/extension.png";
 import HealthCareTemplate from "./images/projects/health-care-template.png";
 import HorseRidingTrainingWebsite from "./images/projects/horse-riding-training-website.png";
+import LinkedInAssistant from "./images/projects/linkedinassistant-assistant.png";
 import MathPlus from "./images/projects/mathplus.png";
 import PasswordVault from "./images/projects/passwordvault.png";
 import PennayCalc from "./images/projects/pennycalc.png";
@@ -67,6 +68,26 @@ const Projects = [
     webLink: "https://mypasswordvault.vercel.app",
   },
   {
+    id: "LinkedInAssistant",
+    type: "extension",
+    image: LinkedInAssistant,
+    title: "LinkedIn AI Assistant",
+    description:
+      "The LinkedIn AI Assistant is a Chrome extension designed to help professionals and businesses engage effectively on LinkedIn. It generates personalized comments to improve interactions on the platform. This tool is primarily aimed at individuals who want to increase their LinkedIn presence while saving time.",
+    technologies: [
+      "React",
+      "Vitejs",
+      "Framer-motion",
+      "Nodejs",
+      "MongoDB",
+      "OpenAI",
+      "Vercel",
+    ],
+    height: "550",
+    githubLink: "https://github.com/mhshuvoalways/linkedin-assistant",
+    webLink: "https://linkedinassistant.vercel.app",
+  },
+  {
     id: "TimsTutor",
     type: "fullstack",
     image: TimsTutor,
@@ -101,9 +122,9 @@ const Projects = [
     webLink: "https://mathplusapp.vercel.app",
   },
   {
-    id: "Extention",
-    type: "extention",
-    image: Extention,
+    id: "Extension",
+    type: "extension",
+    image: Extension,
     title: "Auto Easy Refresh Chrome Extension",
     description:
       "The Easy Auto Refresh Chrome Extension is a powerful tool that allows you to automatically refresh web pages at specified intervals. This documentation provides an overview of the extension's features, installation instructions, and usage examples.",

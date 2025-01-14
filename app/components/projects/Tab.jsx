@@ -2,7 +2,7 @@ const tabs = [
   "all",
   "full stack",
   "frontend",
-  "extention",
+  "extension",
   "npm",
   "contribute",
 ];
