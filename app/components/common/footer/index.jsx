@@ -9,7 +9,7 @@ const Footer = ({ bottom, bottomCondition }) => {
       }`}
     >
       <p className="border-t py-5 border-gray-800 text-sm text-gray-400 text-center">
-        © 2024 MH Shuvo. All rights reserved.
+        © 2025 MH Shuvo. All rights reserved.
       </p>
     </footer>
   );
