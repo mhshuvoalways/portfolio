@@ -7,7 +7,7 @@ import EShop from "./images/projects/eshop.png";
 import Extension from "./images/projects/extension.png";
 import HealthCareTemplate from "./images/projects/health-care-template.png";
 import HorseRidingTrainingWebsite from "./images/projects/horse-riding-training-website.png";
-import LinkedInAssistant from "./images/projects/linkedinassistant-assistant.png";
+import LinkedInComment from "./images/projects/linkedin-ai-comment.png";
 import MathPlus from "./images/projects/mathplus.png";
 import PasswordVault from "./images/projects/passwordvault.png";
 import PennayCalc from "./images/projects/pennycalc.png";
@@ -68,12 +68,12 @@ const Projects = [
     webLink: "https://mypasswordvault.vercel.app",
   },
   {
-    id: "LinkedInAssistant",
+    id: "LinkedInComment",
     type: "extension",
-    image: LinkedInAssistant,
-    title: "LinkedIn AI Assistant",
+    image: LinkedInComment,
+    title: "LinkedIn AI Comment",
     description:
-      "The LinkedIn AI Assistant is a Chrome extension designed to help professionals and businesses engage effectively on LinkedIn. It generates personalized comments to improve interactions on the platform. This tool is primarily aimed at individuals who want to increase their LinkedIn presence while saving time.",
+      "The LinkedIn AI Comment is a Chrome extension designed to help professionals and businesses engage effectively on LinkedIn. It generates personalized comments to improve interactions on the platform. This tool is primarily aimed at individuals who want to increase their LinkedIn presence while saving time.",
     technologies: [
       "React",
       "Vitejs",
@@ -84,8 +84,8 @@ const Projects = [
       "Vercel",
     ],
     height: "550",
-    githubLink: "https://github.com/mhshuvoalways/linkedin-assistant",
-    webLink: "https://linkedinassistant.vercel.app",
+    githubLink: "https://github.com/mhshuvoalways/linkedin-ai-comment",
+    webLink: "https://linkedinaicomment.vercel.app",
   },
   {
     id: "TimsTutor",
