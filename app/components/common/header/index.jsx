@@ -4,12 +4,17 @@ import DropDown from "@/app/components/common/dropdown";
 import MyImage from "@/public/images/mhshuvo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const items = [
   {
     name: "Home",
     url: "/",
+  },
+  {
+    name: "Services",
+    url: "/services",
   },
   {
     name: "Projects",
@@ -32,6 +37,8 @@ const items = [
 const Header = () => {
   const [prevScrollY, setPrevScrollY] = useState(0);
   const [scrollDirection, setScrollDirection] = useState(true);
+
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,12 +71,20 @@ const Header = () => {
           className="w-11 h-11 rounded-full cursor-pointer border-primary border-2"
         />
       </Link>
-      <div className="sm:flex justify-between items-center gap-6 font-semibold text-primary hidden">
-        {items.map((el) => (
-          <Link href={el.url} key={el.name}>
-            {el.name}
-          </Link>
-        ))}
+      <div className="sm:flex justify-between items-center gap-6 hidden">
+        {items.map((el) => {
+          const isActive =
+            el.url === "/" ? pathname === el.url : pathname.includes(el.url);
+          return (
+            <Link
+              href={el.url}
+              key={el.name}
+              className={`text-primary ${isActive ? "font-semibold " : ""}`}
+            >
+              {el.name}
+            </Link>
+          );
+        })}
       </div>
       <div className="block sm:hidden">
         <DropDown btnIcon={"fa-solid fa-bars"} items={items} />
