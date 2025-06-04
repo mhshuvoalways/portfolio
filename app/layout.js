@@ -13,66 +13,36 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* website */}
-        <meta
-          name="description"
-          content="As an expert in JavaScript, Reactjs, React Native, Nextjs, and Nodejs, I specialize in building Web & Mobile Applications that not only look great but also deliver exceptional scalability, availability, usability, maintainability, reliability, and security."
+      <head>{/* You can add other meta or link tags here */}</head>
+      <body className={`bg-black ${inter.className}`}>
+        {children}
+        {/* Google Analytics */}
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.MEASUREMENT_ID}`}
         />
-        <meta
-          name="og:title"
-          content="MH Shuvo | Software Developer | Web & Mobile Application Developer"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://mhshuvo.com`} />
-        <meta
-          property="og:description"
-          content="As an expert in JavaScript, Reactjs, React Native, Nextjs, and Nodejs, I specialize in building Web & Mobile Applications that not only look great but also deliver exceptional scalability, availability, usability, maintainability, reliability, and security."
-        />
-        <meta
-          property="og:image"
-          content={`https://mhshuvo.com/images/social_image.png`}
-        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.MEASUREMENT_ID}');
+          `}
+        </Script>
 
-        {/* twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@mhshuvoalways" />
-        <meta
-          name="twitter:title"
-          content="MH Shuvo | Software Developer | Web & Mobile Application Developer"
-        />
-        <meta
-          name="twitter:description"
-          content="As an expert in JavaScript, Reactjs, React Native, Nextjs, and Nodejs, I specialize in building Web & Mobile Applications that not only look great but also deliver exceptional scalability, availability, usability, maintainability, reliability, and security."
-        />
-        <meta
-          name="twitter:image"
-          content={`https://mhshuvo.com/images/social_image.png`}
-        />
-
-        {/* fontawesome */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-        />
-      </head>
-      <body className={`bg-black ${inter.className}`}>{children}</body>
-      {/* google analytics */}
-      <Script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.MEASUREMENT_ID}`}
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         gtag('config', '${process.env.MEASUREMENT_ID}');
-        `}
-      </Script>
+        {/* Chatbot Script */}
+        <Script id="chatbot-widget" strategy="afterInteractive">
+          {`
+            window.chatbotUserId = '325ae8ff-b9fc-4e52-a323-aadc93d44276';
+            (function() {
+              const script = document.createElement('script');
+              script.src = './dist/assets/index-D1QqH3D2.js';
+              script.async = true;
+              document.head.appendChild(script);
+            })();
+          `}
+        </Script>
+      </body>
     </html>
   );
 }

@@ -7,7 +7,7 @@ const items = [
     title: "Web Development",
     icon: "🖥️",
     description:
-      "I design and build modern, fast, and responsive websites using technologies like HTML, CSS, JavaScript, React.js, Next.js, Node.js and more.",
+      "I design and build modern, fast, and responsive websites using powerful technologies like HTML, CSS, JavaScript, React.js, Next.js, Node.js and more.",
     lists: [
       "Custom-built websites for better performance (no cookie-cutter templates!).",
       "Faster, smoother user experience to keep visitors engaged.",
