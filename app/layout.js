@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             window.chatbotUserId = '325ae8ff-b9fc-4e52-a323-aadc93d44276';
             (function() {
               const script = document.createElement('script');
-              script.src = './dist/assets/index-D1QqH3D2.js';
+              script.src = 'https://chatbot-sense.vercel.app/chatbot-widget.js';
               script.async = true;
               document.head.appendChild(script);
             })();
