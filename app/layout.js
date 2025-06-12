@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         {/* Chatbot Script */}
         <Script id="chatbot-widget" strategy="afterInteractive">
           {`
-            window.chatbotUserId = 'd31d2d69-a2d3-421d-b38e-b774a5c336f0';
+            window.chatbotUserId = '826e4006-a5f6-4c08-82bd-e0b29bdb19ce';
             (function() {
               const script = document.createElement('script');
               script.src = 'https://app.chatbotsense.com/chatbot-widget.js';
