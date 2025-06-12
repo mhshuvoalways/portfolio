@@ -33,10 +33,10 @@ export default function RootLayout({ children }) {
         {/* Chatbot Script */}
         <Script id="chatbot-widget" strategy="afterInteractive">
           {`
-            window.chatbotUserId = '325ae8ff-b9fc-4e52-a323-aadc93d44276';
+            window.chatbotUserId = 'd31d2d69-a2d3-421d-b38e-b774a5c336f0';
             (function() {
               const script = document.createElement('script');
-              script.src = 'https://chatbot-sense.vercel.app/chatbot-widget.js';
+              script.src = 'https://app.chatbotsense.com/chatbot-widget.js';
               script.async = true;
               document.head.appendChild(script);
             })();
