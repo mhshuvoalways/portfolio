@@ -31,17 +31,17 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Chatbot Script */}
-        <Script id="chatbot-widget" strategy="afterInteractive">
+        {/* <Script id="chatbot-widget" strategy="afterInteractive">
           {`
-            window.chatbotUserId = '826e4006-a5f6-4c08-82bd-e0b29bdb19ce';
+            window.chatbotUserId = 'f4500a06-5eff-411d-8786-853d9b0093d7';
             (function() {
               const script = document.createElement('script');
-              script.src = 'https://app.chatbotsense.com/chatbot-widget.js';
+              script.src = 'http://localhost:8080/chatbot-widget.js';
               script.async = true;
               document.head.appendChild(script);
             })();
           `}
-        </Script>
+        </Script> */}
       </body>
     </html>
   );
