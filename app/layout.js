@@ -31,9 +31,9 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Chatbot Script */}
-        {/* <Script id="chatbot-widget" strategy="afterInteractive">
+        <Script id="chatbot-widget" strategy="afterInteractive">
           {`
-            window.chatbotUserId = 'f4500a06-5eff-411d-8786-853d9b0093d7';
+            window.chatbotUserId = '89bae0f4-3516-4b49-9316-0e3f59d2698c';
             (function() {
               const script = document.createElement('script');
               script.src = 'http://localhost:8080/chatbot-widget.js';
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
               document.head.appendChild(script);
             })();
           `}
-        </Script> */}
+        </Script>
       </body>
     </html>
   );
