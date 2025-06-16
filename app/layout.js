@@ -13,7 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>{/* You can add other meta or link tags here */}</head>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+        ></link>
+      </head>
       <body className={`bg-black ${inter.className}`}>
         {children}
         {/* Google Analytics */}
@@ -36,7 +41,7 @@ export default function RootLayout({ children }) {
             window.chatbotUserId = '89bae0f4-3516-4b49-9316-0e3f59d2698c';
             (function() {
               const script = document.createElement('script');
-              script.src = 'http://localhost:8080/chatbot-widget.js';
+              script.src = 'https://app.chatbotsense.com/chatbot-widget.js';
               script.async = true;
               document.head.appendChild(script);
             })();
