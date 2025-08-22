@@ -3,8 +3,8 @@ import Header from "@/app/components/common/header";
 
 const MainComponent = ({ children, bottom, bottomCondition }) => {
   return (
-    <div
-      className="bg-cover bg-center bg-no-repeat bg-fixed min-h-screen"
+    <main
+      className="bg-cover bg-center bg-no-repeat bg-fixed"
       style={{
         backgroundImage: "url(/images/bg.svg)",
       }}
@@ -14,7 +14,7 @@ const MainComponent = ({ children, bottom, bottomCondition }) => {
         {children}
         <Footer bottom={bottom} bottomCondition={bottomCondition} />
       </div>
-    </div>
+    </main>
   );
 };
 

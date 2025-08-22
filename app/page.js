@@ -37,15 +37,15 @@ const skills = [
 ];
 
 const stats = [
-  { number: "100+", label: "Projects Completed" },
-  { number: "30+", label: "Happy Clients" },
-  { number: "5⭐", label: "Average Rating" },
-  { number: "3+", label: "Years Experience" }
+  { number: "180+", label: "Projects Completed" },
+  { number: "76+", label: "Happy Clients" },
+  { number: "4.9⭐", label: "Average Rating" },
+  { number: "4+", label: "Years Experience" }
 ];
 
 const page = () => {
   return (
-    <Main bottomCondition={true}>
+    <Main>
       {/* Hero Section */}
       <div className="mt-10 lg:mt-20 flex items-center justify-between gap-10 flex-col-reverse lg:flex-row min-h-[70vh]">
         {/* Content Section */}
@@ -111,7 +111,7 @@ const page = () => {
             </p>
             
             <p className="text-gray-400 leading-relaxed">
-              🎯 Let's work together to elevate your applications to new heights. Reach out to me via DM, and let's discuss how we can collaborate to achieve your goals. Your application transformation is just one click away!
+              {`🎯 Let's work together to elevate your applications to new heights. Reach out to me via DM, and let's discuss how we can collaborate to achieve your goals. Your application transformation is just one click away!`}
             </p>
           </div>
 

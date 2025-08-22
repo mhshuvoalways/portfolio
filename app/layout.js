@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
             window.chatbotUserId = '89bae0f4-3516-4b49-9316-0e3f59d2698c';
             (function() {
               const script = document.createElement('script');
-              script.src = 'http://localhost:8080/chatbot-widget.js';
+              script.src = 'https://app.chatbotsense.com/chatbot-widget.js';
               script.async = true;
               document.head.appendChild(script);
             })();
