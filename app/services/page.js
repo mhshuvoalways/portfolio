@@ -86,8 +86,8 @@ const page = () => {
                 Transform Your Ideas Into Reality
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                From concept to deployment, I deliver cutting-edge solutions that drive results. 
-                Let's build something extraordinary together.
+                {`From concept to deployment, I deliver cutting-edge solutions that drive results. 
+                Let's build something extraordinary together.`}
               </p>
             </motion.div>
             
@@ -142,8 +142,8 @@ const page = () => {
               Ready to Start Your Project?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Let's discuss your vision and turn it into a powerful digital solution. 
-              Book a free consultation call and let's get started!
+              {`Let's discuss your vision and turn it into a powerful digital solution. 
+              Book a free consultation call and let's get started!`}
             </p>
             <motion.div
               whileHover={{ scale: 1.05 }}
