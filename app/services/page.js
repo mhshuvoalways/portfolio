@@ -1,9 +1,10 @@
 "use client";
 
 import Main from "@/app/components/common/main";
-import Card from "../components/services/Card";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
+import Card from "../components/services/Card";
 
 const items = [
   {
@@ -90,7 +91,7 @@ const page = () => {
                 Let's build something extraordinary together.`}
               </p>
             </motion.div>
-            
+
             {/* Stats Section */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -145,21 +146,21 @@ const page = () => {
               {`Let's discuss your vision and turn it into a powerful digital solution. 
               Book a free consultation call and let's get started!`}
             </p>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <Link
+              href="https://calendly.com/mhshuvoalways/support-for-building-website"
+              target="_blank"
             >
-              <a
-                href="https://calendly.com/mhshuvoalways/support-for-building-website"
-                target="_blank"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-secondary via-primary to-tertiary hover:from-tertiary hover:via-primary hover:to-secondary text-black font-bold py-4 px-8 rounded-xl transition-all duration-500 shadow-lg hover:shadow-xl"
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gradient-to-r from-secondary via-primary to-tertiary hover:from-tertiary hover:via-primary hover:to-secondary text-black font-bold py-4 px-6 rounded-xl transition-all duration-500 shadow-lg hover:shadow-xl relative overflow-hidden group/btn"
               >
-                <span>Schedule Free Consultation</span>
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </motion.div>
+                <span className="relative z-10">
+                  Schedule Free Consultation
+                </span>
+                <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 skew-x-12" />
+              </motion.button>
+            </Link>
           </motion.div>
         </Fade>
       </div>

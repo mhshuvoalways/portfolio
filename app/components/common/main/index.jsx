@@ -4,7 +4,9 @@ import Header from "@/app/components/common/header";
 const MainComponent = ({ children, bottom, bottomCondition }) => {
   return (
     <main
-      className="bg-cover bg-center bg-no-repeat bg-fixed"
+      className={`bg-cover bg-center bg-no-repeat bg-fixed ${
+        bottomCondition ? "min-h-screen" : ""
+      }`}
       style={{
         backgroundImage: "url(/images/bg.svg)",
       }}
