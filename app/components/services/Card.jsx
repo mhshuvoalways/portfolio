@@ -12,7 +12,7 @@ const Card = ({ title, icon, description, lists, index }) => {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="group relative bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-primary/50 px-6 pt-8 pb-20 w-full rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden"
+      className="group relative bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-primary/50 px-6 pt-8 pb-6 w-full rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden flex flex-col h-full"
     >
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -23,7 +23,7 @@ const Card = ({ title, icon, description, lists, index }) => {
         <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-secondary/10 rounded-full blur-xl group-hover:scale-125 transition-transform duration-700" />
       </div>
 
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col h-full">
         {/* Icon with animation */}
         <motion.div
           animate={{ 
@@ -51,7 +51,7 @@ const Card = ({ title, icon, description, lists, index }) => {
         </p>
 
         {/* Features section */}
-        <div className="mb-8">
+        <div className="mb-8 flex-grow">
           <h4 className="text-lg font-semibold text-primary mb-4 flex items-center">
             <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
             What you get:
@@ -82,7 +82,7 @@ const Card = ({ title, icon, description, lists, index }) => {
         </div>
 
         {/* CTA Button */}
-        <div className="absolute bottom-6 left-6 right-6">
+        <div className="mt-auto">
           <Link
             href="https://calendly.com/mhshuvoalways/support-for-building-website"
             target="_blank"
