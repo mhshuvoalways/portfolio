@@ -138,8 +138,8 @@ const Projects = () => {
               Ready to Start Your Own Project?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Inspired by what you see? Let's collaborate to bring your vision to life 
-              with the same level of quality and attention to detail.
+              {`Inspired by what you see? Let's collaborate to bring your vision to life 
+              with the same level of quality and attention to detail.`}
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -151,7 +151,7 @@ const Projects = () => {
                 target="_blank"
                 className="relative z-10"
               >
-                Let's Build Something Amazing
+                {`Let's Build Something Amazing`}
               </a>
               <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 skew-x-12" />
             </motion.button>
