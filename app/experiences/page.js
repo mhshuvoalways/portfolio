@@ -1,10 +1,12 @@
+"use client";
+
 import Main from "@/app/components/common/main";
 import Experience from "@/app/components/experience";
 import { motion } from "framer-motion";
 
 const page = () => {
   return (
-    <Main bottomCondition>
+    <Main>
       <div className="mt-10 lg:mt-20">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -21,8 +23,8 @@ const page = () => {
               My Experience & Growth
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              From starting as a freelancer to becoming a top-rated developer, 
-              here's my journey of continuous learning and achievement.
+              {`From starting as a freelancer to becoming a top-rated developer, 
+              here's my journey of continuous learning and achievement.`}
             </p>
           </motion.div>
 
@@ -44,7 +46,7 @@ const page = () => {
             </div>
             <div className="w-px h-12 bg-gray-700 hidden sm:block"></div>
             <div className="text-center">
-              <div className="text-3xl font-bold textGradient">100+</div>
+              <div className="text-3xl font-bold textGradient">180+</div>
               <div className="text-sm text-gray-400">Orders Completed</div>
             </div>
           </motion.div>
@@ -64,8 +66,9 @@ const page = () => {
             Ready to Work Together?
           </h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            With years of experience and a proven track record, I'm ready to help 
-            you build your next successful project. Let's discuss your vision!
+            {`With years of experience and a proven track record, I'm ready to
+            help you build your next successful project. Let's discuss your
+            vision!`}
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}

@@ -48,7 +48,7 @@ const ProjectCard = ({
           <Image
             src={image}
             alt={title}
-            className="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-110"
+            className="w-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-110"
             style={{
               transition: "transform 2s ease",
               transform: isHovered ? `translateY(-${height}px)` : "translateY(0)",

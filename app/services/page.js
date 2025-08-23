@@ -100,7 +100,7 @@ const page = () => {
               className="flex justify-center items-center gap-8 flex-wrap mb-8"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold textGradient">100+</div>
+                <div className="text-3xl font-bold textGradient">180+</div>
                 <div className="text-sm text-gray-400">Projects Completed</div>
               </div>
               <div className="w-px h-12 bg-gray-700 hidden sm:block"></div>

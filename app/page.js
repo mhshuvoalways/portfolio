@@ -269,7 +269,7 @@ const page = () => {
             },
             {
               title: "Portfolio",
-              desc: "100+ Completed Projects",
+              desc: "180+ Completed Projects",
               link: "/projects",
               icon: "💼",
             },

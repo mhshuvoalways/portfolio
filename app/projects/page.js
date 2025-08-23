@@ -6,8 +6,8 @@ import { useState } from "react";
 import FlipMove from "react-flip-move";
 import { motion } from "framer-motion";
 import { Fade } from "react-awesome-reveal";
-import MainComponent from "../components/common/main";
-import Tab from "../components/projects/Tab";
+import MainComponent from "@/app/components/common/main";
+import Tab from "@/app/components/projects/Tab";
 
 const Projects = () => {
   const [current, setCurrent] = useState("all");
@@ -87,19 +87,6 @@ const Projects = () => {
               projectDB={projectDB}
             />
           </div>
-        </motion.div>
-
-        {/* Projects Count Display */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.4 }}
-          className="text-center mb-8"
-        >
-          <p className="text-gray-400">
-            Showing <span className="text-primary font-semibold">{filteredProjects.length}</span> 
-            {current === 'all' ? ' projects' : ` ${current} project${filteredProjects.length !== 1 ? 's' : ''}`}
-          </p>
         </motion.div>
 
         {/* Projects Grid */}
