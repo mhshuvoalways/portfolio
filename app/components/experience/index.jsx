@@ -87,7 +87,7 @@ const Experience = () => {
 
         {/* Main Content */}
         <Fade direction="right">
-          <div className="w-full lg:w-7/12 font-medium relative mx-auto lg:mx-0">
+          <div className="w-full lg:w-9/12 font-medium relative mx-auto lg:mx-0">
             {/* Company Header */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -274,33 +274,6 @@ const Experience = () => {
                     </p>
                   </motion.div>
                 ))}
-              </div>
-            </motion.div>
-
-            {/* Client Testimonial Highlight */}
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-              className="mt-12 bg-gradient-to-r from-primary/10 to-secondary/10 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 text-center"
-            >
-              <div className="text-4xl mb-4">💬</div>
-              <blockquote className="text-xl text-gray-300 italic mb-4 leading-relaxed">
-                Working with MH Shuvo has been an absolute game-changer for our
-                business. His attention to detail and commitment to excellence
-                is unmatched.
-              </blockquote>
-              <div className="flex items-center justify-center gap-2">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-yellow-400 text-lg">
-                      ⭐
-                    </span>
-                  ))}
-                </div>
-                <span className="text-gray-400 text-sm">
-                  - Happy Client Review
-                </span>
               </div>
             </motion.div>
           </div>

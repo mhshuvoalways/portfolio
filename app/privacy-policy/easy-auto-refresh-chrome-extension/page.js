@@ -82,7 +82,7 @@ const page = () => {
           <p className="text3">8. Contact Us</p>
           <p className="mt-2">
             If you have any questions or concerns regarding this Privacy Policy,
-            please contact us at <strong>mhshuvoalways@gmail.com</strong>
+            please contact us at <strong>contact@mhshuvo.com</strong>
           </p>
         </div>
       </div>

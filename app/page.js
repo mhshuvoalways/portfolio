@@ -50,7 +50,7 @@ const skills = [
 const stats = [
   { number: "180+", label: "Projects Completed" },
   { number: "76+", label: "Happy Clients" },
-  { number: "4.9⭐", label: "Average Rating" },
+  { number: "5.0⭐", label: "Average Rating" },
   { number: "4+", label: "Years Experience" },
 ];
 
@@ -60,7 +60,7 @@ const page = () => {
       {/* Hero Section */}
       <div className="mt-10 lg:mt-20 flex items-center justify-between gap-10 flex-col-reverse lg:flex-row min-h-[70vh]">
         {/* Content Section */}
-        <div className="space-y-8 w-11/12 lg:w-7/12 relative">
+        <div className="grid gap-y-8 w-11/12 lg:w-7/12 relative">
           {/* Animated background elements */}
           <div className="absolute -top-20 -left-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute -bottom-20 -right-10 w-32 h-32 bg-secondary/10 rounded-full blur-2xl animate-pulse delay-1000"></div>

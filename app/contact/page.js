@@ -13,23 +13,23 @@ const contactMethods = [
     icon: "📧",
     title: "Email",
     description: "Send me a direct message",
-    value: "mhshuvoalways@gmail.com",
-    link: "mailto:mhshuvoalways@gmail.com"
+    value: "contact@mhshuvo.com",
+    link: "mailto:contact@mhshuvo.com",
   },
   {
     icon: "💼",
     title: "LinkedIn",
     description: "Connect professionally",
     value: "mhshuvoalways",
-    link: "https://www.linkedin.com/in/mhshuvoalways"
+    link: "https://www.linkedin.com/in/mhshuvoalways",
   },
   {
     icon: "📅",
     title: "Schedule Call",
     description: "Book a free consultation",
     value: "Calendly",
-    link: "https://calendly.com/mhshuvoalways/support-for-building-website"
-  }
+    link: "https://calendly.com/mhshuvoalways/support-for-building-website",
+  },
 ];
 
 const stats = [
@@ -73,7 +73,7 @@ const Contact = () => {
   };
 
   return (
-    <Main bottom={true}>
+    <Main>
       <div className="mt-10 lg:mt-20">
         {/* Header Section */}
         <Fade>
@@ -88,11 +88,11 @@ const Contact = () => {
                 💬 Get In Touch
               </span>
               <h1 className="text-4xl lg:text-5xl font-bold textGradient mb-4">
-                Let's Build Something Amazing
+                {`Let's Build Something Amazing`}
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                Have a project in mind? I'd love to hear about it. 
-                Send me a message and let's discuss how we can bring your vision to life.
+                {`Have a project in mind? I'd love to hear about it. 
+                Send me a message and let's discuss how we can bring your vision to life.`}
               </p>
             </motion.div>
 
@@ -145,7 +145,7 @@ const Contact = () => {
                     Send Me a Message
                   </h2>
                   <p className="text-gray-400">
-                    Fill out the form below and I'll get back to you soon
+                    {`Fill out the form below and I'll get back to you soon`}
                   </p>
                 </div>
 
@@ -202,8 +202,18 @@ const Contact = () => {
                   >
                     <span className="relative z-10 flex items-center justify-center gap-2">
                       <span>Send Message</span>
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                        />
                       </svg>
                     </span>
                     <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 skew-x-12" />
@@ -245,7 +255,7 @@ const Contact = () => {
                   >
                     {/* Background gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
+
                     <div className="relative z-10 flex items-center gap-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center border border-primary/30 group-hover:scale-110 transition-transform duration-300">
                         <span className="text-2xl">{method.icon}</span>
@@ -262,8 +272,18 @@ const Contact = () => {
                         </p>
                       </div>
                       <div className="text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
                         </svg>
                       </div>
                     </div>
@@ -285,22 +305,34 @@ const Contact = () => {
                   <div className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="text-gray-300 font-medium">Response Time: </span>
-                      <span className="text-gray-400">Usually within 24 hours</span>
+                      <span className="text-gray-300 font-medium">
+                        Response Time:{" "}
+                      </span>
+                      <span className="text-gray-400">
+                        Usually within 24 hours
+                      </span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="text-gray-300 font-medium">Free Consultation: </span>
-                      <span className="text-gray-400">30-minute discovery call</span>
+                      <span className="text-gray-300 font-medium">
+                        Free Consultation:{" "}
+                      </span>
+                      <span className="text-gray-400">
+                        30-minute discovery call
+                      </span>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-tertiary rounded-full mt-2 flex-shrink-0"></span>
                     <div>
-                      <span className="text-gray-300 font-medium">Project Timeline: </span>
-                      <span className="text-gray-400">Depends on scope and complexity</span>
+                      <span className="text-gray-300 font-medium">
+                        Project Timeline:{" "}
+                      </span>
+                      <span className="text-gray-400">
+                        Depends on scope and complexity
+                      </span>
                     </div>
                   </div>
                 </div>

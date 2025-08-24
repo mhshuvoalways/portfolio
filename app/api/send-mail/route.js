@@ -14,7 +14,7 @@ export const POST = async (request) => {
         </div>`;
     await resend.emails.send({
       from: "Portfolio <noreply@mhshuvo.com>",
-      to: "mhshuvoalways@gmail.com",
+      to: "contact@mhshuvo.com",
       subject: `A message from my portfolio!`,
       html: messageHtml,
     });

@@ -1,10 +1,12 @@
+"use client";
+
 import Main from "@/app/components/common/main";
 import Card from "@/app/components/testimonials/Card";
 import LinkIcon from "@/public/icons/link.svg";
 import { motion } from "framer-motion";
-import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
 import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 
 const reviewSections = [
   {
@@ -12,16 +14,16 @@ const reviewSections = [
     icon: "🟢",
     url: "https://www.fiverr.com/mhshuvoit",
     count: 22,
-    rating: "4.9",
-    description: "Top-rated freelancer with exceptional client satisfaction"
+    rating: "5.0",
+    description: "Top-rated freelancer with exceptional client satisfaction",
   },
   {
     platform: "Upwork",
-    icon: "🔵", 
+    icon: "🔵",
     url: "https://www.upwork.com/freelancers/~01ac7ebbe6d926dab4",
     count: 2,
     rating: "5.0",
-    description: "Perfect rating with professional service delivery"
+    description: "Perfect rating with professional service delivery",
   },
   {
     platform: "LinkedIn",
@@ -29,13 +31,13 @@ const reviewSections = [
     url: "https://www.linkedin.com/in/mhshuvoalways",
     count: 3,
     rating: "5.0",
-    description: "Professional recommendations from industry peers"
-  }
+    description: "Professional recommendations from industry peers",
+  },
 ];
 
 const stats = [
   { number: "27", label: "Total Reviews", icon: "⭐" },
-  { number: "4.9", label: "Average Rating", icon: "🏆" },
+  { number: "5.0", label: "Average Rating", icon: "🏆" },
   { number: "100%", label: "Satisfaction Rate", icon: "✅" },
   { number: "3", label: "Platforms", icon: "🌐" },
 ];
@@ -57,10 +59,10 @@ const page = () => {
                 ⭐ Client Reviews
               </span>
               <h1 className="text-4xl lg:text-5xl font-bold textGradient mb-4">
-                What My Clients Say
+                Some of the Best Reviews
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                Real feedback from satisfied clients across multiple platforms. 
+                Real feedback from satisfied clients across multiple platforms.
                 See why businesses trust me with their most important projects.
               </p>
             </motion.div>
@@ -118,16 +120,20 @@ const page = () => {
                       <div className="flex items-center gap-4 text-sm">
                         <div className="flex items-center gap-2">
                           <span className="w-2 h-2 bg-primary rounded-full"></span>
-                          <span className="text-gray-300">{section.count} Reviews</span>
+                          <span className="text-gray-300">
+                            {section.count} Reviews
+                          </span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span className="w-2 h-2 bg-secondary rounded-full"></span>
-                          <span className="text-gray-300">{section.rating}⭐ Rating</span>
+                          <span className="text-gray-300">
+                            {section.rating}⭐ Rating
+                          </span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  
+
                   <Link href={section.url} target="_blank">
                     <motion.button
                       whileHover={{ scale: 1.05 }}
@@ -153,10 +159,15 @@ const page = () => {
                       key={index}
                       initial={{ opacity: 0, y: 30 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.6, delay: (sectionIndex * 0.3) + (index * 0.1) }}
+                      transition={{
+                        duration: 0.6,
+                        delay: sectionIndex * 0.3 + index * 0.1,
+                      }}
                     >
                       <Card
-                        img={`/images/testimonials/${section.platform.toLowerCase()}/${index + 1}.png`}
+                        img={`/images/testimonials/${section.platform.toLowerCase()}/${
+                          index + 1
+                        }.png`}
                       />
                     </motion.div>
                   ))}
@@ -178,8 +189,8 @@ const page = () => {
               Ready to Join My Happy Clients?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Experience the same level of quality and professionalism that earned me 
-              these amazing reviews. Let's start your success story today!
+              {`Experience the same level of quality and professionalism that earned me 
+              these amazing reviews. Let's start your success story today!`}
             </p>
             <Link
               href="https://calendly.com/mhshuvoalways/support-for-building-website"
@@ -190,9 +201,7 @@ const page = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-secondary via-primary to-tertiary hover:from-tertiary hover:via-primary hover:to-secondary text-black font-bold py-4 px-6 rounded-xl transition-all duration-500 shadow-lg hover:shadow-xl relative overflow-hidden group/btn"
               >
-                <span className="relative z-10">
-                  Start Your Project Today
-                </span>
+                <span className="relative z-10">Start Your Project Today</span>
                 <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 skew-x-12" />
               </motion.button>
             </Link>

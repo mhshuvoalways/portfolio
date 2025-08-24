@@ -53,9 +53,7 @@ const page = () => {
         </div>
 
         {/* Experience Timeline */}
-        <div className="max-w-6xl mx-auto">
-          <Experience />
-        </div>
+        <Experience />
 
         {/* Bottom CTA Section */}
         <motion.div

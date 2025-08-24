@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
+
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 const Card = ({ img }) => {
@@ -16,7 +18,7 @@ const Card = ({ img }) => {
     >
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      
+
       {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-4 -right-4 w-16 h-16 bg-primary/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700" />
@@ -35,7 +37,7 @@ const Card = ({ img }) => {
         {/* Image Container */}
         <div className="relative overflow-hidden rounded-xl">
           <motion.div
-            animate={{ 
+            animate={{
               scale: isHovered ? 1.05 : 1,
             }}
             transition={{ duration: 0.3 }}
@@ -49,7 +51,7 @@ const Card = ({ img }) => {
               height={1000}
               loading="lazy"
             />
-            
+
             {/* Gradient overlay on hover */}
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
           </motion.div>
@@ -57,14 +59,16 @@ const Card = ({ img }) => {
 
         {/* Hover Effect Indicator */}
         <motion.div
-          animate={{ 
+          animate={{
             opacity: isHovered ? 1 : 0,
-            y: isHovered ? 0 : 10
+            y: isHovered ? 0 : 10,
           }}
           transition={{ duration: 0.3 }}
           className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-900/90 backdrop-blur-sm border border-primary/30 rounded-full px-3 py-1"
         >
-          <span className="text-primary text-xs font-medium">Client Testimonial</span>
+          <span className="text-primary text-xs font-medium">
+            Client Testimonial
+          </span>
         </motion.div>
       </div>
     </motion.div>
