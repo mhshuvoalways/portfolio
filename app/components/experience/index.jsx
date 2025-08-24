@@ -87,13 +87,13 @@ const Experience = () => {
 
         {/* Main Content */}
         <Fade direction="right">
-          <div className="w-full lg:w-7/12 font-medium relative">
+          <div className="w-full lg:w-7/12 font-medium relative mx-auto lg:mx-0">
             {/* Company Header */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="mb-12"
+              className="mb-12 text-center lg:text-left"
             >
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl flex items-center justify-center border border-green-500/30">
@@ -115,7 +115,7 @@ const Experience = () => {
               </div>
 
               {/* Top Rated Badge */}
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-full px-4 py-2 mb-8">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-full px-4 py-2 mb-8 mx-auto lg:mx-0">
                 <span className="text-2xl">👑</span>
                 <span className="text-green-400 font-bold">
                   Top Rated Freelancer

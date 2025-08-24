@@ -9,7 +9,7 @@ const page = () => {
     <Main>
       <div className="mt-10 lg:mt-20">
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,14 +53,16 @@ const page = () => {
         </div>
 
         {/* Experience Timeline */}
-        <Experience />
+        <div className="max-w-6xl mx-auto">
+          <Experience />
+        </div>
 
         {/* Bottom CTA Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20 text-center bg-gradient-to-r from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-3xl p-12"
+          className="mt-20 text-center bg-gradient-to-r from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-3xl p-12 max-w-4xl mx-auto"
         >
           <h2 className="text-3xl font-bold textGradient mb-4">
             Ready to Work Together?
