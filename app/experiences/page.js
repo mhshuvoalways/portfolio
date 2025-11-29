@@ -78,6 +78,7 @@ const page = () => {
             <a
               href="https://calendly.com/mhshuvoalways/support-for-building-website"
               target="_blank"
+              rel="noreferrer"
               className="relative z-10"
             >
               Start Your Project Today

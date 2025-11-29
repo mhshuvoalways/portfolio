@@ -1,5 +1,6 @@
 import MyFates from "./images/projects/business-webiste-template.png";
 import Calendar from "./images/projects/calendar.png";
+import ChatbotSense from "./images/projects/chatbotsense.png";
 import Costnip from "./images/projects/costnip.png";
 import CourseTemplateReact from "./images/projects/course-template-react.png";
 import DaringPage from "./images/projects/daringpage.png";
@@ -23,6 +24,26 @@ import Traveling from "./images/projects/traveling.png";
 import WeatherWithDom from "./images/projects/weather-with-dom.png";
 
 const Projects = [
+  {
+    id: "ChatbotSense",
+    type: "fullstack",
+    image: ChatbotSense,
+    title: "Chatbot Sense",
+    description:
+      "ChatBot Sense® is a smart & easy AI chatbot that answers your customers instantly, 24/7. Boost customer satisfaction and save time with auto-generated replies. Boost customer satisfaction with Chatbot Sense®!",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Supabase",
+      "OpenAI",
+      "Vector DB",
+      "Vercel",
+    ],
+    height: "1000",
+    githubLink: "",
+    webLink: "https://www.chatbotsense.com/",
+  },
   {
     id: "PennayCalc",
     type: "fullstack",

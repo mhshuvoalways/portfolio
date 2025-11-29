@@ -5,9 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "MH Shuvo | Software Developer | Web & Mobile Application Developer",
+  title:
+    "MH Shuvo | Software Developer | Web, Mobile & AI Agent Application Developer",
   description:
-    "As an expert in JavaScript, Reactjs, React Native, Nextjs, and Nodejs, I specialize in building Web & Mobile Applications that not only look great but also deliver exceptional scalability, availability, usability, maintainability, reliability, and security.",
+    "As an expert in JavaScript, Reactjs, React Native, Nextjs, and Nodejs, I specialize in building Web, Mobile & AI Agent Applications that not only look great but also deliver exceptional scalability, availability, usability, maintainability, reliability, and security.",
 };
 
 export default function RootLayout({ children }) {

@@ -36,15 +36,20 @@ const social = [
 
 const skills = [
   "JavaScript",
-  "React.js",
-  "Next.js",
-  "Node.js",
-  "React Native",
   "TypeScript",
-  "MongoDB",
-  "AWS",
-  "GraphQL",
+  "ReactJS",
+  "NextJS",
+  "React Native",
+  "Puppeteer",
+  "NodeJS",
   "Express.js",
+  "MongoDB",
+  "Supabase",
+  "Python",
+  "PostgreSQL",
+  "Langchain",
+  "n8n",
+  "AWS",
 ];
 
 const stats = [
@@ -84,7 +89,7 @@ const page = () => {
                 <span className="inline-block">Software Developer</span>
                 <span className="text-primary mx-2">|</span>
                 <span className="inline-block">
-                  Web & Mobile Application Developer
+                  Web, Mobile & AI Agent Developer
                 </span>
               </h2>
             </div>
@@ -123,26 +128,22 @@ const page = () => {
           <div className="relative z-10 space-y-6">
             <p className="text-gray-300 text3 font-medium leading-relaxed">
               I’m a passionate{" "}
-              <span className="textGradient">web and mobile app developer</span>{" "}
-              focused on building fast, beautiful websites and apps using{" "}
               <span className="textGradient">
-                ReactJS, NextJS, React Native, NodeJS, Puppeteer, MongoDB and
-                Supabase
-              </span>
-              . I create smooth, user-friendly experiences that work perfectly
-              on all devices, from desktops to smartphones.
+                web, mobile & AI agent developer
+              </span>{" "}
+              focused on building fast, modern and beautiful software.
             </p>
             <p className="text-gray-300 text3 font-medium leading-relaxed">
-              I’m also an{" "}
-              <span className="textGradient">
-                AI automation expert, ready to help you add smart, time-saving
-                features
-              </span>{" "}
-              that make your projects smarter and more efficient.
+              I create{" "}
+              <span className="textGradient">smooth, user-friendly</span>{" "}
+              experiences that work perfectly on all devices, from desktops to
+              smartphones.
             </p>
-            <p className="textGradient text3 font-medium leading-relaxed">
-              Want to take your business to the next level? Send me a message,
-              and let’s build something amazing together.
+            <p className="text-gray-300 text3 font-medium leading-relaxed">
+              Want to take your business to the next level?{" "}
+              <span className="textGradient">
+                Send me a message, and let’s build something amazing together.
+              </span>
             </p>
           </div>
 
@@ -263,7 +264,7 @@ const page = () => {
           {[
             {
               title: "My Services",
-              desc: "Web & Mobile Development",
+              desc: "Web, Mobile & AI Agent Development",
               link: "/services",
               icon: "🛠️",
             },

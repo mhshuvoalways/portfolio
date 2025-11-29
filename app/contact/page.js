@@ -35,7 +35,7 @@ const contactMethods = [
 const stats = [
   { number: "< 24h", label: "Response Time", icon: "⚡" },
   { number: "100%", label: "Reply Rate", icon: "✅" },
-  { number: "Free", label: "Consultation", icon: "💰" },
+  { number: "Free  />", label: "Consultation", icon: "💰" },
 ];
 
 const Contact = () => {
