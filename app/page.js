@@ -5,6 +5,7 @@ import MyImage from "@/public/images/mhshuvo.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { roundedYears } from "@/app/utils/dynamicExperienceCount";
 
 const social = [
   {
@@ -56,7 +57,7 @@ const stats = [
   { number: "180+", label: "Projects Completed" },
   { number: "76+", label: "Happy Clients" },
   { number: "5.0⭐", label: "Average Rating" },
-  { number: "4+", label: "Years Experience" },
+  { number: roundedYears, label: "Years Experience" },
 ];
 
 const page = () => {
@@ -108,7 +109,9 @@ const page = () => {
               >
                 <div className="relative p-3 bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 rounded-xl hover:border-primary/50 transition-all duration-300 hover:scale-110 hover:bg-primary/10">
                   {el.name === "Fiverr" ? (
-                    <span className="text-white font-black text-sm">fi</span>
+                    <span className="text-gray-400 group-hover:text-primary transition-colors duration-300 font-black">
+                      fi
+                    </span>
                   ) : (
                     <i
                       className={`${el.icon} text-gray-400 group-hover:text-primary transition-colors duration-300`}

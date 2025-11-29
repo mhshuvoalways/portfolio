@@ -2,6 +2,7 @@
 
 import Main from "@/app/components/common/main";
 import Experience from "@/app/components/experience";
+import { roundedYears } from "@/app/utils/dynamicExperienceCount";
 import { motion } from "framer-motion";
 
 const page = () => {
@@ -36,7 +37,9 @@ const page = () => {
             className="flex justify-center items-center gap-8 flex-wrap mb-12"
           >
             <div className="text-center">
-              <div className="text-3xl font-bold textGradient">4+</div>
+              <div className="text-3xl font-bold textGradient">
+                {roundedYears}
+              </div>
               <div className="text-sm text-gray-400">Years Experience</div>
             </div>
             <div className="w-px h-12 bg-gray-700 hidden sm:block"></div>
