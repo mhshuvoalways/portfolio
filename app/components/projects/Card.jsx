@@ -48,6 +48,8 @@ const ProjectCard = ({
           <Image
             src={image}
             alt={title}
+            width={800}
+            height={600}
             className="w-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-110"
             style={{
               transition: "transform 2s ease",
