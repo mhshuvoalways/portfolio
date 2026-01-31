@@ -1,8 +1,13 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const InquiryModal = ({ isOpen, onClose, services, selectedServiceId = null }) => {
+const InquiryModal = ({
+  isOpen,
+  onClose,
+  services,
+  selectedServiceId = null,
+}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,7 +39,9 @@ const InquiryModal = ({ isOpen, onClose, services, selectedServiceId = null }) =
       const data = await response.json();
 
       if (response.ok) {
-        toast.success("Inquiry submitted successfully! We'll get back to you soon.");
+        toast.success(
+          "Inquiry submitted successfully! We'll get back to you soon.",
+        );
         setFormData({
           name: "",
           email: "",
@@ -74,7 +81,9 @@ const InquiryModal = ({ isOpen, onClose, services, selectedServiceId = null }) =
             className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700/50 rounded-2xl shadow-2xl"
           >
             <div className="sticky top-0 bg-gradient-to-br from-gray-900 to-gray-800 border-b border-gray-700/50 px-6 py-4 flex items-center justify-between z-10">
-              <h2 className="text-2xl font-bold textGradient">Send an Inquiry</h2>
+              <h2 className="text-2xl font-bold textGradient">
+                Send an Inquiry
+              </h2>
               <button
                 onClick={onClose}
                 className="text-gray-400 hover:text-white transition-colors"
@@ -197,7 +206,7 @@ const InquiryModal = ({ isOpen, onClose, services, selectedServiceId = null }) =
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all resize-none"
-                  placeholder="Tell us about your project, requirements, and any specific features you need..."
+                  placeholder="Tell me about your project, requirements, and any specific features you need..."
                 />
               </div>
 

@@ -63,7 +63,7 @@ const Page = () => {
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 Real feedback from satisfied clients across multiple platforms.
-                See why businesses trust us with their most important projects.
+                See why businesses trust me with their most important projects.
               </p>
             </motion.div>
 
@@ -189,7 +189,7 @@ const Page = () => {
               Ready to Join Our Happy Clients?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              {`Experience the same level of quality and professionalism that earned us
+              {`Experience the same level of quality and professionalism that earned me
               these amazing reviews. We&apos;ll start your success story today!`}
             </p>
             <Link

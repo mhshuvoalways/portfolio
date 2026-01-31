@@ -10,7 +10,7 @@ const page = () => {
           </p>
           <div>
             <p className="text3">1. Introduction</p>
-            <p className="mt-2">{`The Easy Auto Refresh Chrome Extension ("we," "us," or "our") is dedicated to safeguarding your privacy. This Privacy Policy outlines how I collect, use, and share user data when you use our extension.`}</p>
+            <p className="mt-2">{`The Easy Auto Refresh Chrome Extension ("we," "me," or "our") is dedicated to safeguarding your privacy. This Privacy Policy outlines how I collect, use, and share user data when you use our extension.`}</p>
           </div>
         </div>
         <div>
@@ -18,7 +18,7 @@ const page = () => {
           <ul className="mt-2 list-disc pl-7">
             <li>
               Tab Information: I collect the ID of the specific tab where the
-              auto-refresh feature is initiated. This data helps us manage the
+              auto-refresh feature is initiated. This data helps me manage the
               auto-refresh functionality effectively.
             </li>
             <li>
@@ -82,7 +82,7 @@ const page = () => {
           <p className="text3">8. Contact Us</p>
           <p className="mt-2">
             If you have any questions or concerns regarding this Privacy Policy,
-            please contact us at <strong>contact@mhshuvo.com</strong>
+            please contact me at <strong>contact@mhshuvo.com</strong>
           </p>
         </div>
       </div>

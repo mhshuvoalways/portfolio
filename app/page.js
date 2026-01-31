@@ -59,8 +59,9 @@ const Page = () => {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              I Help Businesses Grow Build Web & AI Automation Tools to Boost
-              Sales and Productivity and Succeed in The Digital World.
+              I help businesses grow by building web apps and AI automation
+              tools that boost sales, productivity, and success in the digital
+              world.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
