@@ -1,13 +1,13 @@
 "use client";
 
-import ProjectCard from "@/app/components/projects/Card";
-import projectDB from "@/public/projectDB";
-import { useState } from "react";
-import FlipMove from "react-flip-move";
-import { motion } from "framer-motion";
-import { Fade } from "react-awesome-reveal";
 import MainComponent from "@/app/components/common/main";
+import ProjectCard from "@/app/components/projects/Card";
 import Tab from "@/app/components/projects/Tab";
+import projectDB from "@/public/projectDB";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { Fade } from "react-awesome-reveal";
+import FlipMove from "react-flip-move";
 
 const Projects = () => {
   const [current, setCurrent] = useState("all");
@@ -16,8 +16,8 @@ const Projects = () => {
     setCurrent(value);
   };
 
-  const filteredProjects = projectDB.filter(project => 
-    current === "all" ? true : current === project.type
+  const filteredProjects = projectDB.filter((project) =>
+    current === "all" ? true : current === project.type,
   );
 
   return (
@@ -33,14 +33,15 @@ const Projects = () => {
               className="mb-8"
             >
               <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-4">
-                💼 Our Portfolio
+                💼 My Portfolio
               </span>
               <h1 className="text-4xl lg:text-5xl font-bold textGradient mb-4">
                 Projects That Make a Difference
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                Explore our collection of web applications, mobile apps, and innovative solutions
-                that have helped businesses grow and succeed.
+                Explore our collection of web applications, mobile apps, and
+                innovative solutions that have helped businesses grow and
+                succeed.
               </p>
             </motion.div>
 
@@ -52,20 +53,22 @@ const Projects = () => {
               className="flex justify-center items-center gap-8 flex-wrap mb-12"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold textGradient">{projectDB.length}+</div>
+                <div className="text-3xl font-bold textGradient">
+                  {projectDB.length}+
+                </div>
                 <div className="text-sm text-gray-400">Total Projects</div>
               </div>
               <div className="w-px h-12 bg-gray-700 hidden sm:block"></div>
               <div className="text-center">
                 <div className="text-3xl font-bold textGradient">
-                  {projectDB.filter(p => p.type === 'fullstack').length}
+                  {projectDB.filter((p) => p.type === "fullstack").length}
                 </div>
                 <div className="text-sm text-gray-400">Full Stack Apps</div>
               </div>
               <div className="w-px h-12 bg-gray-700 hidden sm:block"></div>
               <div className="text-center">
                 <div className="text-3xl font-bold textGradient">
-                  {projectDB.filter(p => p.type === 'frontend').length}
+                  {projectDB.filter((p) => p.type === "frontend").length}
                 </div>
                 <div className="text-sm text-gray-400">Frontend Projects</div>
               </div>
@@ -121,7 +124,9 @@ const Projects = () => {
             className="text-center py-20"
           >
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-2xl font-bold text-gray-300 mb-2">No projects found</h3>
+            <h3 className="text-2xl font-bold text-gray-300 mb-2">
+              No projects found
+            </h3>
             <p className="text-gray-400">Try selecting a different category</p>
           </motion.div>
         )}

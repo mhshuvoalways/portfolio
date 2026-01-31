@@ -216,7 +216,7 @@ const Contact = () => {
                 <div className="text-center mb-8">
                   <div className="text-4xl mb-4">📝</div>
                   <h2 className="text-2xl font-bold textGradient mb-2">
-                    Send Us a Message
+                    Send Me a Message
                   </h2>
                   <p className="text-gray-400">
                     {`Fill out the form below and we&apos;ll get back to you soon`}

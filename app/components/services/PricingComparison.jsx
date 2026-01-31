@@ -20,7 +20,7 @@ const PricingComparison = ({ services }) => {
             Transparent Pricing
           </span>
           <h2 className="text-3xl lg:text-4xl font-bold textGradient mb-4">
-            Compare Our Service Packages
+            Compare My Service Packages
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Choose the perfect package for your project. All packages include

@@ -71,7 +71,7 @@ const Page = () => {
                   whileTap={{ scale: 0.95 }}
                   className="bg-gradient-to-r from-secondary via-primary to-tertiary hover:from-tertiary hover:via-primary hover:to-secondary text-black font-bold py-4 px-8 rounded-xl transition-all duration-500 shadow-lg hover:shadow-xl relative overflow-hidden group/btn"
                 >
-                  <span className="relative z-10">View Our Services</span>
+                  <span className="relative z-10">View My Services</span>
                   <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 skew-x-12" />
                 </motion.button>
               </Link>
@@ -121,7 +121,7 @@ const Page = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-4">
-              Why Choose Us
+              Why Choose Me
             </span>
             <h2 className="text-3xl lg:text-5xl font-bold textGradient mb-4">
               Built for Your Success
@@ -186,7 +186,7 @@ const Page = () => {
               </Link>
               <Link href="/contact">
                 <button className="px-8 py-4 bg-transparent border-2 border-primary/50 hover:bg-primary/10 text-primary font-bold rounded-xl transition-all duration-300">
-                  Contact Us
+                  Contact Me
                 </button>
               </Link>
             </div>

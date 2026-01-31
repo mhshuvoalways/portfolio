@@ -186,7 +186,7 @@ const Page = () => {
           >
             <div className="text-4xl mb-4">🚀</div>
             <h2 className="text-3xl font-bold textGradient mb-4">
-              Ready to Join Our Happy Clients?
+              Ready to Join My Happy Clients?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
               {`Experience the same level of quality and professionalism that earned me

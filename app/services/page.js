@@ -194,7 +194,7 @@ const Page = () => {
                   whileTap={{ scale: 0.95 }}
                   className="bg-transparent border-2 border-primary/50 hover:bg-primary/10 text-primary font-bold py-4 px-6 rounded-xl transition-all duration-300"
                 >
-                  Contact Us
+                  Contact Me
                 </motion.button>
               </Link>
             </div>
