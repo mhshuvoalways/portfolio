@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
               const script = document.createElement('script');
               script.src = 'https://app.chatbotsense.com/chatbot-widget/index.js';
               script.async = true;
-              sript.type = 'module';
+              script.type = 'module';
               document.head.appendChild(script);
             })();
           `}
