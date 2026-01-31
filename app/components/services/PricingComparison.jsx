@@ -3,7 +3,9 @@ import Link from "next/link";
 
 const PricingComparison = ({ services }) => {
   const getServiceTiers = (service) => {
-    return service.pricingTiers?.sort((a, b) => a.sort_order - b.sort_order) || [];
+    return (
+      service.pricingTiers?.sort((a, b) => a.sort_order - b.sort_order) || []
+    );
   };
 
   return (
@@ -21,7 +23,8 @@ const PricingComparison = ({ services }) => {
             Compare Our Service Packages
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Choose the perfect package for your project. All packages include support and quality assurance.
+            Choose the perfect package for your project. All packages include
+            support and quality assurance.
           </p>
         </motion.div>
       </div>
@@ -43,8 +46,12 @@ const PricingComparison = ({ services }) => {
               <div className="flex items-center gap-4 mb-8">
                 <div className="text-4xl">{service.icon}</div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">{service.title}</h3>
-                  <p className="text-gray-400">{service.description.substring(0, 120)}...</p>
+                  <h3 className="text-2xl font-bold text-white">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-400">
+                    {service.description.substring(0, 120)}...
+                  </p>
                 </div>
               </div>
 
@@ -70,8 +77,12 @@ const PricingComparison = ({ services }) => {
                     )}
 
                     <div className="mb-6">
-                      <h4 className="text-xl font-bold text-white mb-2">{tier.name}</h4>
-                      <div className="text-2xl font-bold textGradient mb-4">{tier.price}</div>
+                      <h4 className="text-xl font-bold text-white mb-2">
+                        {tier.name}
+                      </h4>
+                      <div className="text-2xl font-bold textGradient mb-4">
+                        {tier.price}
+                      </div>
                     </div>
 
                     <ul className="space-y-3 mb-6">
@@ -127,7 +138,8 @@ const PricingComparison = ({ services }) => {
           Need a Custom Solution?
         </h3>
         <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-          Have unique requirements? We offer custom packages tailored to your specific business needs and budget.
+          Have unique requirements? I offer custom packages tailored to your
+          specific business needs and budget.
         </p>
         <Link href="/contact">
           <button className="px-8 py-4 bg-transparent border-2 border-primary/50 hover:bg-primary/10 text-primary font-bold rounded-xl transition-all duration-300">

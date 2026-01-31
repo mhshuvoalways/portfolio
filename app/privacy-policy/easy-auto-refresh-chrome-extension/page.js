@@ -10,27 +10,27 @@ const page = () => {
           </p>
           <div>
             <p className="text3">1. Introduction</p>
-            <p className="mt-2">{`The Easy Auto Refresh Chrome Extension ("we," "us," or "our") is dedicated to safeguarding your privacy. This Privacy Policy outlines how we collect, use, and share user data when you use our extension.`}</p>
+            <p className="mt-2">{`The Easy Auto Refresh Chrome Extension ("we," "us," or "our") is dedicated to safeguarding your privacy. This Privacy Policy outlines how I collect, use, and share user data when you use our extension.`}</p>
           </div>
         </div>
         <div>
-          <p className="text3">2. Information We Collect</p>
+          <p className="text3">2. Information I Collect</p>
           <ul className="mt-2 list-disc pl-7">
             <li>
-              Tab Information: We collect the ID of the specific tab where the
+              Tab Information: I collect the ID of the specific tab where the
               auto-refresh feature is initiated. This data helps us manage the
               auto-refresh functionality effectively.
             </li>
             <li>
-              User Preferences: We store your preferences regarding refresh
+              User Preferences: I store your preferences regarding refresh
               intervals and settings to enhance your user experience.
             </li>
           </ul>
         </div>
         <div>
-          <p className="text3">3. How We Use Your Information</p>
+          <p className="text3">3. How I Use Your Information</p>
           <p className="mt-2">
-            We use the collected information for the following purposes:
+            I use the collected information for the following purposes:
           </p>
           <ul className="mt-2 list-disc pl-7">
             <li>
@@ -47,7 +47,7 @@ const page = () => {
           <p className="text3">4. Data Sharing</p>
           <ul className="mt-2 list-disc pl-7">
             <li>
-              Third Parties: We do not share your data with any third parties.
+              Third Parties: I do not share your data with any third parties.
               The information collected is stored locally within your browser
               and is only accessible to the Easy Auto Refresh Chrome Extension.
             </li>
@@ -72,8 +72,8 @@ const page = () => {
         <div>
           <p className="text3">7. Changes to This Privacy Policy</p>
           <p className="mt-2">
-            We may update this Privacy Policy occasionally. We will notify you
-            of any changes by updating the effective date at the top of this
+            I may update this Privacy Policy occasionally. I will notify you of
+            any changes by updating the effective date at the top of this
             policy. Your continued use of the extension after any changes
             indicates your acceptance of the new Privacy Policy.
           </p>

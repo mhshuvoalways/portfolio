@@ -167,7 +167,7 @@ const Contact = () => {
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 {`Have a project in mind? We&apos;d love to hear about it.
-                Send us a message and we&apos;ll discuss how we can bring your vision to life.`}
+                Send us a message and we&apos;ll discuss how I can bring your vision to life.`}
               </p>
             </motion.div>
 

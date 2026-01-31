@@ -1,9 +1,9 @@
 "use client";
 
 import Main from "@/app/components/common/main";
+import { roundedYears } from "@/app/utils/dynamicExperienceCount";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { roundedYears } from "@/app/utils/dynamicExperienceCount";
 
 const stats = [
   { number: "180+", label: "Projects Delivered" },
@@ -16,12 +16,13 @@ const benefits = [
   {
     icon: "⚡",
     title: "Fast Delivery",
-    description: "Get your project delivered on time without compromising quality",
+    description:
+      "Get your project delivered on time without compromising quality",
   },
   {
     icon: "🎯",
     title: "Results-Driven",
-    description: "We focus on solutions that drive real business growth and ROI",
+    description: "I focus on solutions that drive real business growth and ROI",
   },
   {
     icon: "🛡️",
@@ -31,7 +32,7 @@ const benefits = [
   {
     icon: "💼",
     title: "Business-First",
-    description: "We understand your business needs and build accordingly",
+    description: "I understand your business needs and build accordingly",
   },
 ];
 
@@ -58,7 +59,9 @@ const Page = () => {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              We build powerful web applications, mobile apps, and AI-powered solutions that help businesses automate, scale, and succeed in the digital world.
+              I build powerful web applications, mobile apps, and AI-powered
+              solutions that help businesses automate, scale, and succeed in the
+              digital world.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -124,7 +127,7 @@ const Page = () => {
               Built for Your Success
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              We combine technical excellence with business understanding
+              I combine technical excellence with business understanding
             </p>
           </motion.div>
         </div>
@@ -164,7 +167,8 @@ const Page = () => {
               Ready to Transform Your Business?
             </h2>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto text-lg">
-              Schedule a free consultation to discuss how our custom software solutions can help you achieve your business goals
+              Schedule a free consultation to discuss how our custom software
+              solutions can help you achieve your business goals
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -187,7 +191,8 @@ const Page = () => {
               </Link>
             </div>
             <p className="text-gray-500 text-sm mt-6">
-              No commitment required • Free consultation • Response within 24 hours
+              No commitment required • Free consultation • Response within 24
+              hours
             </p>
           </div>
         </motion.div>
