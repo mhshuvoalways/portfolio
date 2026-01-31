@@ -59,9 +59,8 @@ const Page = () => {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              I build powerful web applications, mobile apps, and AI-powered
-              solutions that help businesses automate, scale, and succeed in the
-              digital world.
+              I Help Businesses Grow Build Web & AI Automation Tools to Boost
+              Sales and Productivity and Succeed in The Digital World.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
