@@ -3,11 +3,7 @@
 import Main from "@/app/components/common/main";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import { roundedYears } from "@/app/utils/dynamicExperienceCount";
-
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 const stats = [
   { number: "180+", label: "Projects Delivered" },
@@ -40,33 +36,6 @@ const benefits = [
 ];
 
 const Page = () => {
-  const [services, setServices] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetchServices();
-  }, []);
-
-  const fetchServices = async () => {
-    try {
-      const response = await fetch(
-        `${SUPABASE_URL}/rest/v1/services?is_active=eq.true&order=sort_order.asc&limit=4`,
-        {
-          headers: {
-            apikey: SUPABASE_ANON_KEY,
-            Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-          },
-        }
-      );
-      const data = await response.json();
-      setServices(data);
-    } catch (error) {
-      console.error("Error fetching services:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
     <Main>
       <div className="mt-10 lg:mt-20">
@@ -149,81 +118,6 @@ const Page = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-4">
-              Our Services
-            </span>
-            <h2 className="text-3xl lg:text-5xl font-bold textGradient mb-4">
-              Enterprise Solutions That Drive Growth
-            </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              From concept to launch, we deliver comprehensive software solutions tailored to your business needs
-            </p>
-          </motion.div>
-        </div>
-
-        {loading ? (
-          <div className="flex justify-center items-center py-20">
-            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-primary"></div>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <motion.div
-                key={service.id}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm border border-gray-700/50 hover:border-primary/50 p-6 rounded-2xl transition-all duration-300 hover:scale-105"
-              >
-                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-                  {service.description.substring(0, 100)}...
-                </p>
-                <Link
-                  href="/services"
-                  className="text-primary text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all"
-                >
-                  Learn More
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        )}
-
-        <div className="text-center mt-12">
-          <Link href="/services">
-            <button className="px-8 py-4 bg-gray-800/50 border border-gray-600/50 hover:border-primary/50 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105">
-              View All Services & Pricing
-            </button>
-          </Link>
-        </div>
-      </div>
-
-      <div className="mt-16 lg:mt-20">
-        <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-4">
               Why Choose Us
             </span>
             <h2 className="text-3xl lg:text-5xl font-bold textGradient mb-4">
@@ -286,9 +180,9 @@ const Page = () => {
                   <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 skew-x-12" />
                 </motion.button>
               </Link>
-              <Link href="/services">
+              <Link href="/contact">
                 <button className="px-8 py-4 bg-transparent border-2 border-primary/50 hover:bg-primary/10 text-primary font-bold rounded-xl transition-all duration-300">
-                  View Pricing
+                  Contact Us
                 </button>
               </Link>
             </div>
