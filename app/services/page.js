@@ -6,79 +6,84 @@ import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import Card from "../components/services/Card";
 import FAQ from "../components/services/FAQ";
-import { useState, useEffect } from "react";
+
+const services = [
+  {
+    id: 1,
+    title: "Web Development",
+    icon: "🖥️",
+    description: "I design and build modern, fast, and responsive websites using powerful technologies like HTML, CSS, JavaScript, React.js, Next.js, Node.js and more.",
+    features: [
+      "Custom-built websites for better performance (no cookie-cutter templates!).",
+      "Faster, smoother user experience to keep visitors engaged.",
+      "Modern and mobile-friendly design that looks great on any screen.",
+      "Stronger security to protect your business and customer data.",
+      "SEO-friendly structure to help your website rank higher on Google.",
+      "Easy updates & future growth without technical headaches."
+    ]
+  },
+  {
+    id: 2,
+    title: "Mobile App Development",
+    icon: "📱",
+    description: "I design and build modern mobile apps that work smoothly on both iOS and Android using React Native and other modern tools.",
+    features: [
+      "Custom-built app for better performance (no cookie-cutter templates!).",
+      "Faster, smoother user experience to keep users engaged.",
+      "Stronger security to protect your business and customer data.",
+      "Easy updates & future growth."
+    ]
+  },
+  {
+    id: 3,
+    title: "AI Agent Development",
+    icon: "🧠",
+    description: "I build smart AI agents using tools like OpenAI to automate tasks, handle workflows, solve problems, and operate independently to support your business.",
+    features: [
+      "Custom-built AI agent tailored to your workflow.",
+      "Automates tasks and handles complex actions on its own.",
+      "Can analyze data, make decisions, and run processes.",
+      "Integrates into your website or backend systems.",
+      "Chat history and analytics if needed.",
+      "Easy updates & future growth."
+    ]
+  }
+];
+
+const faqs = [
+  {
+    id: 1,
+    question: "How long does it take to build a website?",
+    answer: "The timeline varies based on project complexity. A simple website typically takes 2-4 weeks, while more complex applications can take 2-3 months. We'll provide a detailed timeline during our initial consultation."
+  },
+  {
+    id: 2,
+    question: "Do you offer ongoing maintenance and support?",
+    answer: "Yes! We offer maintenance packages to keep your website secure, updated, and running smoothly. We can discuss the best option for your needs during our consultation."
+  },
+  {
+    id: 3,
+    question: "What technologies do you use?",
+    answer: "We use modern, industry-standard technologies including React.js, Next.js, Node.js, TypeScript, and various other tools depending on project requirements. We always choose the best technology stack for your specific needs."
+  },
+  {
+    id: 4,
+    question: "Do you work with clients internationally?",
+    answer: "Absolutely! We work with clients from all over the world. We're comfortable with remote collaboration and can adjust to different time zones."
+  },
+  {
+    id: 5,
+    question: "What's included in the free consultation?",
+    answer: "During the free consultation, we'll discuss your project goals, requirements, timeline, and budget. We'll provide recommendations and a detailed proposal with pricing. There's no obligation to proceed."
+  },
+  {
+    id: 6,
+    question: "How much does a project typically cost?",
+    answer: "Pricing varies greatly depending on your specific requirements, features, and complexity. We provide custom quotes after understanding your needs. Simple websites start from a few thousand dollars, while complex applications require larger investments."
+  }
+];
 
 const Page = () => {
-  const [services, setServices] = useState([]);
-  const [faqs, setFaqs] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetchServices();
-    fetchFAQs();
-  }, []);
-
-  const fetchServices = async () => {
-    try {
-      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-      const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
-      if (!supabaseUrl || !supabaseKey) {
-        throw new Error("Supabase configuration is missing");
-      }
-
-      const response = await fetch(
-        `${supabaseUrl}/rest/v1/services?is_active=eq.true&order=sort_order.asc`,
-        {
-          headers: {
-            apikey: supabaseKey,
-            Authorization: `Bearer ${supabaseKey}`,
-          },
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data = await response.json();
-      setServices(data || []);
-    } catch (error) {
-      console.error("Error fetching services:", error);
-      setError(error.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const fetchFAQs = async () => {
-    try {
-      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-      const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
-      if (!supabaseUrl || !supabaseKey) {
-        return;
-      }
-
-      const response = await fetch(
-        `${supabaseUrl}/rest/v1/service_faqs?service_id=is.null&order=sort_order.asc`,
-        {
-          headers: {
-            apikey: supabaseKey,
-            Authorization: `Bearer ${supabaseKey}`,
-          },
-        }
-      );
-
-      if (response.ok) {
-        const data = await response.json();
-        setFaqs(data || []);
-      }
-    } catch (error) {
-      console.error("Error fetching FAQs:", error);
-    }
-  };
 
   return (
     <Main>
@@ -126,46 +131,20 @@ const Page = () => {
           </div>
         </Fade>
 
-        {loading ? (
-          <div className="flex justify-center items-center py-20">
-            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-primary"></div>
-          </div>
-        ) : error ? (
-          <div className="flex justify-center items-center py-20">
-            <div className="text-center">
-              <p className="text-red-500 mb-4">Error loading services: {error}</p>
-              <button
-                onClick={() => {
-                  setLoading(true);
-                  setError(null);
-                  fetchServices();
-                }}
-                className="bg-primary text-black px-6 py-2 rounded-lg"
-              >
-                Retry
-              </button>
-            </div>
-          </div>
-        ) : services.length === 0 ? (
-          <div className="flex justify-center items-center py-20">
-            <p className="text-gray-400 text-lg">No services available at the moment.</p>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
-            {services.map((service, index) => (
-              <Card
-                key={service.id}
-                icon={service.icon}
-                title={service.title}
-                description={service.description}
-                lists={service.features}
-                index={index}
-              />
-            ))}
-          </div>
-        )}
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
+          {services.map((service, index) => (
+            <Card
+              key={service.id}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+              lists={service.features}
+              index={index}
+            />
+          ))}
+        </div>
 
-        {faqs.length > 0 && <FAQ faqs={faqs} />}
+        <FAQ faqs={faqs} />
 
         <Fade>
           <motion.div
