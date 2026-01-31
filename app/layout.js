@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Chatbot Script */}
-        <Script id="chatbot-widget" strategy="afterInteractive">
+        <Script id="chatbot-widget" strategy="afterInteractive" type="module">
           {`
             window.chatbotUserId = '89bae0f4-3516-4b49-9316-0e3f59d2698c';
             (function() {

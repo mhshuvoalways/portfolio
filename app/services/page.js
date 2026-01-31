@@ -79,7 +79,7 @@ const faqs = [
   {
     id: 6,
     question: "How much does a project typically cost?",
-    answer: "Pricing varies greatly depending on your specific requirements, features, and complexity. We provide custom quotes after understanding your needs. Simple websites start from a few thousand dollars, while complex applications require larger investments."
+    answer: "Pricing varies greatly depending on your specific requirements, features, and complexity. We provide custom quotes after understanding your needs. Simple websites start at a few hundred dollars, while complex applications require an investment of thousands of dollars or more."
   }
 ];
 
