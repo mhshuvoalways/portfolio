@@ -8,13 +8,11 @@ import Card from "../components/services/Card";
 import FAQ from "../components/services/FAQ";
 import { useState, useEffect } from "react";
 
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
 const Page = () => {
   const [services, setServices] = useState([]);
   const [faqs, setFaqs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetchServices();
@@ -23,20 +21,32 @@ const Page = () => {
 
   const fetchServices = async () => {
     try {
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+      const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+      if (!supabaseUrl || !supabaseKey) {
+        throw new Error("Supabase configuration is missing");
+      }
+
       const response = await fetch(
-        `${SUPABASE_URL}/rest/v1/services?is_active=eq.true&order=sort_order.asc`,
+        `${supabaseUrl}/rest/v1/services?is_active=eq.true&order=sort_order.asc`,
         {
           headers: {
-            apikey: SUPABASE_ANON_KEY,
-            Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+            apikey: supabaseKey,
+            Authorization: `Bearer ${supabaseKey}`,
           },
         }
       );
 
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
       const data = await response.json();
-      setServices(data);
+      setServices(data || []);
     } catch (error) {
       console.error("Error fetching services:", error);
+      setError(error.message);
     } finally {
       setLoading(false);
     }
@@ -44,18 +54,27 @@ const Page = () => {
 
   const fetchFAQs = async () => {
     try {
+      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+      const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+      if (!supabaseUrl || !supabaseKey) {
+        return;
+      }
+
       const response = await fetch(
-        `${SUPABASE_URL}/rest/v1/service_faqs?service_id=is.null&order=sort_order.asc`,
+        `${supabaseUrl}/rest/v1/service_faqs?service_id=is.null&order=sort_order.asc`,
         {
           headers: {
-            apikey: SUPABASE_ANON_KEY,
-            Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+            apikey: supabaseKey,
+            Authorization: `Bearer ${supabaseKey}`,
           },
         }
       );
 
-      const data = await response.json();
-      setFaqs(data);
+      if (response.ok) {
+        const data = await response.json();
+        setFaqs(data || []);
+      }
     } catch (error) {
       console.error("Error fetching FAQs:", error);
     }
@@ -111,8 +130,28 @@ const Page = () => {
           <div className="flex justify-center items-center py-20">
             <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-primary"></div>
           </div>
+        ) : error ? (
+          <div className="flex justify-center items-center py-20">
+            <div className="text-center">
+              <p className="text-red-500 mb-4">Error loading services: {error}</p>
+              <button
+                onClick={() => {
+                  setLoading(true);
+                  setError(null);
+                  fetchServices();
+                }}
+                className="bg-primary text-black px-6 py-2 rounded-lg"
+              >
+                Retry
+              </button>
+            </div>
+          </div>
+        ) : services.length === 0 ? (
+          <div className="flex justify-center items-center py-20">
+            <p className="text-gray-400 text-lg">No services available at the moment.</p>
+          </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
             {services.map((service, index) => (
               <Card
                 key={service.id}
