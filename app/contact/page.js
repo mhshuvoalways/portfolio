@@ -46,16 +46,88 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [messageError, setMessageError] = useState("");
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const validateName = (name) => {
+    return name.trim().length >= 2;
+  };
+
+  const validateMessage = (message) => {
+    return message.trim().length >= 10;
+  };
 
   const onChangeHandler = (e) => {
     setContact({
       ...contact,
       [e.target.name]: e.target.value,
     });
+
+    if (e.target.name === "email" && emailError) {
+      setEmailError("");
+    }
+    if (e.target.name === "name" && nameError) {
+      setNameError("");
+    }
+    if (e.target.name === "message" && messageError) {
+      setMessageError("");
+    }
+  };
+
+  const handleEmailBlur = () => {
+    if (contact.email && !validateEmail(contact.email)) {
+      setEmailError("Please enter a valid email address");
+    } else {
+      setEmailError("");
+    }
+  };
+
+  const handleNameBlur = () => {
+    if (contact.name && !validateName(contact.name)) {
+      setNameError("Name must be at least 2 characters");
+    } else {
+      setNameError("");
+    }
+  };
+
+  const handleMessageBlur = () => {
+    if (contact.message && !validateMessage(contact.message)) {
+      setMessageError("Message must be at least 10 characters");
+    } else {
+      setMessageError("");
+    }
   };
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
+
+    let hasError = false;
+
+    if (!validateName(contact.name)) {
+      setNameError("Name must be at least 2 characters");
+      hasError = true;
+    }
+
+    if (!validateEmail(contact.email)) {
+      setEmailError("Please enter a valid email address");
+      hasError = true;
+    }
+
+    if (!validateMessage(contact.message)) {
+      setMessageError("Message must be at least 10 characters");
+      hasError = true;
+    }
+
+    if (hasError) {
+      return;
+    }
+
     setLoading("loading");
     axios
       .post(`/api/send-mail`, contact)
@@ -66,6 +138,9 @@ const Contact = () => {
           email: "",
           message: "",
         });
+        setEmailError("");
+        setNameError("");
+        setMessageError("");
       })
       .catch(() => {
         setLoading("fail");
@@ -156,13 +231,34 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-600/50 rounded-xl focus:border-primary/50 focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 text-gray-200 placeholder-gray-500"
+                      className={`w-full px-4 py-3 bg-gray-800/50 backdrop-blur-sm border rounded-xl focus:ring-2 outline-none transition-all duration-300 text-gray-200 placeholder-gray-500 ${
+                        nameError
+                          ? "border-red-500/70 focus:border-red-500 focus:ring-red-500/20"
+                          : "border-gray-600/50 focus:border-primary/50 focus:ring-primary/20"
+                      }`}
                       placeholder="Enter your full name"
                       name="name"
                       onChange={onChangeHandler}
+                      onBlur={handleNameBlur}
                       value={contact.name}
                       required
                     />
+                    {nameError && (
+                      <p className="mt-2 text-sm text-red-400 flex items-center gap-1">
+                        <svg
+                          className="w-4 h-4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        {nameError}
+                      </p>
+                    )}
                   </div>
 
                   <div>
@@ -171,13 +267,34 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
-                      className="w-full px-4 py-3 bg-gray-800/50 backdrop-blur-sm border border-gray-600/50 rounded-xl focus:border-primary/50 focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 text-gray-200 placeholder-gray-500"
+                      className={`w-full px-4 py-3 bg-gray-800/50 backdrop-blur-sm border rounded-xl focus:ring-2 outline-none transition-all duration-300 text-gray-200 placeholder-gray-500 ${
+                        emailError
+                          ? "border-red-500/70 focus:border-red-500 focus:ring-red-500/20"
+                          : "border-gray-600/50 focus:border-primary/50 focus:ring-primary/20"
+                      }`}
                       placeholder="Enter your email address"
                       name="email"
                       onChange={onChangeHandler}
+                      onBlur={handleEmailBlur}
                       value={contact.email}
                       required
                     />
+                    {emailError && (
+                      <p className="mt-2 text-sm text-red-400 flex items-center gap-1">
+                        <svg
+                          className="w-4 h-4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        {emailError}
+                      </p>
+                    )}
                   </div>
 
                   <div>
@@ -185,13 +302,34 @@ const Contact = () => {
                       Project Details *
                     </label>
                     <textarea
-                      className="w-full px-4 py-3 h-32 bg-gray-800/50 backdrop-blur-sm border border-gray-600/50 rounded-xl focus:border-primary/50 focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 text-gray-200 placeholder-gray-500 resize-none"
+                      className={`w-full px-4 py-3 h-32 bg-gray-800/50 backdrop-blur-sm border rounded-xl focus:ring-2 outline-none transition-all duration-300 text-gray-200 placeholder-gray-500 resize-none ${
+                        messageError
+                          ? "border-red-500/70 focus:border-red-500 focus:ring-red-500/20"
+                          : "border-gray-600/50 focus:border-primary/50 focus:ring-primary/20"
+                      }`}
                       placeholder="Tell me about your project, timeline, and requirements..."
                       name="message"
                       onChange={onChangeHandler}
+                      onBlur={handleMessageBlur}
                       value={contact.message}
                       required
                     />
+                    {messageError && (
+                      <p className="mt-2 text-sm text-red-400 flex items-center gap-1">
+                        <svg
+                          className="w-4 h-4"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        {messageError}
+                      </p>
+                    )}
                   </div>
 
                   <motion.button
