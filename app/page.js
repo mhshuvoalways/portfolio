@@ -69,7 +69,7 @@ const Page = () => {
 
   return (
     <Main>
-      <div className="mt-10 lg:mt-20 flex items-center justify-center min-h-[80vh]">
+      <div className="mt-10 lg:mt-20">
         <div className="w-full text-center relative">
           <div className="absolute -top-20 left-1/4 w-40 h-40 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute -bottom-20 right-1/4 w-32 h-32 bg-secondary/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
@@ -120,7 +120,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="mt-20 lg:mt-32">
+      <div className="mt-16 lg:mt-20">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
             <motion.div
@@ -141,7 +141,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="mt-20 lg:mt-32">
+      <div className="mt-16 lg:mt-20">
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -216,7 +216,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="mt-20 lg:mt-32">
+      <div className="mt-16 lg:mt-20">
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -256,7 +256,7 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="mt-20 lg:mt-32">
+      <div className="mt-16 lg:mt-20">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
