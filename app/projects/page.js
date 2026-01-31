@@ -143,7 +143,7 @@ const Projects = () => {
               Ready to Start Your Own Project?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              {`Inspired by what you see? We&apos;ll collaborate to bring your vision to life
+              {`Inspired by what you see? I'll collaborate to bring your vision to life
               with the same level of quality and attention to detail.`}
             </p>
             <motion.button
