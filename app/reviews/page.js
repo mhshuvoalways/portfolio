@@ -189,8 +189,7 @@ const Page = () => {
               Ready to Join My Happy Clients?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              {`Experience the same level of quality and professionalism that earned me
-              these amazing reviews. We&apos;ll start your success story today!`}
+              {`Experience the same level of quality and professionalism that earned me these amazing reviews. I'll start your success story today!`}
             </p>
             <Link
               href="https://calendly.com/mhshuvoalways/support-for-building-website"
