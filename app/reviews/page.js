@@ -42,7 +42,7 @@ const stats = [
   { number: "3", label: "Platforms", icon: "🌐" },
 ];
 
-const page = () => {
+const Page = () => {
   return (
     <Main>
       <div className="mt-10 lg:mt-20">
@@ -63,7 +63,7 @@ const page = () => {
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 Real feedback from satisfied clients across multiple platforms.
-                See why businesses trust me with their most important projects.
+                See why businesses trust us with their most important projects.
               </p>
             </motion.div>
 
@@ -186,11 +186,11 @@ const page = () => {
           >
             <div className="text-4xl mb-4">🚀</div>
             <h2 className="text-3xl font-bold textGradient mb-4">
-              Ready to Join My Happy Clients?
+              Ready to Join Our Happy Clients?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              {`Experience the same level of quality and professionalism that earned me 
-              these amazing reviews. Let's start your success story today!`}
+              {`Experience the same level of quality and professionalism that earned us
+              these amazing reviews. We&apos;ll start your success story today!`}
             </p>
             <Link
               href="https://calendly.com/mhshuvoalways/support-for-building-website"
@@ -212,4 +212,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

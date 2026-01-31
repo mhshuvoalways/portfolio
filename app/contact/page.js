@@ -91,8 +91,8 @@ const Contact = () => {
                 {`Let's Build Something Amazing`}
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                {`Have a project in mind? I'd love to hear about it. 
-                Send me a message and let's discuss how we can bring your vision to life.`}
+                {`Have a project in mind? We&apos;d love to hear about it.
+                Send us a message and we&apos;ll discuss how we can bring your vision to life.`}
               </p>
             </motion.div>
 
@@ -142,10 +142,10 @@ const Contact = () => {
                 <div className="text-center mb-8">
                   <div className="text-4xl mb-4">📝</div>
                   <h2 className="text-2xl font-bold textGradient mb-2">
-                    Send Me a Message
+                    Send Us a Message
                   </h2>
                   <p className="text-gray-400">
-                    {`Fill out the form below and I'll get back to you soon`}
+                    {`Fill out the form below and we&apos;ll get back to you soon`}
                   </p>
                 </div>
 

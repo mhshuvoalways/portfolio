@@ -33,13 +33,13 @@ const Projects = () => {
               className="mb-8"
             >
               <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-4">
-                💼 My Portfolio
+                💼 Our Portfolio
               </span>
               <h1 className="text-4xl lg:text-5xl font-bold textGradient mb-4">
                 Projects That Make a Difference
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                Explore my collection of web applications, mobile apps, and innovative solutions 
+                Explore our collection of web applications, mobile apps, and innovative solutions
                 that have helped businesses grow and succeed.
               </p>
             </motion.div>
@@ -138,7 +138,7 @@ const Projects = () => {
               Ready to Start Your Own Project?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              {`Inspired by what you see? Let's collaborate to bring your vision to life 
+              {`Inspired by what you see? We&apos;ll collaborate to bring your vision to life
               with the same level of quality and attention to detail.`}
             </p>
             <motion.button
