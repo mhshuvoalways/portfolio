@@ -10,7 +10,7 @@ const page = () => {
           </p>
           <div>
             <p className="text3">1. Introduction</p>
-            <p className="mt-2">{`The Easy Auto Refresh Chrome Extension ("we," "me," or "our") is dedicated to safeguarding your privacy. This Privacy Policy outlines how I collect, use, and share user data when you use our extension.`}</p>
+            <p className="mt-2">{`The Easy Auto Refresh Chrome Extension is dedicated to safeguarding your privacy. This Privacy Policy outlines how I collect, use, and share user data when you use my extension.`}</p>
           </div>
         </div>
         <div>
@@ -57,7 +57,7 @@ const page = () => {
           <p className="text3">5. Data Storage</p>
           <p className="mt-2">
             {`Your data is stored locally in your browser's storage and is not
-              sent to our servers or shared with any external parties.`}
+              sent to my servers or shared with any external parties.`}
           </p>
         </div>
         <div>

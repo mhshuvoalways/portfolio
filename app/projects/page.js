@@ -39,7 +39,7 @@ const Projects = () => {
                 Projects That Make a Difference
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                Explore our collection of web applications, mobile apps, and
+                Explore my collection of web applications, mobile apps, and
                 innovative solutions that have helped businesses grow and
                 succeed.
               </p>

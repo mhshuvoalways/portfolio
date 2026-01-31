@@ -167,7 +167,7 @@ const Page = () => {
               Ready to Transform Your Business?
             </h2>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto text-lg">
-              Schedule a free consultation to discuss how our custom software
+              Schedule a free consultation to discuss how my custom software
               solutions can help you achieve your business goals
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

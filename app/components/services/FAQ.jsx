@@ -23,7 +23,8 @@ const FAQ = ({ faqs }) => {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Got questions? Here are answers to the most common questions about our services.
+            Got questions? Here are answers to the most common questions about
+            my services.
           </p>
         </motion.div>
       </div>
@@ -69,7 +70,7 @@ const FAQ = ({ faqs }) => {
               initial={false}
               animate={{
                 height: openIndex === index ? "auto" : 0,
-                opacity: openIndex === index ? 1 : 0
+                opacity: openIndex === index ? 1 : 0,
               }}
               transition={{ duration: 0.3 }}
               className="overflow-hidden"

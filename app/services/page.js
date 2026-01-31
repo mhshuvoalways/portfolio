@@ -58,13 +58,13 @@ const faqs = [
     id: 1,
     question: "How long does it take to build a website?",
     answer:
-      "The timeline varies based on project complexity. A simple website typically takes 2-4 weeks, while more complex applications can take 2-3 months. We'll provide a detailed timeline during our initial consultation.",
+      "The timeline varies based on project complexity. A simple website typically takes 2-4 weeks, while more complex applications can take 2-3 months. We'll provide a detailed timeline during my initial consultation.",
   },
   {
     id: 2,
     question: "Do you offer ongoing maintenance and support?",
     answer:
-      "Yes! I offer maintenance packages to keep your website secure, updated, and running smoothly. I can discuss the best option for your needs during our consultation.",
+      "Yes! I offer maintenance packages to keep your website secure, updated, and running smoothly. I can discuss the best option for your needs during my consultation.",
   },
   {
     id: 3,
@@ -82,7 +82,7 @@ const faqs = [
     id: 5,
     question: "What's included in the free consultation?",
     answer:
-      "During the free consultation, we'll discuss your project goals, requirements, timeline, and budget. We'll provide recommendations and a detailed proposal with pricing. There's no obligation to proceed.",
+      "During the free consultation, I'll discuss your project goals, requirements, timeline, and budget. We'll provide recommendations and a detailed proposal with pricing. There's no obligation to proceed.",
   },
   {
     id: 6,
@@ -168,8 +168,8 @@ const Page = () => {
               Ready to Scale Your Business?
             </h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Join 76+ businesses that have transformed their operations with
-              our professional software development services. Schedule a
+              Join 76+ businesses that have transformed their operations with my
+              professional software development services. Schedule a
               consultation to discuss your project and get a custom quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
