@@ -146,20 +146,21 @@ const Projects = () => {
               {`Inspired by what you see? I'll collaborate to bring your vision to life
               with the same level of quality and attention to detail.`}
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-secondary via-primary to-tertiary hover:from-tertiary hover:via-primary hover:to-secondary text-black font-bold py-4 px-6 rounded-xl transition-all duration-500 shadow-lg hover:shadow-xl relative overflow-hidden group/btn"
+            <a
+              href="https://calendly.com/mhshuvoalways/support-for-building-website"
+              target="_blank"
+              className="relative z-10"
             >
-              <a
-                href="https://calendly.com/mhshuvoalways/support-for-building-website"
-                target="_blank"
-                className="relative z-10"
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-gradient-to-r from-secondary via-primary to-tertiary hover:from-tertiary hover:via-primary hover:to-secondary text-black font-bold py-4 px-6 rounded-xl transition-all duration-500 shadow-lg hover:shadow-xl relative overflow-hidden group/btn"
               >
                 {`Let's Build Something Amazing`}
-              </a>
-              <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 skew-x-12" />
-            </motion.button>
+
+                <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700 skew-x-12" />
+              </motion.button>
+            </a>
           </motion.div>
         </Fade>
       </div>
