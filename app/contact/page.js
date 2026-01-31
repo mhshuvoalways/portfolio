@@ -219,7 +219,7 @@ const Contact = () => {
                     Send Me a Message
                   </h2>
                   <p className="text-gray-400">
-                    {`Fill out the form below and we&apos;ll get back to you soon`}
+                    {`Fill out the form below and I'll get back to you soon!`}
                   </p>
                 </div>
 
