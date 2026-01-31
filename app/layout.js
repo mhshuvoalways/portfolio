@@ -37,13 +37,14 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* Chatbot Script */}
-        <Script id="chatbot-widget" strategy="afterInteractive" type="module">
+        <Script id="chatbot-widget" strategy="afterInteractive">
           {`
             window.chatbotUserId = '89bae0f4-3516-4b49-9316-0e3f59d2698c';
             (function() {
               const script = document.createElement('script');
               script.src = 'https://app.chatbotsense.com/chatbot-widget/index.js';
               script.async = true;
+              sript.type = 'module';
               document.head.appendChild(script);
             })();
           `}
