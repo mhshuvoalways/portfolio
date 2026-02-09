@@ -3,25 +3,17 @@ const Calendar = "/images/projects/calendar.png";
 const ChatbotSense = "/images/projects/chatbotsense.png";
 const Costnip = "/images/projects/costnip.png";
 const CourseTemplateReact = "/images/projects/course-template-react.png";
-const DaringPage = "/images/projects/daringpage.png";
 const EShop = "/images/projects/eshop.png";
 const Extension = "/images/projects/extension.png";
-const HealthCareTemplate = "/images/projects/health-care-template.png";
-const HorseRidingTrainingWebsite = "/images/projects/horse-riding-training-website.png";
+const HorseRidingTrainingWebsite =
+  "/images/projects/horse-riding-training-website.png";
 const LinkedInComment = "/images/projects/linkedin-ai-comment.png";
 const MathPlus = "/images/projects/mathplus.png";
 const PasswordVault = "/images/projects/passwordvault.png";
 const PennayCalc = "/images/projects/pennycalc.png";
-const Polling = "/images/projects/polling.jpg";
 const GoogleLocationSuggest = "/images/projects/react-google-place-suggest.png";
-const Shopmate = "/images/projects/shopmate.png";
 const Solutiongorilla = "/images/projects/solutiongorilla.png";
-const SuperbInfo = "/images/projects/superb-info.png";
-const TicTacToe = "/images/projects/tic-tac-toe.png";
 const TimsTutor = "/images/projects/timstutor.png";
-const TodoList = "/images/projects/todolist.jpg";
-const Traveling = "/images/projects/traveling.png";
-const WeatherWithDom = "/images/projects/weather-with-dom.png";
 
 const Projects = [
   {
@@ -106,7 +98,7 @@ const Projects = [
     ],
     height: "550",
     githubLink: "https://github.com/mhshuvoalways/linkedin-ai-comment",
-    webLink: "https://linkedinaicomment.vercel.app",
+    webLink: "https://linkedinaicomment.com",
   },
   {
     id: "TimsTutor",
@@ -207,45 +199,6 @@ const Projects = [
     webLink: "https://www.npmjs.com/package/react-google-location-suggest",
   },
   {
-    id: "DaringPage",
-    type: "fullstack",
-    image: DaringPage,
-    title: "Daring Page",
-    description:
-      "Daring Page is my blog application with nextjs. It is totally SEO friendly.🚀 I just tried to clean and simple the UI so that user can use it easily. 💻",
-    technologies: [
-      "Nextjs",
-      "Next-auth",
-      "Tailwind",
-      "Expressjs",
-      "MongoDB",
-      "Vercel",
-    ],
-    height: "190",
-    githubLink: "https://github.com/mhshuvoalways/blog-app-nextjs",
-    webLink: "https://daringpage.vercel.app",
-  },
-  {
-    id: "Traveling",
-    type: "fullstack",
-    image: Traveling,
-    title: "Travel Booking Web Application",
-    description:
-      "This application allows users to browse available travel dates, book them, make payments via PayPal, and leave reviews.🚌 The application is built using Next.js, Node.js, and MongoDB. This document provides an overview of the application's features, installation instructions, and usage guidelines.",
-    technologies: [
-      "Nextjs",
-      "Tailwind",
-      "Expressjs",
-      "MongoDB",
-      "Cloudinary",
-      "render",
-      "Netlify",
-    ],
-    height: "380",
-    githubLink: "https://github.com/mhshuvoalways/travel-booking-app",
-    webLink: "https://travelbookingclient.vercel.app",
-  },
-  {
     id: "Solutiongorilla",
     type: "frontend",
     image: Solutiongorilla,
@@ -295,40 +248,6 @@ const Projects = [
     webLink: "https://course-template-react.netlify.app",
   },
   {
-    id: "HealthCareTemplate",
-    type: "frontend",
-    image: HealthCareTemplate,
-    title: "Health Care Template",
-    description:
-      "💊This is a healthcare template for influencers and companies who want to donate money or something to help poor people who cannot afford treatment💊",
-    technologies: ["React", "Netlify"],
-    height: "830",
-    githubLink: "https://github.com/mhshuvoalways/health-care-template",
-    webLink: "https://health-care-template.netlify.app",
-  },
-
-  {
-    id: "SuperbInfo",
-    type: "frontend",
-    image: SuperbInfo,
-    title: "Saving personal data",
-    description:
-      "This is the application for saving personal data with redux persist with a simple but beautiful design from Figma in Reactjs, TypeScript🔥❤",
-    technologies: [
-      "React",
-      "React-redux",
-      "TypeScript",
-      "Redux-persist",
-      "Dropzone",
-      "Framer-motion",
-      "Vitejs",
-      "Netlify",
-    ],
-    height: "90",
-    githubLink: "https://github.com/mhshuvoalways/saving-personal-data",
-    webLink: "https://superb-info.netlify.app",
-  },
-  {
     id: "Costnip",
     type: "contribute",
     image: Costnip,
@@ -341,64 +260,6 @@ const Projects = [
     height: "880",
     githubLink: "",
     webLink: "https://costnip.com",
-  },
-  {
-    id: "Shopmate",
-    type: "frontend",
-    image: Shopmate,
-    title: "Shop Mate",
-    description:
-      "Shop Mate is a simple functional-based application where users can add, delete and update buckets and add a list of items under each bucket. This application inspired by google🥼",
-    technologies: ["React", "BEM", "Easy-peasy", "Netlify"],
-    height: "",
-    githubLink: "https://github.com/mhshuvoalways/shopping-list-app",
-    webLink: "https://shopmate-mhs.netlify.app",
-  },
-  {
-    id: "WeatherWithDom",
-    type: "frontend",
-    image: WeatherWithDom,
-    title: "Weather With Dom",
-    description: "A simple weather app with JS AND DOM manipulation ☁",
-    technologies: ["JS", "DOM manipulation", "HTML", "CSS", "Vercel"],
-    height: "",
-    githubLink: "https://github.com/mhshuvoalways/weather-app-with-dom",
-    webLink: "https://weather-with-dom.vercel.app",
-  },
-  {
-    id: "Polling",
-    type: "frontend",
-    image: Polling,
-    title: "Polling",
-    description:
-      "Polling is a simple functional-based application where users can add, delete and update poll category and add vote under each category.",
-    technologies: ["React", "Netlify"],
-    height: "",
-    githubLink: "https://github.com/mhshuvoalways/react-poll-app",
-    webLink: "https://poll-vote.netlify.app",
-  },
-  {
-    id: "TodoList",
-    type: "frontend",
-    image: TodoList,
-    title: "TodoList",
-    description:
-      "TodoList is a simple application where users can add and filter todo",
-    technologies: ["React", "Netlify"],
-    height: "",
-    githubLink: "https://todolist-mhs.netlify.app",
-    webLink: "https://github.com/mhshuvoalways/todo-app",
-  },
-  {
-    id: "TicTacToe",
-    type: "frontend",
-    image: TicTacToe,
-    title: "Tic Tac Toe Game",
-    description: "React tic tac toe game🏆",
-    technologies: ["React", "Netlify"],
-    height: "",
-    githubLink: "https://github.com/mhshuvoalways/tic-tac-toe-game",
-    webLink: "https://tic-tac-toe-mhs.netlify.app",
   },
 ];
 
