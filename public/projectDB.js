@@ -78,7 +78,7 @@ const Projects = [
       "Museras is an AI-powered investment research app. It helps investors go from idea to investment faster. The app collects data, analyzes it, and turns it into clear, actionable insights. Instead of spending hours on research, you get simple investment memos in minutes. Museras is built for all investors—from beginners to pros. It saves time, reduces risk, and helps you make smarter, confident decisions with trusted sources.",
     technologies: ["NextJS", "TypeScript", "Tailwind", "OpenAI", "Vercel"],
     height: "150",
-    githubLink: "https://github.com/mhshuvoalways/money-management-app",
+    githubLink: "",
     webLink: "https://www.museras.com",
   },
   {
