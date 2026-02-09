@@ -13,6 +13,7 @@ const PennayCalc = "/images/projects/pennycalc.png";
 const GoogleLocationSuggest = "/images/projects/react-google-place-suggest.png";
 const Solutiongorilla = "/images/projects/solutiongorilla.png";
 const TimsTutor = "/images/projects/timstutor.png";
+const Museras = "/images/projects/museras.png";
 const PokemonCollectionTracker =
   "/images/projects/pokemon-collection-mythique.png";
 
@@ -25,7 +26,7 @@ const Projects = [
     description:
       "ChatBot Sense® is a smart & easy AI chatbot that answers your customers instantly, 24/7. Boost customer satisfaction and save time with auto-generated replies. Boost customer satisfaction with Chatbot Sense®!",
     technologies: [
-      "React",
+      "ReactJS",
       "TypeScript",
       "Tailwind",
       "Supabase",
@@ -45,7 +46,7 @@ const Projects = [
     description:
       "Track Your Pokémon TCG Cards & Sealed Products. Scan Pokémon cards and sealed products, track real eBay prices, and follow the value of your collection over time.",
     technologies: [
-      "React",
+      "ReactJS",
       "TypeScript",
       "Tailwind",
       "Supabase",
@@ -63,24 +64,23 @@ const Projects = [
     title: "PennyCalc | Money Management App",
     description:
       "This app is designed to help users track and manage their finances efficiently. The app provides various features to monitor income, expenses, savings, and budget, along with detailed breakdowns and visual charts for better financial planning.",
-    technologies: [
-      "Nextjs",
-      "React",
-      "TypeScript",
-      "Redux toolkit",
-      "Tailwind",
-      "Expressjs",
-      "MongoDB",
-      "Multer",
-      "Cloudinary",
-      "SMTP server",
-      "Vercel",
-    ],
+    technologies: ["ReactJS", "TypeScript", "Tailwind", "Supabase", "Vercel"],
     height: "150",
     githubLink: "https://github.com/mhshuvoalways/money-management-app",
     webLink: "https://pennycalc.vercel.app/",
   },
-
+  {
+    id: "Museras",
+    type: "fullstack",
+    image: Museras,
+    title: "Museras | An AI-powered investment research app.",
+    description:
+      "Museras is an AI-powered investment research app. It helps investors go from idea to investment faster. The app collects data, analyzes it, and turns it into clear, actionable insights. Instead of spending hours on research, you get simple investment memos in minutes. Museras is built for all investors—from beginners to pros. It saves time, reduces risk, and helps you make smarter, confident decisions with trusted sources.",
+    technologies: ["NextJS", "TypeScript", "Tailwind", "OpenAI", "Vercel"],
+    height: "150",
+    githubLink: "https://github.com/mhshuvoalways/money-management-app",
+    webLink: "https://www.museras.com",
+  },
   {
     id: "PasswordVault",
     type: "fullstack",
@@ -89,13 +89,11 @@ const Projects = [
     description:
       "Password vault is designed to make managing passwords effortless. Users can generate passwords and save passwords of any social media or website.",
     technologies: [
-      "React",
-      "Vitejs",
+      "ReactJS",
       "Framer-motion",
       "Expressjs",
       "MongoDB",
-      "Netlify",
-      "Cyclic",
+      "Vercel",
     ],
     height: "400",
     githubLink: "https://github.com/mhshuvoalways/password-manager-app",
@@ -109,10 +107,11 @@ const Projects = [
     description:
       "The LinkedIn AI Comment is a Chrome extension designed to help professionals and businesses engage effectively on LinkedIn. It generates personalized comments to improve interactions on the platform. This tool is primarily aimed at individuals who want to increase their LinkedIn presence while saving time.",
     technologies: [
-      "React",
-      "Vitejs",
+      "ReactJS",
+      "Tailwind",
       "Framer-motion",
-      "Nodejs",
+      "Stripe",
+      "NodeJS",
       "MongoDB",
       "OpenAI",
       "Vercel",
@@ -129,12 +128,12 @@ const Projects = [
     description:
       "The Tutor Marketplace project, designed to facilitate seamless interactions between Admins, Tutors, and Students. The platform aims to simplify learning, teaching, and administrative workflows.",
     technologies: [
-      "Nextjs",
+      "NextJS",
       "motion-primitives",
       "Zoom API",
       "Stripe",
       "Resend",
-      "Nodejs",
+      "NodeJS",
       "Expressjs",
       "MongoDB",
       "Vercel",
@@ -150,7 +149,7 @@ const Projects = [
     title: "Math Plus",
     description:
       "➕Math+ is a free tool designed to help K-5 children improve their math skills through fun and interactive drills. This app focuses on basic algebra operations such as addition, subtraction, multiplication, and division. It’s perfect for enhancing your child's math abilities and identifying areas where they might need extra help.➕",
-    technologies: ["React", "BEM", "Figma", "Vercel"],
+    technologies: ["ReactJS", "BEM", "Figma", "Vercel"],
     height: "130",
     githubLink: "https://github.com/mhshuvoalways/math-plus-app",
     webLink: "https://mathplusapp.vercel.app",
@@ -215,7 +214,7 @@ const Projects = [
     title: "MyFates",
     description:
       "This website helps you discover your future 🔮. Get personal insights on life, love ❤️, and career 💼. Using ancient wisdom 🧠, it guides you to make better choices and unlock your full potential 🚀",
-    technologies: ["Nextjs", "Nodejs", "Tailwind", "AWS", "CICD", "Nginx"],
+    technologies: ["NextJS", "NodeJS", "Tailwind", "AWS", "CICD", "Nginx"],
     height: "1450",
     githubLink: "https://github.com/mhshuvoalways/myfates-web-app",
     webLink: "https://myfates.vercel.app",
@@ -227,7 +226,7 @@ const Projects = [
     title: "Horse Riding Training Website",
     description:
       "💻This is a beautiful horse riding training web landing page🔥",
-    technologies: ["Nextjs", "Tailwind", "Vercel"],
+    technologies: ["NextJS", "Tailwind", "Vercel"],
     height: "2120",
     githubLink:
       "https://github.com/mhshuvoalways/horse-riding-training-website",
@@ -240,7 +239,7 @@ const Projects = [
     title: "Course Template React",
     description:
       "Beautiful and fresh UI react template. I build it for one of my client📚",
-    technologies: ["React", "Tailwind", "Netlify"],
+    technologies: ["ReactJS", "Tailwind", "Netlify"],
     height: "570",
     githubLink: "https://github.com/mhshuvoalways/react-course-template",
     webLink: "https://course-template-react.netlify.app",
