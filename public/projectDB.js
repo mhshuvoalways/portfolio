@@ -14,6 +14,7 @@ const GoogleLocationSuggest = "/images/projects/react-google-place-suggest.png";
 const Solutiongorilla = "/images/projects/solutiongorilla.png";
 const TimsTutor = "/images/projects/timstutor.png";
 const Museras = "/images/projects/museras.png";
+const TiTratto = "/images/projects/titratto-web-app.png";
 const PokemonCollectionTracker =
   "/images/projects/pokemon-collection-mythique.png";
 
@@ -98,6 +99,25 @@ const Projects = [
     height: "400",
     githubLink: "https://github.com/mhshuvoalways/password-manager-app",
     webLink: "https://mypasswordvault.vercel.app",
+  },
+  {
+    id: "TiTratto",
+    type: "fullstack",
+    image: TiTratto,
+    title: "TiTratto | A Wellness Web App",
+    description:
+      "Book massages, physiotherapy, and osteopathy at your home with certified professionals. Secure payments, verified reviews. Wellness comes to you.",
+    technologies: [
+      "ReactJS",
+      "TypeScript",
+      "Tailwind",
+      "Supabase",
+      "OpenAI",
+      "Vercel",
+    ],
+    height: "120",
+    githubLink: "https://github.com/mhshuvoalways/wellness-web-app",
+    webLink: "https://titratto.vercel.app/",
   },
   {
     id: "LinkedInComment",
