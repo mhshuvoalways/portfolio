@@ -3,7 +3,6 @@ const Calendar = "/images/projects/calendar.png";
 const ChatbotSense = "/images/projects/chatbotsense.png";
 const Costnip = "/images/projects/costnip.png";
 const CourseTemplateReact = "/images/projects/course-template-react.png";
-const EShop = "/images/projects/eshop.png";
 const Extension = "/images/projects/extension.png";
 const HorseRidingTrainingWebsite =
   "/images/projects/horse-riding-training-website.png";
@@ -14,6 +13,8 @@ const PennayCalc = "/images/projects/pennycalc.png";
 const GoogleLocationSuggest = "/images/projects/react-google-place-suggest.png";
 const Solutiongorilla = "/images/projects/solutiongorilla.png";
 const TimsTutor = "/images/projects/timstutor.png";
+const PokemonCollectionTracker =
+  "/images/projects/pokemon-collection-mythique.png";
 
 const Projects = [
   {
@@ -35,6 +36,25 @@ const Projects = [
     height: "1000",
     githubLink: "",
     webLink: "https://www.chatbotsense.com/",
+  },
+  {
+    id: "PokemonCollectionTracker",
+    type: "fullstack",
+    image: PokemonCollectionTracker,
+    title: "Pokemon Collection Tracker",
+    description:
+      "Track Your Pokémon TCG Cards & Sealed Products. Scan Pokémon cards and sealed products, track real eBay prices, and follow the value of your collection over time.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Supabase",
+      "OpenAI",
+      "Vercel",
+    ],
+    height: "400",
+    githubLink: "",
+    webLink: "https://pokemoncollectiontracker.vercel.app",
   },
   {
     id: "PennayCalc",
@@ -60,6 +80,7 @@ const Projects = [
     githubLink: "https://github.com/mhshuvoalways/money-management-app",
     webLink: "https://pennycalc.vercel.app/",
   },
+
   {
     id: "PasswordVault",
     type: "fullstack",
@@ -76,7 +97,7 @@ const Projects = [
       "Netlify",
       "Cyclic",
     ],
-    height: "480",
+    height: "400",
     githubLink: "https://github.com/mhshuvoalways/password-manager-app",
     webLink: "https://mypasswordvault.vercel.app",
   },
@@ -96,7 +117,7 @@ const Projects = [
       "OpenAI",
       "Vercel",
     ],
-    height: "550",
+    height: "500",
     githubLink: "https://github.com/mhshuvoalways/linkedin-ai-comment",
     webLink: "https://linkedinaicomment.com",
   },
@@ -118,7 +139,7 @@ const Projects = [
       "MongoDB",
       "Vercel",
     ],
-    height: "280",
+    height: "250",
     githubLink: "https://github.com/mhshuvoalways/tutor-marketplace",
     webLink: "https://timstutors.vercel.app",
   },
@@ -147,29 +168,6 @@ const Projects = [
       "https://github.com/mhshuvoalways/auto-refresh-chrome-extension",
     webLink:
       "https://chromewebstore.google.com/detail/easy-auto-refresh/kefkjkdjjekifjbfnlmgmgkdolhblceb",
-  },
-  {
-    id: "EShop",
-    type: "fullstack",
-    image: EShop,
-    title: "e-Shop Multi Vendor",
-    description:
-      "E-Shop is a functionally oriented multi vendor ecommerce application where users can get almost all the necessary facilities. There are 2 types of payment methods available such as PayPal and Razorpay.",
-    technologies: [
-      "React",
-      "Redux",
-      "Tailwind",
-      "Expressjs",
-      "MongoDB",
-      "Multer",
-      "Cloudinary",
-      "SMTP server",
-      "Twilio API",
-      "Vercel",
-    ],
-    height: "550",
-    githubLink: "https://github.com/mhshuvoalways/multi-vendor-ecommerce",
-    webLink: "https://eshop-multi-vendor.vercel.app",
   },
   {
     id: "ReactBookingCalender",
@@ -206,7 +204,7 @@ const Projects = [
     description:
       "🦍 Solutions Gorilla's goal is to provide information about the platform that enables customers to deploy their applications and projects quickly and easily. It offers a four-week program to launch a platform including self-service capabilities, infrastructure setup, and security tooling. Their platform is based on cloud-native and open-source technologies.",
     technologies: ["Reactjs", "Tailwind", "Vercel"],
-    height: "420",
+    height: "480",
     githubLink: "https://github.com/mhshuvoalways/solutions-gorilla-website",
     webLink: "https://solutionsgorilla.com",
   },
