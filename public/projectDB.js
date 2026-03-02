@@ -117,7 +117,7 @@ const Projects = [
     ],
     height: "120",
     githubLink: "https://github.com/mhshuvoalways/wellness-web-app",
-    webLink: "https://titratto.vercel.app/",
+    webLink: "https://titratto.it/",
   },
   {
     id: "LinkedInComment",
